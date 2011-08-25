@@ -1,0 +1,9 @@
+This project explores SVG interfaces using ECMAScript/Javascript to manipulate the document DOM on the browser side.
+This project intends to explore mixed markup compound documents (XHTML, XForms, MathML, SVG) and embedded semantic data via RDFa.
+This project explores a team management interface with an initial focus on a soccer/futbol template or configuration or theme or build.
+
+The author intends for the project to be licsenced and distributed under the GPL.
+The author has been dabbling with this exploration and revising these document/graphic/interface types without any version control for a few years now.
+The author mainly tests the project in Chromium but the project intends to be functional in Webkit and Gecko based browsers.
+
+Author: MSK
