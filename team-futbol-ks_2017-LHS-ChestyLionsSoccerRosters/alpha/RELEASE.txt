@@ -1,0 +1,78 @@
+
+Alpha Version of Online Rosters with Jersey Number and Name 
+0.1.0 Released: Aug 22 (13 days ago)
+
+Justine, and coaches, I have been working on a team oriented APP which takes the form of a modern SVG based website, but acts like an APP also on your mobile with no install required.
+
+Am sending to some of the parents I know.
+
+Really it is in early alpha stage, but I wanted to share it and get some initial feedback, I know it has some design issues and is missing basic token focus scroll controls.  Also I don;t have any Microsoft at home so don't know if this works on IE/Edge, have only tested on Chrome and Firefox, that on Linux and Android, and iPad, and iPod.
+
+Also I would like players or parents with web-tech/design/coding interest to ask me so I can share the sources for changes.
+
+I took our team rosters as an initial use case, putting jersey number and names on the player tokens, layed out on a soccer field.
+
+http://team-futbol-ks.org/2017/LHS/lions.svg
+
+When you visit the link you should see, on the right side of the screen, black buttons with red letters, one for each of the three teams.
+If your on a mobile device turn to landscape view.
+
+Click any to go to the init+ page for that team, each has a bit green button with white plus in it in the upper right of the screen.
+
+Press the button a player token should appear.
+Click the token and it should enlarge and focus into the field center.
+Each tine you press the big plus button the token for another player should get added.
+Press until all players are added.
+
+MSK
+
+...
+
+Mark Kalusha <mark.kalusha@gmail.com>
+0.5.0 Released: Sep 2 (2 days ago)
+	
+to Jamie, MARTIN, Tim, Mike, Alee, kansasmelanie, Mike, gary.s.stark, cole.shupert11, montanastan62, wtyanek, Justine, b.jones32, Christy, lmurphy, Randy, Jackie, Charles, brandon.s.daley, Linda, Rosina
+Hello, I made an update addressing the bugs with the buttons and token focus.
+
+http://team-futbol-ks.org/2017/LHS/lions.svg
+
+Also added the token navigation, I don't have an iPhone but I tested it on Matteos' iPod, Safari and Chrome, and on my laptop Chromium and Firefox.
+
+In the center field circle on that page, with the LHS letters, are now some smaller circles, which are actually links to the pictures and photos that people have posted online for this seasons games.  If you zoom in you will see small labels, G0, P1, V1, P2, V2 in those smaller black circles.
+
+G0 links to Google Photos, pics are from summer St. Louis tourni.
+P1 links to Flicker, pics are from game-1 against Manhatten HS.
+V1 links to YouTube, video of varsity game-1 against Manhatten HS.
+P2 links to Flicker, pics are from game-2 against Topeka HS.
+V2 links to YouTube, video of varsity game-2 against Topeka HS.
+
+Thank you Jamie and Rob Hulse for posting those and sending the links.
+
+Click on one of the right hand buttons, Varsity, JV, C-Team, to go to that teams page.
+First time can take a few seconds to load all the player tokens for that team on to the field.
+Each of the three team pages also links to the other teams paging for easy switching.
+
+The team pages all have the same navigation:
+- focusing a player token centers it on the field and zooms/enlarges it
+- click either left/right arrow to focus the previous/next player token
+- or click any player token to focus that token
+- the small '+' button in the upper right adds new player-tokens to the field
+
+Next features I would work on are:
+- player-token images
+- editing player-tokens
+- player-token animation
+
+Any feedback on what works, or not, on what devices and browsers it helpful.
+Note I'm targeting across devices but mainly Chrome, Firefox, and Safari for browsers, not IE.
+
+I started work on the player-token images, and it works partially on my laptop.
+I was surprised that the dynamic load of token image actually worked better on Matteo iPod then on my laptop, hope it works on your phones.
+For testing the token photo background I added an image on Matteo token, so if you see his face there when you focus him then that feature works on your device.
+
+Thank you for checking it out, if I get enough feedback that it is workable then I would move forward with the next steps.
+
+MSK
+
+...
+
