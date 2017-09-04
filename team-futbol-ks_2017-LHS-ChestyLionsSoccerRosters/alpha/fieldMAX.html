@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = "utf-8" />
+
+		<title>SVG Field using Animated Player Tokens</title>
+
+		<style>
+			svg
+			{
+				/* https://stackoverflow.com/questions/33313602/how-to-place-html-elements-over-inline-svg */
+				position: absolute;
+				left: 0;
+				top: 0;
+				/*
+				z-index: -1;
+				*/
+			}
+
+			label
+			{
+				/* To make sure that all labels have the same size and are properly aligned */
+				/*
+				display: inline-block;
+				width: 160px;
+				text-align: right;
+				*/
+			}
+
+			.ptNamesForm
+			{
+				position: relative;
+				background-color: black;
+				color: white;
+				width: fit-content;
+				left: 1290px;
+				top: 40px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id = "fov">
+<svg 
+	version = "1.1" 
+	xmlns = "http://www.w3.org/2000/svg" 
+	xmlns:xlink = "http://www.w3.org/1999/xlink" 
+	x = "0px" 
+	y = "0px" 
+	width = "1776px" 
+	height = "999px" 
+	viewBox = "0 0 1760 990" 
+>
+	<!-- 16:9 1.77 repeating or 1.78 rounded -->
+	<!-- 16 * 110 = 1760, 16 * 120 = 1920 -->
+	<!--  9 * 110 =  990,  9 * 120 = 1080 -->
+
+	<!--
+		 1 - Goal Keeper/Goalie
+		 2 - Right Defender/Halfback-Wingback
+		 3 - Left Defender/HalfBack-Wingback
+		 4 - Right Center Defender/Fullback
+		 5 - Left Center Defender/Fullback
+		 6 - Right Midfielder/Mid
+		 7 - Right Attacker/Forward
+		 8 - Left Midfielder/Mid
+		 9 - Center Attacker/Forward
+		10 - Attacking Midfielder/Mid
+		11 - Left Attacker/Forward
+	-->
+
+	<defs> 
+
+		<linearGradient id = "fadeToLight01">
+			<stop offset = "0%" stop-color = "#0F0" />
+			<stop offset = "100%" stop-color = "#08F" />
+		</linearGradient>
+		<linearGradient id = "fadeToDark01">
+			<stop offset = "0%" stop-color = "#08F" />
+			<stop offset = "100%" stop-color = "#0F0" />
+		</linearGradient>
+		<radialGradient 
+			id = "fadeToCenterLight01" 
+			gradientUnits = "userSpaceOnUse"
+			cx = "36" 
+			cy = "36" 
+			r = "30" 
+		>
+			<stop offset = "0%" stop-color = "#08F" />
+			<stop offset = "100%" stop-color = "#00F" />
+		</radialGradient>
+
+		<g id = "playerToken01">
+			<use xlink:href = "playerToken.svg#playerToken00" x = "0" y= "0" />
+		</g>
+	
+	</defs>
+
+	<!--
+		The width property represents the length of the field.
+		The field length, the length of the touch lines, should be 
+		between 90 and 120 meters.
+		45 and 65 yards for US youth fields. 
+
+		The height property represents the width of field.
+		The field width, the length of the goal lines, should be 
+		between 45 and 90 meters
+		35 and 45 yards for US youth fields.
+		
+		The field length should be greater than than field width.
+
+		A circle of radius 9.15 meters with center at the midpoint of the 
+		half field line will be the area where game play begins.
+		8 yards for US youth fields (using 7 yards which is 70% of 30 feet). 
+
+		For the shapes in the Viewbox the scale is ten pixels equals a yard.
+		With the current Viewbox the maximum field dimension is about 
+		110 yards by 80 yards which is smaller than the max FIFA dimensions but 
+		big enough to accommodate World Cup Matches, commonly played on 
+		105 meter by 68 meter fields.
+	 
+		That gives us a fidelity of 1/10th of a yard or 3.6 inches per pixel.
+
+		1/10th of a yard = 0.1 yards * (36 inches / 1 yard) = 3.6 inches.
+
+		This is pretty good since the ball, the posts, the touch lines, 
+		the goal lines, are all of greater or equal dimension than our 
+		pixel fidelity.
+	
+		Note though that since SVG scales up and down we can simulate 
+		sub-pixel fidelity by simple zooming while using a monitor with 
+		greater then 1200 x 645 resolution.  On a 1600 x 1200 monitor for 
+		example we could zoom up 33% giving us 1 inch per pixel.
+
+		Or on a 2048 by 1152 wide screen aspect ratio, like the
+		Samsung 23" 2343BWX or the 23" 1920 x 1280 XL2370-1 with HDMI,
+		you could zoom up by 70% and 47% respectively.
+	-->
+
+	<use
+		xlink:href = "fieldMAX_fieldOfView.svg#fieldOfView"
+		x = "0" 
+		y = "0" 
+		id = "fieldOfView0000"
+	/>
+
+	<!-- 01 -->
+	<!-- 55 -->
+	<use 
+		xlink:href = "#playerToken01" 
+		x = "0" 
+		y = "0" 
+		id = "player01"
+		display = "none"
+		onclick = "insertPlayerToken(evt, 1); return false;"
+	>
+		<animateMotion
+			xlink:href = "#player01"
+			attributeType = "XML"
+			attributeName = "transform"
+			type = "translate"
+			path = "M 0,0 L 33.5, 33.5"
+			begin = "0s"
+			dur = "3s"
+		/>
+		<animateMotion
+			xlink:href = "#player01"
+			attributeType = "XML"
+			attributeName = "transform"
+			type = "translate"
+			path = "M 33.5, 33.5 L -0.15, -0.15"
+			begin = "3s"
+			dur = "2s"
+		/>
+	</use>
+
+	<use 
+		xlink:href = "playerToken.svg#playerToken00" 
+		x = "72" 
+		y = "72" 
+		id = "player02"
+		display = "none"
+		onclick = "insertPlayerToken(evt, 1); return false;"
+	>
+		<animateMotion
+			xlink:href = "#player02"
+			attributeType = "XML"
+			attributeName = "transform"
+			type = "translate"
+			path = "M 0,0 L 33.5, 33.5"
+			begin = "0s"
+			dur = "3s"
+		/>
+		<animateMotion
+			xlink:href = "#player02"
+			attributeType = "XML"
+			attributeName = "transform"
+			type = "translate"
+			path = "M 33.5, 33.5 L -0.15, -0.15"
+			begin = "3s"
+			dur = "2s"
+		/>
+		<animateMotion
+			xlink:href = "#player02"
+			attributeType = "XML"
+			attributeName = "transform"
+			type = "translate"
+			path = "M 0,0 L 33.5, 33.5 Z"
+			begin = "5s"
+			dur = "1s"
+			repeatCount = "indefinite"
+			fill = "freeze"
+		/>
+	</use>
+
+	<!--
+	<rect x = "0px" y = "0px" width = "72px" height = "72px" fill = "none" stroke = "black" stroke-width = "1px" />
+	<rect x = "72px" y = "72px" width = "72px" height = "72px" fill = "none" stroke = "black" stroke-width = "1px" />
+	-->
+
+	<g
+		id = "addNewPlayerTokens"
+		onclick = "addNewPlayerToken(-1); return false;"
+	>
+	<!--
+		onclick = "insertSetOfPlayerTokensAsUseElements(11); return false;"
+	-->
+		<rect
+			height = "27px"
+			width = "48px"
+			x = "1187px"
+			y = "12px"
+			rx = "5px"
+			ry = "5px"
+			strok-width = "2px"
+			stroke = "black"
+			fill = "green"
+		/>
+		<line
+			x1 = "1201px" y1 = "26px"
+			x2 = "1221px" y2 = "26px"
+			stroke = "white" stroke-width = "4px"
+		/>
+		<line
+			x1 = "1211px" y1 = "16px"
+			x2 = "1211px" y2 = "35px"
+			stroke = "white" stroke-width = "4px"
+		/>
+	</g>
+
+	<use
+		xlink:href = "w3c-svg11.svg#svg11icon" 
+		x = "1630px"
+		y = "918px"
+		id = "svgIcon"
+	/>
+
+	<!-- Copyright 2010 Mark S Kalusha 
+
+		This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 2 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.
+	-->
+
+	<!-- Creative Commons License -->
+	<a xlink:href = "http://creativecommons.org/licenses/GPL/2.0/">
+		<image 
+			x = "1630px"
+			y = "852px"
+			width = "88px"
+			height = "62px"
+			xlink:href = "cc-GPL-a.png" 
+		>
+			<!--
+			xlink:href = "http://creativecommons.org/images/public/cc-GPL-a.png" 
+			-->
+			<title>CC-GNU GPL Copyright Image</title>
+			<desc>CC-GNU GPL Copyright Graphical Pointer</desc>
+		</image>
+	</a>
+	<!--
+	<br />
+	This software is licensed under the 
+	<a href = "http://creativecommons.org/licenses/GPL/2.0/">CC-GNU GPL</a> 
+	version 2.0 or later.
+	-->
+	<!-- /Creative Commons License -->
+
+	<!-- https://stackoverflow.com/questions/3346106/accessing-a-dom-object-defined-in-an-external-svg-file -->
+	<script type = "application/ecmascript">
+	<![CDATA[
+		function loadNewSVGDoc (newSVGDoc, nptNumber)
+		{
+			// import it into the current DOM
+			var pt = document.importNode(newSVGDoc.documentElement.getElementById("playerToken00"), true);
+
+			// var tokenNumber_classNodes = pt.getElementsByClassName("tokenNumber"); // [0]; // .item(0);
+			// alert(tokenNumber_classNodes.length);
+
+			// var playerTokenLabel = pt.getElementsByClassName("tokenNumber").item(0).textContent;
+			// alert("playerTokenLabel: "+ playerTokenLabel);
+
+			var ptSize = 72;
+			var nptx = 9 + 35 + ((nptNumber - 1) * (ptSize + 2));
+			var npty = 9 + 45;
+			if (nptNumber == 0) { nptx = 0; npty = 0; }
+
+			var playerTokenElements = 0;
+			if (nptNumber != 0)
+			{
+				playerTokenElements = document.getElementsByClassName("playerToken");
+				if (nptNumber < 0) { nptNumber = playerTokenElements.length + 1; }
+				// alert("nptNumber: " + nptNumber);
+				nptx = 9 + 35 + ((nptNumber - 1) * (ptSize + 2));
+				npty = 9 + 45;
+			}
+
+			var nptId = "newPlayerToken" + nptNumber;
+			var nextPT = nptNumber + 1;
+
+			
+
+			pt.setAttribute("id", nptId); // Set pt (player-token) id attr. 
+			pt.getElementsByClassName("tokenNumber").item(0).textContent = nptNumber;
+			pt.setAttribute("transform", "translate(" + nptx + "," + npty + ")"); // Set player-token x,y coordinate.
+			pt.setAttribute("onclick", "addNewPlayerToken(" + nextPT + "); return false;");
+			document.querySelector('svg').appendChild(pt); // document.documentElement.appendChild(pt);
+		};
+
+		function fetchXML (url, callback, number)
+		{
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', url, true);
+			xhr.onreadystatechange =
+				function (evt)
+				{
+					// Do not explicitly handle errors, those should be
+					// visible via console output in the browser.
+					if (xhr.readyState === 4)
+					{
+						callback(xhr.responseXML, number);
+					}
+				};
+
+			xhr.send(null);
+		};
+
+		// fetch the document
+		function addNewPlayerToken (nptNumber)
+		{
+			fetchXML
+			(
+				"http://team-futbol-ks.org/playerToken.svg", // #playerToken00",
+				loadNewSVGDoc,
+				nptNumber
+			);
+		};
+
+		var fieldOfView = document.getElementById("fieldOfView0000");
+		var fovWidth = fieldOfView.getBBox().width;
+		var fovHeight = fieldOfView.getBBox().height;
+		console.log("width", fovWidth);
+		console.log("height", fovHeight);
+
+		// addNewPlayerToken(0);
+	]]>
+	</script>
+
+	<script type = "application/ecmascript">
+	<![CDATA[
+		function insertPlayerTokenAsUseElement (nptNumber) // (evt, nptNumber) // nptx, npty)
+		{
+			var nextPT = nptNumber + 1;
+			var ptSize = 72;
+			var epx = "unknown";
+			var epy = "unknown";
+
+			// if (evt.pageX !== undefined) epx = evt.pageX;
+			// if (evt.pageY !== undefined) epy = evt.pageY;
+
+			// alert("epx: " + epx + ", epy: " + epy);
+
+			var svg = document.getElementsByTagName('svg')[0]; // Get svg element
+			var docWidth = svg.getAttribute("width");
+			var docHeight = svg.getAttribute("height");
+			// alert("docWidth: " + docWidth + ", docHeight: " + docHeight);
+
+			/*
+			nptx = (35 - (ptSize / 2)) + ((nptNumber - 1) * ptSize);
+			npty = (45 - (ptSize / 2));
+			*/
+			var nptx = 9 + 35 + ((nptNumber - 1) * (ptSize + 2));
+			var npty = 9 + 45;
+
+			// https://stackoverflow.com/questions/16488884/add-svg-element-to-existing-svg-using-dom
+			// Create a use element in SVG's namespace.
+			var pt = document.createElementNS("http://www.w3.org/2000/svg", "use");
+			pt.setAttribute("id", "newPlayerToken" + nptNumber); // Set pt (player-token) id attr. 
+			pt.setAttribute("x", nptx); // Set player-token x-coordinate.
+			pt.setAttribute("y", npty); // Set player-token y-coordinate.
+
+			// Set player-token onclick event listener.
+			pt.setAttribute("onlick", "insertPlayerToken(evt," + nextPT + "); return false;");
+
+			// http://taye.me/blog/svg/a-guide-to-svg-use-elements/
+			// Set pt (player-token) xlink:href attr. 
+			pt.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "playerToken.svg#playerToken00");
+
+			// Get number from playerToken by class tokenNumber.
+			// It is a text element inside an oval/ellipse graphic, g -> (path + text).
+			// var playerTokenLabel = pt.getElementsByClassName("tokenNumber"); // [0]; // .item(0);
+			// alert(playerTokenLabel.length);
+			// var playerTokenLabelTextUnmodified = pt.getElementsByClassName("tokenNumber").item(0).nodeValue;
+			// .innerHTML => Uncaught TypeError: Cannot read property 'innerHTML' of null;
+			// var ptText= playerTokenLabel.textContent;
+			// alert("nptNumber: " + nptNumber + ", playerTokenLabelTextUnmodified: " + playerTokenLabelTextUnmodified + ", ptText: " + ptText);
+			// pt.getElementsByClassName("tokenNumber").item(0).nodeValue = nptNumber;
+
+			document.querySelector('svg').appendChild(pt);
+			// var svg = document.getElementsByTagName('svg')[0]; // Get svg element
+			// svg.appendChild(pt);
+
+			var newPlayerToken = document.getElementById("newPlayerToken" + nptNumber);
+		}
+
+		function insertSetOfPlayerTokensAsUseElements (setSize, callback)
+		{
+			var ptCount = 0
+			while (ptCount <= setSize)
+			{
+				ptCount++;
+				insertPlayerTokenAsUseElement(ptCount);
+			}
+		}
+	]]>
+	</script>
+
+</svg>
+			</div>
+
+			<div class = "ptNamesForm">
+				<form
+					id = "ptNamesForm1"
+					action = "/"
+					method = "post"
+				>
+					<div>
+						<label for = "ptFirstName1">Player 1 - First Name:</label>
+						<input id = "ptFirstName1" type = "text" name = "firstName" />
+					</div>
+					<div>
+						<label for = "ptLastName1">Player 1 - Last Name:</label>
+						<input id = "ptLastName1" type = "text" name = "lastName" />
+					</div>
+					<div class = "button">
+						<button type = "submit">Attach Names to Player Tokens</button>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</body>
+
+</html>
+

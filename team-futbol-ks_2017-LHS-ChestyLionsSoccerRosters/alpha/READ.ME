@@ -1,0 +1,38 @@
+
+Short APP Design GOAL Statement
+-------------------------------
+
+- Modes Toggle: Top Left { '+':"add/sub player tokens", '-':"view/edit player" }
+
+- Main Controls: Top Right
+	mode-A
+	{
+		{ 
+			submode-a: { '+':"add/sub player tokens", '-':"view/edit player" },
+			submode-b: { '+':"scroll focus right to higher numbers", '-':"scroll focus left to lower numbers" }
+		}
+	}
+
+- Playbook and Schedules
+	{
+		mode-A: "for team player tokens control",
+		mode-B: "for formation control",
+		mode-C: "for schedule control",
+		mode-D: "for roster based game stats control"
+	}
+
+
+View/Edit Token Functional Requirements
+---------------------------------------
+
+- edit the name of the player playing that position
+  the position is determined by the playerTokenId token-number which keys to a position-description
+  clicking the token number opens input box that allows entering the players name (keyborad/with mini-button for submit)
+
+- clicking the upper portion of a token allows you edit its background or icon/symbol
+  need to able to find and upload media files and store them for later re-association
+
+- clicking the lower portion of a token allows you fill out contact info
+  opens up goal areas as contact-attribute scroll buttons
+  opens up save/post/upload button
+

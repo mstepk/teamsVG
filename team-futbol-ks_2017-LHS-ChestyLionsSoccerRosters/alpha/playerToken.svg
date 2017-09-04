@@ -1,0 +1,243 @@
+<?xml 
+	version = "1.0" 
+	encoding = "UTF-8"
+	standalone = "yes"
+?>
+
+<!DOCTYPE 
+	svg 
+	PUBLIC 
+	"-//W3C//DTD SVG 1.1//EN" 
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" 
+>
+
+<svg 
+	version = "1.1" 
+	xmlns = "http://www.w3.org/2000/svg" 
+	xmlns:xlink = "http://www.w3.org/1999/xlink" 
+	x = "0px" 
+	y = "0px" 
+	width = "72px" 
+	height = "72px" 
+	viewBox = "0 0 72 72" 
+>
+
+	<defs>
+		<g id = "ptUnderGuide">
+			<circle
+				cx = "36px"
+				cy = "36px"
+				r = "30px"
+				fill = "#02F"
+				stroke = "#000"
+				stroke-width = "3px"
+			/>
+			<text
+				x = "36px"
+				y = "38.5px"
+				font-family = "sans-serif"
+				font-size = "8px"
+				fill = "#111"
+				text-anchor = "middle"
+			>1</text>
+		</g>
+
+		<g id = "ptOverGuide">
+			<rect
+				x = "0px" y = "0px"
+				width = "72px" height = "72px"
+				fill = "none"
+				stroke = "black" stroke-width = "6px"
+			/>
+			<line
+				x1 = "0px" y1 = "36px"
+				x2 = "72px" y2 = "36px"
+				stroke = "#666" stroke-width= "1px"
+			/>
+			<line
+				x1 = "36px" y1 = "0px"
+				x2 = "36px" y2 = "72px"
+				stroke = "#666" stroke-width= "1px"
+			/>
+		</g>
+
+		<linearGradient id = "fadeToLight01">
+			<stop offset = "0%" stop-color = "#0F0" />
+			<stop offset = "100%" stop-color = "#08F" />
+		</linearGradient>
+		<linearGradient id = "fadeToDark01">
+			<stop offset = "0%" stop-color = "#08F" />
+			<stop offset = "100%" stop-color = "#0F0" />
+		</linearGradient>
+		<radialGradient 
+			id = "fadeToCenterLight01" 
+			gradientUnits = "userSpaceOnUse"
+			cx = "36" 
+			cy = "36" 
+			r = "30" 
+		>
+			<stop offset = "0%" stop-color = "#08F" />
+			<stop offset = "100%" stop-color = "#00F" />
+		</radialGradient>
+
+		<g
+			id = "playerToken00"
+			class = "playerToken"
+		>
+			<defs>
+				<g id = "ptTopSemiCircle">
+					<!-- Top semi-circle -->
+					<a xlink:href = "javascript:void(0);">
+						<path
+							d =
+								"
+									M
+										6, 36 
+									a
+										30,
+										30
+										0
+										1,
+										1
+										60, 0
+									Z
+								"
+							fill = "url(#fadeToLight01)"
+							stroke = "#FFF"
+							stroke-width = "3px"
+						/>
+					</a>
+				</g>
+
+				<g id = "ptBottomSemiCircle">
+					<!-- Bottom semi-circle -->
+					<a xlink:href = "javascript:void(0);">
+						<path
+							d =
+								"
+									M
+										6, 36
+									a
+										30,
+										30
+										0
+										1,
+										0
+										60, 0
+									Z
+								"
+							fill = "url(#fadeToDark01)"
+							stroke = "#FFF"
+							stroke-width = "3px"
+						/>
+					</a>
+				</g>
+
+				<g id = "ptCenterEllipse">
+					<!-- Center ellipse with name inscribed. -->
+					<a xlink:href = "javascript:void(0);">
+						<path
+							d =
+								"
+									M
+										6, 36 
+									a
+										30,
+										15
+										0
+										1,
+										0
+										0, -0.0001
+								"
+							fill = "url(#fadeToCenterLight01)"
+							stroke = "#FFFFFF"
+							stroke-width = "2"
+						/>
+					</a>
+				</g>
+
+				<g id = "playerToken">
+					<use xlink:href = "#ptTopSemiCircle" />
+					<use xlink:href = "#ptBottomSemiCircle" />
+					<use xlink:href = "#ptCenterEllipse" />
+				</g>
+			</defs>
+
+			<use xlink:href = "#playerToken" />
+
+			<text
+				class = "tokenNumber"
+				x = "36px"
+				y = "40px"
+				font-family = "sans-serif"
+				font-size = "12px"
+				fill = "#111"
+				text-anchor = "middle"
+			>00</text>
+		</g>
+
+		<animateMotion
+			xlink:href = "#playerToken00"
+			attributeType = "XML"
+			attributeName = "transform"
+			type = "translate"
+			path = "M 0,0 L 33.5, 33.5"
+			begin = "0s"
+			dur = "3s"
+		/>
+		<animateMotion
+			xlink:href = "#playerToken00"
+			attributeType = "XML"
+			attributeName = "transform"
+			type = "translate"
+			path = "M 33.5, 33.5 L -0.15, -0.15"
+			begin = "3s"
+			dur = "2s"
+		/>
+
+			<!--
+			<animateMotion
+				attributeType = "XML"
+				attributeName = "transform"
+				type = "translate"
+				path = "M 85, 255 L 145, 255"
+				begin = "14s"
+				dur = "2"
+			/>
+			<animateMotion
+				attributeType = "XML"
+				attributeName = "transform"
+				type = "translate"
+				path = "M 145, 255 l 30, 0"
+				begin = "18s"
+				dur = "2"
+			/>
+			-->
+
+	</defs>
+
+	<use xlink:href = "#ptUnderGuide" />
+	<use 
+		xlink:href = "#playerToken00" 
+		x = "0" 
+		y = "0" 
+		id = "player00"
+	/>
+	<use xlink:href = "#ptOverGuide" />
+
+	<animateMotion
+		xlink:href = "#player00"
+		attributeType = "XML"
+		attributeName = "transform"
+		type = "translate"
+		path = "M 0,0 L 33.5, 33.5 Z"
+		begin = "5s"
+		dur = "1s"
+		repeatCount = "indefinite"
+	/>
+	<!--
+		fill = "freeze"
+	-->
+
+</svg>
+
