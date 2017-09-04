@@ -314,6 +314,7 @@
 	<g
 		id = "pushNewPlayerToken"
 		onclick = "pushPT(-1); return false;"
+		style = "display: none;"
 	>
 		<rect
 			x = "1307px"
@@ -338,13 +339,14 @@
 		/>
 	</g>
 
-
+	<!--
 	<use
 		xlink:href = "w3c-svg11.svg#svg11icon" 
 		x = "1630px"
 		y = "918px"
 		id = "svgIcon"
 	/>
+	-->
 
 	<!-- Copyright 2017 Mark S Kalusha 
 
@@ -362,11 +364,11 @@
 		along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	-->
 
-	<!-- Creative Commons License -->
+	<!-- Creative Commons License --> <!-- y = "852px" -->
 	<a xlink:href = "http://creativecommons.org/licenses/GPL/2.0/">
 		<image 
-			x = "1630px"
-			y = "852px"
+			x = "1620px"
+			y = "880px"
 			width = "88px"
 			height = "62px"
 			xlink:href = "cc-GPL-a.png" 
@@ -451,7 +453,7 @@
 			// Fetch the document using XHR, Ajax style?
 			fetchXML
 			(
-				"http://team-futbol-ks.org/playerToken.svg", // #playerToken00",
+				"http://localhost:8000/playerToken.svg", // #playerToken00",
 				// http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
 				loadNewSVGDoc,
 				nptNumber
@@ -524,7 +526,7 @@
 		{
 			fetchXML
 			(
-				"http://team-futbol-ks.org/playerToken.svg",
+				"http://localhost:8000/playerToken.svg",
 				// http://team-futbol-ks.org/playerToken.svg",
 				addNewPT,
 				nptNumber,
@@ -587,7 +589,7 @@
 			/*
 			fetchXML
 			(
-				evt, // "http://team-futbol-ks.org/playerToken.svg", // #playerToken00",
+				evt, // "http://localhost:8000/playerToken.svg", // #playerToken00",
 				evt, // http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
 				focusSVGDoc,
 				nptNumber

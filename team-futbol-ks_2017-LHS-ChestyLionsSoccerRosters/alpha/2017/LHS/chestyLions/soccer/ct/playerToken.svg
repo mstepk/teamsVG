@@ -196,7 +196,29 @@
 				font-size = "12px"
 				fill = "#111"
 				text-anchor = "middle"
+				style = "display: none;"
 			>00</text>
+
+			<text
+				class = "ptPlayerName"
+				x = "36px"
+				y = "40px"
+				font-family = "sans-serif"
+				font-size = "12px"
+				fill = "#111"
+				text-anchor = "middle"
+			>00</text>
+
+			<text
+				class = "ptJerseyNumber"
+				x = "36px"
+				y = "61.5px"
+				font-family = "sans-serif"
+				font-size = "10px"
+				fill = "#111"
+				text-anchor = "middle"
+			>00</text>
+
 			<!--
 				x = "-3.3px" y = "17.5px"
 				width = "70.4px" height = "36px"
@@ -226,6 +248,7 @@
 						class = "playerNameFormContainer"
 						style =
 							"
+								display: none;
 								position: absolute;
 								width: 71px;
 								margin: 0 auto;
@@ -252,7 +275,7 @@
 										"
 											width: 71px;
 											font-size: 10px;
-                                            line-height: 80%;
+											line-height: 80%;
 										"
 								/>
 								<!--

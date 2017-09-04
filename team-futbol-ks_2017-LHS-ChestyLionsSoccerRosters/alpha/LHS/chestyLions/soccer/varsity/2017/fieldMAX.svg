@@ -148,6 +148,7 @@
 		</radialGradient>
 
 		<g id = "playerToken01">
+			<!-- <use xlink:href = "LHS/chestyLions/soccer/varsity/2017/playerToken.svg#playerToken00" x = "0" y= "0" /> -->
 			<use xlink:href = "playerToken.svg#playerToken00" x = "0" y= "0" />
 		</g>
 	
@@ -231,6 +232,9 @@
 		/>
 	</use>
 
+	<!--
+		xlink:href = "LHS/chestyLions/soccer/varsity/2017/playerToken.svg#playerToken00" 
+	-->
 	<use 
 		xlink:href = "playerToken.svg#playerToken00" 
 		x = "72" 
@@ -415,13 +419,37 @@
 				npty = 9 + 45;
 			}
 
+			var playerTokenElements = 0;
+			var carriageReturnNumber = 16;
+			var resetTokenJustification = 0;
+			var justificationResetCounter = 0;
+			var xJustificationFactor = resetTokenJustification * carriageReturnNumber * justificationResetCounter;
+			var yJustificationFactor = ptSize * justificationResetCounter;
+
+			if (nptNumber != 0)
+			{
+				playerTokenElements = document.getElementsByClassName("playerToken");
+				if (nptNumber < 0) { nptNumber = playerTokenElements.length + 1; }
+				// alert("nptNumber: " + nptNumber);
+
+				// https://stackoverflow.com/questions/4228356/how-to-perform-integer-division-and-get-the-remainder-in-javascript
+				if (nptNumber > carriageReturnNumber) { resetTokenJustification = 1; }
+				justificationResetCounter = ~~((nptNumber - 1) / carriageReturnNumber);
+				xJustificationFactor = resetTokenJustification * carriageReturnNumber * justificationResetCounter;
+				yJustificationFactor = ptSize * justificationResetCounter;
+				
+				nptx = 9 + 35 + ((nptNumber - xJustificationFactor - 1) * (ptSize + 2));
+				npty = 9 + 45 + yJustificationFactor;
+			}
+
 			var nptId = "newPlayerToken" + nptNumber;
 			var nextPT = nptNumber + 1;
 
-			
-
 			pt.setAttribute("id", nptId); // Set pt (player-token) id attr. 
 			pt.getElementsByClassName("tokenNumber").item(0).textContent = nptNumber;
+			pt.getElementsByClassName("ptJerseyNumber").item(0).textContent = nptNumber;
+			pt.getElementsByClassName("ptPlayerName").item(0).textContent = nptNumber;
+
 			pt.setAttribute("transform", "translate(" + nptx + "," + npty + ")"); // Set player-token x,y coordinate.
 			// pt.setAttribute("onclick", "addNewPlayerToken(" + nextPT + "); return false;");
 			pt.setAttribute("onclick", "focusPlayerToken(evt, this.id); return false;");
@@ -451,7 +479,9 @@
 			// Fetch the document using XHR, Ajax style?
 			fetchXML
 			(
-				"http://team-futbol-ks.org/playerToken.svg", // #playerToken00",
+				"http://team-futbol-ks.org/LHS/chestyLions/soccer/varsity/2017/playerToken.svg", // #playerToken00",
+				// "http://localhost:8000/LHS/chestyLions/soccer/varsity/2017/playerToken.svg", // #playerToken00",
+				// "http://localhost:8000/playerToken.svg", // #playerToken00",
 				// http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
 				loadNewSVGDoc,
 				nptNumber
@@ -468,12 +498,41 @@
 	]]>
 	</script>
 
+	<!--
+		Ross Brungardt GK 11 00
+
+		+ 6 defenders
+		Ja’Melle Dye D 12 2
+		Robbie Kleibohmer D 12 9
+		Jack Anderson D 11 5
+		Garrett Hart D 11 15
+		Trey Hulse D 11 3
+		Gary Schmidt D 11 4
+
+		+ 9 midfielders
+		Ben Matthews M 12 19
+		Joseph Minder M 12 17
+		Dario Ramirez M 12 14
+		Cole Shupert M 11 10
+		Matteo Kalusha-Aguirre M 10 12
+		Kanak Masten M 10 18
+		Mason Anderson M 9 13
+		Tanner Glanton M 9 16
+		Alec Murphy M 9 11
+
+		+ 3 forwards
+		Quentin Harrington F 12 6
+		Anton Martinez de Velasco F 12 7
+		Will Yanek F 11 8
+	-->
+
 	<script type = "application/ecmascript">
 	<![CDATA[
-		function addNewPT (newPT, nptNumber, ptSize)
+		function addNewPT (newPT, nptNumber, ptSize, ptDictionaryJSON)
 		{
 			// Import new player token into the current DOM
 			var pt = document.importNode(newPT.documentElement.getElementById("playerToken00"), true);
+			var ptDataDict = eval(ptDictionaryJSON);
 
 			// Set x and y default coordinates.
 			var nptx = 9 + 35 + ((nptNumber - 1) * (ptSize + 2));
@@ -482,27 +541,45 @@
 
 			// Reset x any coordinates.
 			var playerTokenElements = 0;
+			var carriageReturnNumber = 16;
+			var resetTokenJustification = 0;
+			var justificationResetCounter = 0;
+			var xJustificationFactor = resetTokenJustification * carriageReturnNumber * justificationResetCounter;
+			var yJustificationFactor = ptSize * justificationResetCounter;
+
 			if (nptNumber != 0)
 			{
 				playerTokenElements = document.getElementsByClassName("playerToken");
 				if (nptNumber < 0) { nptNumber = playerTokenElements.length + 1; }
 				// alert("nptNumber: " + nptNumber);
-				nptx = 9 + 35 + ((nptNumber - 1) * (ptSize + 2));
-				npty = 9 + 45;
+
+				// https://stackoverflow.com/questions/4228356/how-to-perform-integer-division-and-get-the-remainder-in-javascript
+				if (nptNumber > carriageReturnNumber) { resetTokenJustification = 1; }
+				justificationResetCounter = ~~((nptNumber - 1) / carriageReturnNumber);
+				xJustificationFactor = resetTokenJustification * carriageReturnNumber * justificationResetCounter;
+				yJustificationFactor = ptSize * justificationResetCounter;
+				
+				nptx = 9 + 35 + ((nptNumber - xJustificationFactor - 1) * (ptSize + 2));
+				npty = 9 + 45 + yJustificationFactor;
 			}
 
 			var nptId = "newPlayerToken" + nptNumber;
+			var ptPlayerName = ptDataDict[nptNumber - 1].ptPlayerNickName;
+			var ptJerseyNumber = ptDataDict[nptNumber - 1].ptJerseyNumber;
 			var nextPT = nptNumber + 1;
 
 			pt.setAttribute("id", nptId); // Set pt (player-token) id attr. 
 			pt.getElementsByClassName("tokenNumber").item(0).textContent = nptNumber;
+			pt.getElementsByClassName("ptJerseyNumber").item(0).textContent = ptJerseyNumber;
+			pt.getElementsByClassName("ptPlayerName").item(0).textContent = ptPlayerName;
+
 			pt.setAttribute("transform", "translate(" + nptx + "," + npty + ")"); // Set player-token x,y coordinate.
 			// pt.setAttribute("onclick", "popPT(" + nextPT + "," + ptSize + "); return false;");
 			pt.setAttribute("onclick", "focusPlayerToken(evt, this.id); return false;");
 			document.querySelector('svg').appendChild(pt);
 		};
 
-		function fetchXML (url, callback, number, size)
+		function fetchXML (url, callback, number, size, dictJSON)
 		{
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET', url, true);
@@ -513,7 +590,7 @@
 					// visible via console output in the browser.
 					if (xhr.readyState === 4)
 					{
-						callback(xhr.responseXML, number, size);
+						callback(xhr.responseXML, number, size, dictJSON);
 					}
 				};
 
@@ -522,13 +599,231 @@
 
 		function pushPT (nptNumber)
 		{
+			var ptDictionaryJSON = '' + // '{[{ptPlayerName: "JaMelle"}]}'
+					'{' + 
+						'[' +
+							'{' +
+								'tokenNumber: 1,' +
+								'ptJerseyNumber: "00",' +
+								'ptPlayerNickName: "Ross",' +
+								'ptPlayerFirstName: "Ross",' +
+								'ptPlayerLastName: "Brungardt",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Goal Keeper",' +
+								'ptPositionAbbreviation: "GK",' +
+								'ptStudentGradeLevel: 11' +
+							'},' +
+							'{' +
+								'tokenNumber: 2,' +
+								'ptJerseyNumber: 2,' +
+								'ptPlayerNickName: "JaMelle",' +
+								'ptPlayerFirstName: "JaMelle",' +
+								'ptPlayerLastName: "Dye",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Defender",' +
+								'ptPositionAbbreviation: "D",' +
+								'ptStudentGradeLevel: 12' +
+							'},' +
+							'{' +
+								'tokenNumber: 3,' +
+								'ptJerseyNumber: 12,' +
+								'ptPlayerNickName: "Robbie",' +
+								'ptPlayerFirstName: "Robbie",' +
+								'ptPlayerLastName: "Kleibohmer",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Defender",' +
+								'ptPositionAbbreviation: "D",' +
+								'ptStudentGradeLevel: 12' +
+							'},' +
+							'{' +
+								'tokenNumber: 4,' +
+								'ptJerseyNumber: 5,' +
+								'ptPlayerNickName: "Jack",' +
+								'ptPlayerFirstName: "Jack",' +
+								'ptPlayerLastName: "Anderson",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Defender",' +
+								'ptPositionAbbreviation: "D",' +
+								'ptStudentGradeLevel: 11' +
+							'},' +
+							'{' +
+								'tokenNumber: 5,' +
+								'ptJerseyNumber: 15,' +
+								'ptPlayerNickName: "Garrett",' +
+								'ptPlayerFirstName: "Garrett",' +
+								'ptPlayerLastName: "Hart",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Defender",' +
+								'ptPositionAbbreviation: "D",' +
+								'ptStudentGradeLevel: 11' +
+							'},' +
+							'{' +
+								'tokenNumber: 6,' +
+								'ptJerseyNumber: 3,' +
+								'ptPlayerNickName: "Trey",' +
+								'ptPlayerFirstName: "Hulse",' +
+								'ptPlayerLastName: "Hart",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Defender",' +
+								'ptPositionAbbreviation: "D",' +
+								'ptStudentGradeLevel: 11' +
+							'},' +
+							'{' +
+								'tokenNumber: 7,' +
+								'ptJerseyNumber: 4,' +
+								'ptPlayerNickName: "Gary",' +
+								'ptPlayerFirstName: "Schmidt",' +
+								'ptPlayerLastName: "Hart",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Defender",' +
+								'ptPositionAbbreviation: "D",' +
+								'ptStudentGradeLevel: 11' +
+							'},' +
+							'{' +
+								'tokenNumber: 8,' +
+								'ptJerseyNumber: 19,' +
+								'ptPlayerNickName: "Ben",' +
+								'ptPlayerFirstName: "Ben",' +
+								'ptPlayerLastName: "Matthews",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Midfielder",' +
+								'ptPositionAbbreviation: "M",' +
+								'ptStudentGradeLevel: 12' +
+							'},' +
+							'{' +
+								'tokenNumber: 9,' +
+								'ptJerseyNumber: 17,' +
+								'ptPlayerNickName: "Joey",' +
+								'ptPlayerFirstName: "Joseph",' +
+								'ptPlayerLastName: "Minder",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Midfielder",' +
+								'ptPositionAbbreviation: "M",' +
+								'ptStudentGradeLevel: 12' +
+							'},' +
+							'{' +
+								'tokenNumber: 10,' +
+								'ptJerseyNumber: 14,' +
+								'ptPlayerNickName: "Dario",' +
+								'ptPlayerFirstName: "Dario",' +
+								'ptPlayerLastName: "Ramirez",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Midfielder",' +
+								'ptPositionAbbreviation: "M",' +
+								'ptStudentGradeLevel: 12' +
+							'},' +
+							'{' +
+								'tokenNumber: 11,' +
+								'ptJerseyNumber: 10,' +
+								'ptPlayerNickName: "Cole",' +
+								'ptPlayerFirstName: "Cole",' +
+								'ptPlayerLastName: "Shupert",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Midfielder",' +
+								'ptPositionAbbreviation: "M",' +
+								'ptStudentGradeLevel: 11' +
+							'},' +
+							'{' +
+								'tokenNumber: 12,' +
+								'ptJerseyNumber: 12,' +
+								'ptPlayerNickName: "Matteo",' +
+								'ptPlayerFirstName: "Matteo",' +
+								'ptPlayerLastName: "Kalusha-Aguirre",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Midfielder",' +
+								'ptPositionAbbreviation: "M",' +
+								'ptStudentGradeLevel: 10' +
+							'},' +
+							'{' +
+								'tokenNumber: 13,' +
+								'ptJerseyNumber: 18,' +
+								'ptPlayerNickName: "Kanak",' +
+								'ptPlayerFirstName: "Kanak",' +
+								'ptPlayerLastName: "Masten",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Midfielder",' +
+								'ptPositionAbbreviation: "M",' +
+								'ptStudentGradeLevel: 10' +
+							'},' +
+							'{' +
+								'tokenNumber: 14,' +
+								'ptJerseyNumber: 13,' +
+								'ptPlayerNickName: "Mason",' +
+								'ptPlayerFirstName: "Mason",' +
+								'ptPlayerLastName: "Anderson",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Midfielder",' +
+								'ptPositionAbbreviation: "M",' +
+								'ptStudentGradeLevel: 9' +
+							'},' +
+							'{' +
+								'tokenNumber: 15,' +
+								'ptJerseyNumber: 16,' +
+								'ptPlayerNickName: "Tanner",' +
+								'ptPlayerFirstName: "Tanner",' +
+								'ptPlayerLastName: "Glanton",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Midfielder",' +
+								'ptPositionAbbreviation: "M",' +
+								'ptStudentGradeLevel: 9' +
+							'},' +
+							'{' +
+								'tokenNumber: 16,' +
+								'ptJerseyNumber: 11,' +
+								'ptPlayerNickName: "Alec",' +
+								'ptPlayerFirstName: "Alec",' +
+								'ptPlayerLastName: "Murphy",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Midfielder",' +
+								'ptPositionAbbreviation: "M",' +
+								'ptStudentGradeLevel: 9' +
+							'},' +
+							'{' +
+								'tokenNumber: 17,' +
+								'ptJerseyNumber: 6,' +
+								'ptPlayerNickName: "Quentin",' +
+								'ptPlayerFirstName: "Quentin",' +
+								'ptPlayerLastName: "Harrington",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Forward",' +
+								'ptPositionAbbreviation: "F",' +
+								'ptStudentGradeLevel: 12' +
+							'},' +
+							'{' +
+								'tokenNumber: 18,' +
+								'ptJerseyNumber: 7,' +
+								'ptPlayerNickName: "Anton",' +
+								'ptPlayerFirstName: "Anton",' +
+								'ptPlayerLastName: "Martinez de Velasco",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Forward",' +
+								'ptPositionAbbreviation: "F",' +
+								'ptStudentGradeLevel: 12' +
+							'},' +
+							'{' +
+								'tokenNumber: 19,' +
+								'ptJerseyNumber: 8,' +
+								'ptPlayerNickName: "Will",' +
+								'ptPlayerFirstName: "William",' +
+								'ptPlayerLastName: "Yanek",' +
+								'ptPositionNumber: "null",' +
+								'ptPositionName: "Forward",' +
+								'ptPositionAbbreviation: "F",' +
+								'ptStudentGradeLevel: 11' +
+							'}' +
+						']' +
+					'}';
+
 			fetchXML
 			(
-				"http://team-futbol-ks.org/playerToken.svg",
+				"http://team-futbol-ks.org/LHS/chestyLions/soccer/varsity/2017/playerToken.svg",
+				// "http://localhost:8000/LHS/chestyLions/soccer/varsity/2017/playerToken.svg",
+				// "http://localhost:8000/playerToken.svg",
 				// http://team-futbol-ks.org/playerToken.svg",
 				addNewPT,
 				nptNumber,
-				72
+				72,
+				ptDictionaryJSON
 			);
 		};
 
@@ -579,16 +874,18 @@
 			// playerToken.setAttribute("transform", "scale(8), translate(43.12, 25.9)");
 			// playerToken.setAttribute("transform", "scale(9), translate(34.34, 19)");
 			// playerToken.setAttribute("transform", "scale(10), translate(27.3, 13.5)");
-			playerToken.setAttribute("fill-opacity", "0.6");
-			playerToken.setAttribute("stroke-opacity", "0.2");
+			playerToken.setAttribute("fill-opacity", "1");
+			playerToken.setAttribute("stroke-opacity", "1");
 		// }
 
 			// Fetch the document using XHR, Ajax style?
 			/*
 			fetchXML
 			(
-				evt, // "http://team-futbol-ks.org/playerToken.svg", // #playerToken00",
-				evt, // http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
+				evt, // "http://team-futbol-ks.org/LHS/chestyLions/soccer/varsity/2017/playerToken.svg", // #playerToken00",
+				// evt, // "http://localhost:8000/LHS/chestyLions/soccer/varsity/2017/playerToken.svg", // #playerToken00",
+				// evt, // "http://localhost:8000/playerToken.svg", // #playerToken00",
+				// evt, // http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
 				focusSVGDoc,
 				nptNumber
 			);
@@ -642,6 +939,7 @@
 			// http://taye.me/blog/svg/a-guide-to-svg-use-elements/
 			// Set pt (player-token) xlink:href attr. 
 			pt.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "playerToken.svg#playerToken00");
+			// pt.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "LHS/chestyLions/soccer/varsity/2017/playerToken.svg#playerToken00");
 
 			// Get number from playerToken by class tokenNumber.
 			// It is a text element inside an oval/ellipse graphic, g -> (path + text).
