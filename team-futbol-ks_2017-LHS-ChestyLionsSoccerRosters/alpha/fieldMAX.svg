@@ -451,7 +451,7 @@
 			// Fetch the document using XHR, Ajax style?
 			fetchXML
 			(
-				"http://team-futbol-ks.org/playerToken.svg", // #playerToken00",
+				"http://localhost:8000/playerToken.svg", // #playerToken00",
 				// http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
 				loadNewSVGDoc,
 				nptNumber
@@ -524,7 +524,7 @@
 		{
 			fetchXML
 			(
-				"http://team-futbol-ks.org/playerToken.svg",
+				"http://localhost:8000/playerToken.svg",
 				// http://team-futbol-ks.org/playerToken.svg",
 				addNewPT,
 				nptNumber,
@@ -587,7 +587,7 @@
 			/*
 			fetchXML
 			(
-				evt, // "http://team-futbol-ks.org/playerToken.svg", // #playerToken00",
+				evt, // "http://localhost:8000/playerToken.svg", // #playerToken00",
 				evt, // http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
 				focusSVGDoc,
 				nptNumber

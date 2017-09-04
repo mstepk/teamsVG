@@ -23,36 +23,12 @@
 >
 
 	<defs>
-
-		<pattern
-			id = "ptImage"
-			patternUnits = "userSpaceOnUse"
-			width = "72px" height="72px"
-		>
-			<image
-				id = "ptNativeImage"
-				xlink:href = "matteo_croppedTo_393x393_headShotCaracas.png"
-				x = "0px" y = "0px"
-				width = "72px" height="72px"
-				opacity = "0.9"
-			/> <!-- Note: opacity on the pattern was not effective. -->
-		</pattern>
-		<!--
-				opacity = "0.5"
-				width = "88px" height="62px"
-				xlink:href = "cc-GPL-a.png"
-		-->
-
 		<g id = "ptUnderGuide">
-			<!--
-				fill = "#02F"
-				fill = "url(cc-GPL-a.png)"
-			-->
 			<circle
 				cx = "36px"
 				cy = "36px"
 				r = "30px"
-				fill = "url(#ptImage)"
+				fill = "#02F"
 				stroke = "#000"
 				stroke-width = "3px"
 			/>
@@ -64,13 +40,6 @@
 				fill = "#111"
 				text-anchor = "middle"
 			>1</text>
-			<!--
-			<rect
-				x = "0px" y = "0px"
-				width = "72px" height = "72px"
-				fill = "url(cc-GPL-a.png)"
-			/>
-			-->
 		</g>
 
 		<g id = "ptOverGuide">
@@ -102,17 +71,13 @@
 		</linearGradient>
 		<radialGradient 
 			id = "fadeToCenterLight01" 
+			gradientUnits = "userSpaceOnUse"
 			cx = "36" 
 			cy = "36" 
 			r = "30" 
 		>
 			<stop offset = "0%" stop-color = "#08F" />
-			<stop offset = "100%" stop-color = "#08F" />
-			<!--
-			gradientUnits = "userSpaceOnUse"
-			<stop offset = "100%" stop-color = "#09F" />
 			<stop offset = "100%" stop-color = "#00F" />
-			-->
 		</radialGradient>
 
 		<g
@@ -121,10 +86,6 @@
 		>
 			<defs>
 				<g id = "ptTopSemiCircle">
-					<!--
-							fill = "url(cc-GPL-a.png)"
-							fill = "url(#ptImage)"
-					-->
 					<!-- Top semi-circle -->
 					<a xlink:href = "javascript:void(0);">
 						<path
@@ -145,9 +106,6 @@
 							stroke = "#FFF"
 							stroke-width = "3px"
 						/>
-						<!--
-							fill = "url(#fadeToLight01)"
-						-->
 					</a>
 				</g>
 
@@ -172,9 +130,6 @@
 							stroke = "#FFF"
 							stroke-width = "3px"
 						/>
-						<!--
-							fill = "url(#fadeToLight01)"
-						-->
 					</a>
 				</g>
 
@@ -195,34 +150,10 @@
 										0, -0.0001
 								"
 							fill = "url(#fadeToCenterLight01)"
-							stroke = "#FFF"
+							stroke = "#FFFFFF"
 							stroke-width = "2"
 						/>
-					<!--		fill = "url(#fadeToDark01)" -->
 					</a>
-					<!--
-							width = "48px" height = "18px"
-									<input type = "text" style = "padding-right: 0px; padding-left: 0px; margin: 0px;" />
-					-->
-					<!--
-						<foreignObject
-							x = "-5px" y = "18px"
-							width = "80px" height = "36px"
-						>
-							<body xmlns = "http://www.w3.org/1999/xhtml">
-								<form
-									xmlns = "http://www.w3.org/1999/xhtml"
-									style = "padding-right: 0px; padding-left: 0px; margin: 0px;"
-								>
-									<input
-										xmlns = "http://www.w3.org/1999/xhtml"
-										type = "text"
-										style = "padding-right: 0px; padding-left: 0px; margin: 0px;"
-									/>
-								</form>
-							</body>
-						</foreignObject>
-					-->
 				</g>
 
 				<g id = "playerToken">
@@ -243,100 +174,6 @@
 				fill = "#111"
 				text-anchor = "middle"
 			>00</text>
-			<!--
-				x = "-3.3px" y = "17.5px"
-				width = "70.4px" height = "36px"
-
-				x = "-11px" y = "15px"
-				width = "88px" height = "36px"
-			-->
-			<foreignObject
-				x = "-11px" y = "60px"
-				width = "87px" height = "33px"
-			>
-				<!--
-								padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 0px;
-								margin-right: 0px; margin-left: 0px; margin-top: 0px; margin-bottom: 0px;
-								display: inline-block;
-									display: run-in;
-							style = 
-								"
-									padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 0px;
-									margin-right: 0px; margin-left: 0px; margin-top: 0px; margin-bottom: 0px;
-								"
-							style = "right: 0px; left: 0px: top: 0px; bottom: 0px;"
-				-->
-				<body xmlns = "http://www.w3.org/1999/xhtml">
-					<div
-						xmlns = "http://www.w3.org/1999/xhtml"
-						class = "playerNameFormContainer"
-						style =
-							"
-								position: absolute;
-								width: 71px;
-								margin: 0 auto;
-							"
-					>
-						<form
-							xmlns = "http://www.w3.org/1999/xhtml"
-						>
-							<div
-								xmlns = "http://www.w3.org/1999/xhtml"
-								class = "submitButtonEmbeddedInTextField"
-							>
-							<!--
-								style = "position: relative;"
-										"
-											right: 0px; left: 0px;
-											top: 0px; bottom: 0px;
-										"
-							-->
-								<input
-									xmlns = "http://www.w3.org/1999/xhtml"
-									type = "text"
-									style =
-										"
-											width: 71px;
-											font-size: 10px;
-											line-height: 80%;
-										"
-								/>
-								<!--
-											width: 8px !important;
-											right: -5px;
-											top: 3px;
-								-->
-								<button
-									type= "button"
-									onclick="sendData({test:'ok'})"
-									style = 
-										"
-											position: absolute;
-											right: -7px;
-											top: 3px;
-											height: 16px !important;
-											width: 2px !important;
-											vertical-align: middle;
-											font-family: 'Courier New', monospace;
-										"
-								>#</button>
-								<!--
-									style =
-										"
-											float: right;
-											transform: translate(0, -30);
-										"
-										"
-											position: relative;
-											right: 0px; left: 0px;
-											top: 0px; bottom: 0px;
-										"
-								-->
-							</div>
-						</form>
-					</div>
-				</body>
-			</foreignObject>
 		</g>
 
 		<animateMotion
@@ -400,14 +237,6 @@
 	/>
 	<!--
 		fill = "freeze"
-	-->
-
-	<!--
-	<rect
-		x = "0px" y = "0px"
-		width = "88px" height = "62px"
-		fill = "url(#ptImage)"
-	/>
 	-->
 
 </svg>

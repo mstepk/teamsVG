@@ -39,93 +39,6 @@
 		11 - Left Attacker/Forward
 	-->
 
-	<!--
-		:: LHS Chesty Lions Soccer Team Rosters Fall 2017 ::
-
-
-		Head Coach: Mike Murphy
-		Varsity Assistant & Goalkeepers: Stan Rasmussen
-		JV Assistant: Brandon Daley
-		C-Team Assistant: Mike Lee	        
-		Manager: Mary Carr
-
-
-		: Varsity = 19 players:
-
-		Ross Brungardt GK 11 00
-
-		+ 6 defenders
-		Ja’Melle Dye D 12 2
-		Robbie Kleibohmer D 12 9
-		Jack Anderson D 11 5
-		Garrett Hart D 11 15
-		Trey Hulse D 11 3
-		Gary Schmidt D 11 4
-
-		+ 9 midfielders
-		Ben Matthews M 12 19
-		Joseph Minder M 12 17
-		Dario Ramirez M 12 14
-		Cole Shupert M 11 10
-		Matteo Kalusha-Aguirre M 10 12
-		Kanak Masten M 10 18
-		Mason Anderson M 9 13
-		Tanner Glanton M 9 16
-		Alec Murphy M 9 11
-
-		+ 3 forwards
-		Quentin Harrington F 12 6
-		Anton Martinez de Velasco F 12 7
-		Will Yanek F 11 8
-
-
-		: Junior Varsity = 19 players :
-
-		Luke Dunlap 11 11
-		Hunter Jones 11 5
-		Spencer King 11 12
-		Paul Lyan 11 18
-		Nathan Stoddard 11 13
-		Brandon Thimmesch 11 7
-		Andrew Williams 11 22
-		Cooper Wright 11 10
-		Joseph Hawker 10 19
-		Ben Hoopes 10 00
-		Nicholai Jost-Epp 10 15
-		Jordan Lavin 10 6
-		Peyton Mallory 10 14
-		Max Northrop 10 8
-		Alex Stark 10 17
-		Jackson Theilen 10 00
-		Aidan Truong 10 3
-		Nicholas Davies 9 2
-		Abdalla Eltom 9 9
-
-
-		: C-Team = 20 players :
-
-		Trey Kelly 10 21
-		Guillermo Rodriguez 10 10
-		Wheeler Battaglia-Davis 9 11
-		Ben Cohen 9 5
-		Alex Culbertson 9 3
-		Evan Day 9 16
-		Brevin Flory 9 8
-		Ethan Gaddie 9 12
-		Omar Gonzalez 9 7
-		Salvador Good 9 2
-		Sam Gordon-Ross 9 18
-		Carter Knox 9 4
-		Sam Mandigo 9 14
-		Ike Phillips 9 17
-		Chase Reed 9 15
-		Isaac Seybold 9 9
-		Daniel Sikes 9 6
-		Trenton Snyder 9 19 / 0
-		Giovanni Ventello 9 13
-		Adam Walther 9 20 / 00
-	-->
-
 	<defs> 
 
 		<linearGradient id = "fadeToLight01">
@@ -150,123 +63,7 @@
 		<g id = "playerToken01">
 			<use xlink:href = "playerToken.svg#playerToken00" x = "0" y= "0" />
 		</g>
-
-		<g id = "teamLabel" >
-			<rect
-				x = "522px"
-				y = "10px"
-				width = "238px"
-				height = "30px" 
-				fill = "white"
-				stroke = "black"
-				stroke-width = "1px"
-				rx = "5px"
-				ry = "5px"
-			/>
 	
-			<text
-				x = "641px"
-				y = "32px"
-				text-anchor = "middle"
-				font-family = "sans-serif"
-				font-size = "18px"
-				fill = "#111"
-			>LHS Chesty Lions Soccer</text>
-		</g>
-
-		<!--
-			Issue with iDevices:
-			Not only do anchor tag hrefs that are imported from external resources
-			not work on iPod, iPhone, iPad, but even a graphic having the href
-			defined in the main document, then used via use element, also does not work!
-		-->
-		<g id = "varsityButton00">
-			<!-- Half Field A Half-HD -->
-			<a xlink:href = "chestyLions/soccer/varsity/fieldMAX.svg">
-				<rect
-					x = "1275px"
-					y = "30px"
-					width = "450px"
-					height = "300px"
-					rx = "42px"
-					ry = "32px"
-					fill = "#222"
-					stroke = "#DDD"
-					stroke-width = "10px"
-				/>
-				<text
-					x = "1500px"
-					y = "212px"
-					font-family = "sans-serif"
-					font-size = "72px"
-					fill = "red"
-					text-anchor = "middle"
-					font-variant = "small-caps"
-					font-weight = "900"
-					stroke = "#111"
-					stroke-width = "1px"
-				>Varsity</text>
-			</a>
-		</g>
-
-		<g id = "juniorVarsityButton00">
-			<!-- Half Field B Half-HD -->
-			<a xlink:href = "chestyLions/soccer/jv/fieldMAX.svg">
-				<rect
-					x = "1275px"
-					y = "345px"
-					width = "450px"
-					height = "300px"
-					rx = "42px"
-					ry = "32px"
-					fill = "#222"
-					stroke = "#DDD"
-					stroke-width = "10px"
-				/>
-				<text
-					x = "1500px"
-					y = "527px"
-					font-family = "sans-serif"
-					font-size = "72px"
-					fill = "red"
-					text-anchor = "middle"
-					font-variant = "small-caps"
-					font-weight = "900"
-					stroke = "#111"
-					stroke-width = "1px"
-				>JV</text>
-			</a>
-		</g>
-
-		<g id = "cTeamButton00">
-			<!-- Half Field B-Alone Half-HD -->
-			<a xlink:href = "chestyLions/soccer/ct/fieldMAX.svg">
-				<rect
-					x = "1275px"
-					y = "660px"
-					width = "450px"
-					height = "300px"
-					rx = "42px"
-					ry = "32px"
-					fill = "#222"
-					stroke = "#DDD"
-					stroke-width = "10px"
-				/>
-				<text
-					x = "1500px"
-					y = "842px"
-					font-family = "sans-serif"
-					font-size = "72px"
-					fill = "red"
-					text-anchor = "middle"
-					font-variant = "small-caps"
-					font-weight = "900"
-					stroke = "#111"
-					stroke-width = "1px"
-				>C-Team</text>
-			</a>
-		</g>
-
 	</defs>
 
 	<!--
@@ -316,235 +113,6 @@
 		y = "0" 
 		id = "fieldOfView0000"
 	/>
-
-	<use xlink:href = "#teamLabel" />
-
-	<!-- Center Circle -->
-	<g id = "centerCircle">
-		<a xlink:href = "https://goo.gl/photos/tJrDw6doFo7PJuPL8">
-			<circle
-				cx = "635px"
-				cy = "495px"
-				r = "91.5px"
-				fill = "green"
-				stroke = "white"
-				stroke-width = "3px"
-			/>
-			<text
-				x = "637px"
-				y = "521px"
-				font-family = "sans-serif"
-				font-size = "72px"
-				font-weight = "900"
-				fill = "#DDD"
-				text-anchor = "middle"
-				stroke = "#222"
-				stroke-width = "4px"
-			>LHS</text>
-		</a>
-		<a xlink:href = "https://goo.gl/photos/tJrDw6doFo7PJuPL8">
-			<circle
-				cx = "635px"
-				cy = "495px"
-				r = "12px"
-				fill = "#222"
-				stroke = "#DDD"
-				stroke-width = "2px"
-				transform = "translate(0, -48)"
-			/>
-			<text
-				x = "635px"
-				y = "499px"
-				font-family = "sans-serif"
-				font-size = "10px"
-				fill = "#DDD"
-				text-anchor = "middle"
-				transform = "translate(0, -48)"
-			>G0</text>
-		</a>
-		<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157685729584933">
-			<circle
-				cx = "635px"
-				cy = "495px"
-				r = "12px"
-				fill = "#222"
-				stroke = "#DDD"
-				stroke-width = "2px"
-				transform = "translate(-48, 48)"
-			/>
-			<text
-				x = "635px"
-				y = "499px"
-				font-family = "sans-serif"
-				font-size = "10px"
-				fill = "#DDD"
-				text-anchor = "middle"
-				transform = "translate(-48, 48)"
-			>P1</text>
-		</a>
-		<a xlink:href = "https://youtu.be/RwcCtOFvBsc">
-			<circle
-				cx = "635px"
-				cy = "495px"
-				r = "12px"
-				fill = "#222"
-				stroke = "#DDD"
-				stroke-width = "2px"
-				transform = "translate(-22, 66)"
-			/>
-			<text
-				x = "635px"
-				y = "499px"
-				font-family = "sans-serif"
-				font-size = "10px"
-				fill = "#DDD"
-				text-anchor = "middle"
-				transform = "translate(-22, 66)"
-			>V1</text>
-		</a>
-		<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157688357102205">
-			<circle
-				cx = "635px"
-				cy = "495px"
-				r = "12px"
-				fill = "#222"
-				stroke = "#DDD"
-				stroke-width = "2px"
-				transform = "translate(48, 48)"
-			/>
-			<text
-				x = "635px"
-				y = "499px"
-				font-family = "sans-serif"
-				font-size = "10px"
-				fill = "#DDD"
-				text-anchor = "middle"
-				transform = "translate(48, 48)"
-			>P2</text>
-		</a>
-		<a xlink:href = "https://youtu.be/LmGgKDN9vBw">
-			<circle
-				cx = "635px"
-				cy = "495px"
-				r = "12px"
-				fill = "#222"
-				stroke = "#DDD"
-				stroke-width = "2px"
-				transform = "translate(22, 66)"
-			/>
-			<text
-				x = "635px"
-				y = "499px"
-				font-family = "sans-serif"
-				font-size = "10px"
-				fill = "#DDD"
-				text-anchor = "middle"
-				transform = "translate(22, 66)"
-			>V2</text>
-		</a>
-	</g>
-
-	<use
-		xlink:href = "#varsityButton00"
-		display = "none"
-	/>
-
-	<use
-		xlink:href = "#juniorVarsityButton00"
-		display = "none"
-	/>
-
-	<use
-		xlink:href = "#cTeamButton00"
-		display = "none"
-	/>
-
-	<g id = "varsityButton">
-		<!-- Half Field A Half-HD -->
-		<a xlink:href = "chestyLions/soccer/varsity/fieldMAX.svg">
-			<rect
-				x = "1275px"
-				y = "30px"
-				width = "450px"
-				height = "300px"
-				rx = "42px"
-				ry = "32px"
-				fill = "#222"
-				stroke = "#DDD"
-				stroke-width = "10px"
-			/>
-			<text
-				x = "1500px"
-				y = "212px"
-				font-family = "sans-serif"
-				font-size = "72px"
-				fill = "red"
-				text-anchor = "middle"
-				font-variant = "small-caps"
-				font-weight = "900"
-				stroke = "#111"
-				stroke-width = "1px"
-			>Varsity</text>
-		</a>
-	</g>
-
-	<g id = "juniorVarsityButton">
-		<!-- Half Field B Half-HD -->
-		<a xlink:href = "chestyLions/soccer/jv/fieldMAX.svg">
-			<rect
-				x = "1275px"
-				y = "345px"
-				width = "450px"
-				height = "300px"
-				rx = "42px"
-				ry = "32px"
-				fill = "#222"
-				stroke = "#DDD"
-				stroke-width = "10px"
-			/>
-			<text
-				x = "1500px"
-				y = "527px"
-				font-family = "sans-serif"
-				font-size = "72px"
-				fill = "red"
-				text-anchor = "middle"
-				font-variant = "small-caps"
-				font-weight = "900"
-				stroke = "#111"
-				stroke-width = "1px"
-			>JV</text>
-		</a>
-	</g>
-
-	<g id = "cTeamButton">
-		<!-- Half Field B-Alone Half-HD -->
-		<a xlink:href = "chestyLions/soccer/ct/fieldMAX.svg">
-			<rect
-				x = "1275px"
-				y = "660px"
-				width = "450px"
-				height = "300px"
-				rx = "42px"
-				ry = "32px"
-				fill = "#222"
-				stroke = "#DDD"
-				stroke-width = "10px"
-			/>
-			<text
-				x = "1500px"
-				y = "842px"
-				font-family = "sans-serif"
-				font-size = "72px"
-				fill = "red"
-				text-anchor = "middle"
-				font-variant = "small-caps"
-				font-weight = "900"
-				stroke = "#111"
-				stroke-width = "1px"
-			>C-Team</text>
-		</a>
-	</g>
 
 	<!-- 01 -->
 	<!-- 55 -->
@@ -640,8 +208,8 @@
 			y = "12px"
 			rx = "5px"
 			ry = "5px"
-			stroke-width = "2px"
-			stroke = "grey"
+			strok-width = "2px"
+			stroke = "black"
 			fill = "green"
 		/>
 		<line
@@ -656,42 +224,12 @@
 		/>
 	</g>
 
-	<g
-		id = "pushNewPlayerToken"
-		onclick = "pushPT(-1); return false;"
-		style = "display: none;"
-	>
-		<rect
-			x = "1307px"
-			y = "48px"
-			width = "386px"
-			height = "264px"
-			rx = "32px"
-			ry = "18px"
-			fill = "green"
-			stroke-width = "9px"
-			stroke = "grey"
-		/>
-		<line
-			x1 = "1339" y1 = "180px"
-			x2 = "1661px" y2 = "180px"
-			stroke = "white" stroke-width = "16px"
-		/>
-		<line
-			x1 = "1500px" y1 = "75px"
-			x2 = "1500px" y2 = "287px"
-			stroke = "white" stroke-width = "16px"
-		/>
-	</g>
-
-	<!--
 	<use
 		xlink:href = "w3c-svg11.svg#svg11icon" 
 		x = "1630px"
 		y = "918px"
 		id = "svgIcon"
 	/>
-	-->
 
 	<!-- Copyright 2017 Mark S Kalusha 
 
@@ -709,11 +247,11 @@
 		along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	-->
 
-	<!-- Creative Commons License --> <!-- y = "852px" -->
+	<!-- Creative Commons License -->
 	<a xlink:href = "http://creativecommons.org/licenses/GPL/2.0/">
 		<image 
-			x = "1620px"
-			y = "880px"
+			x = "1630px"
+			y = "852px"
 			width = "88px"
 			height = "62px"
 			xlink:href = "cc-GPL-a.png" 
@@ -799,7 +337,6 @@
 			fetchXML
 			(
 				"http://localhost:8000/playerToken.svg", // #playerToken00",
-				// http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
 				loadNewSVGDoc,
 				nptNumber
 			);
@@ -812,76 +349,6 @@
 		console.log("height", fovHeight);
 
 		// addNewPlayerToken(0);
-	]]>
-	</script>
-
-	<script type = "application/ecmascript">
-	<![CDATA[
-		function addNewPT (newPT, nptNumber, ptSize)
-		{
-			// Import new player token into the current DOM
-			var pt = document.importNode(newPT.documentElement.getElementById("playerToken00"), true);
-
-			// Set x and y default coordinates.
-			var nptx = 9 + 35 + ((nptNumber - 1) * (ptSize + 2));
-			var npty = 9 + 45;
-			if (nptNumber == 0) { nptx = 0; npty = 0; }
-
-			// Reset x any coordinates.
-			var playerTokenElements = 0;
-			if (nptNumber != 0)
-			{
-				playerTokenElements = document.getElementsByClassName("playerToken");
-				if (nptNumber < 0) { nptNumber = playerTokenElements.length + 1; }
-				// alert("nptNumber: " + nptNumber);
-				nptx = 9 + 35 + ((nptNumber - 1) * (ptSize + 2));
-				npty = 9 + 45;
-			}
-
-			var nptId = "newPlayerToken" + nptNumber;
-			var nextPT = nptNumber + 1;
-
-			pt.setAttribute("id", nptId); // Set pt (player-token) id attr. 
-			pt.getElementsByClassName("tokenNumber").item(0).textContent = nptNumber;
-			pt.setAttribute("transform", "translate(" + nptx + "," + npty + ")"); // Set player-token x,y coordinate.
-			// pt.setAttribute("onclick", "popPT(" + nextPT + "," + ptSize + "); return false;");
-			pt.setAttribute("onclick", "focusPlayerToken(evt, this.id); return false;");
-			document.querySelector('svg').appendChild(pt);
-		};
-
-		function fetchXML (url, callback, number, size)
-		{
-			var xhr = new XMLHttpRequest();
-			xhr.open('GET', url, true);
-			xhr.onreadystatechange =
-				function (evt)
-				{
-					// Do not explicitly handle errors, those should be
-					// visible via console output in the browser.
-					if (xhr.readyState === 4)
-					{
-						callback(xhr.responseXML, number, size);
-					}
-				};
-
-			xhr.send(null);
-		};
-
-		function pushPT (nptNumber)
-		{
-			fetchXML
-			(
-				"http://localhost:8000/playerToken.svg",
-				// http://team-futbol-ks.org/playerToken.svg",
-				addNewPT,
-				nptNumber,
-				72
-			);
-		};
-
-		function popPT (nptNumber)
-		{
-		}
 	]]>
 	</script>
 
@@ -911,7 +378,6 @@
 			playerToken.setAttribute("y", 450);
 			*/
 			// playerToken.setAttribute("transform", "scale(3), translate(" + "0" + "," + "0" + "), translate(" + "800" + "," + "450" + ")");
-			// playerToken.setAttribute("transform", "scale(.5), translate(43.12, 25.9)");
 			// playerToken.setAttribute("transform", "scale(1), translate(599, 459)");
 			// playerToken.setAttribute("transform", "scale(2), translate(281.5, 211.6)");
 			// (72 + 1200) / (2 * 3) = 1272 / 6 = 212
@@ -921,11 +387,7 @@
 			// playerToken.setAttribute("transform", "scale(3), translate(175.6, 129)");
 			// playerToken.setAttribute("transform", "scale(4), translate(122.55, 87.75)");
 			// playerToken.setAttribute("transform", "scale(5), translate(90.7, 63)");
-			// playerToken.setAttribute("transform", "scale(6), translate(69.6, 46.52)");
-			playerToken.setAttribute("transform", "scale(7), translate(54.5, 34.8)");
-			// playerToken.setAttribute("transform", "scale(8), translate(43.12, 25.9)");
-			// playerToken.setAttribute("transform", "scale(9), translate(34.34, 19)");
-			// playerToken.setAttribute("transform", "scale(10), translate(27.3, 13.5)");
+			playerToken.setAttribute("transform", "scale(6), translate(69.6, 46.52)");
 			playerToken.setAttribute("fill-opacity", "0.6");
 			playerToken.setAttribute("stroke-opacity", "0.2");
 		// }
@@ -935,7 +397,6 @@
 			fetchXML
 			(
 				evt, // "http://localhost:8000/playerToken.svg", // #playerToken00",
-				evt, // http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
 				focusSVGDoc,
 				nptNumber
 			);

@@ -39,10 +39,7 @@
 	<defs>
 
 		<g id = "fieldOfView">
-			<!--
 			<a xlink:href = "">
-			</a>
-			-->
 				<circle
 					cx = "35px"
 					cy = "45px"
@@ -56,16 +53,14 @@
 					y = "48px"
 					font-family = "sans-serif"
 					font-size = "8px"
-					fill = "#111"
+					fill = "#111111"
 				>XXX</text>
+			</a>
 			
 			<!-- Viewbox -->
 			<!-- 1920 - 1760 = 160 -->
 			<!-- 1080 -  990 =  90 -->
-			<!--
 			<a xlink:href = "teamLabel.svg">
-			</a>
-			-->
 				<rect 
 					x = "0px"
 					y = "0px"
@@ -77,6 +72,7 @@
 					stroke = "white"
 					stroke-width = "10px"
 				/>
+			</a>
 		
 			<!-- Full Field Landscape Full-HD (10-px = 1-meter, 1-px = 0.1-meter = 10-cm) -->
 			<rect
@@ -105,7 +101,6 @@
 				fill = "black"
 				stroke = "#000"
 				stroke-width = "1px"
-				display = "none"
 			/>
 		
 			<!-- Half Field A Half-HD -->
@@ -119,7 +114,6 @@
 				fill = "#390"
 				stroke = "#FFF"
 				stroke-width = "1px"
-				display = "none"
 			/>
 		
 			<!--	fill = "#390" -->
@@ -134,7 +128,6 @@
 				fill = "#390"
 				stroke = "#FFF"
 				stroke-width = "1px"
-				display = "none"
 			/>
 		
 			<!-- Half Field B-Alone Half-HD -->
@@ -148,7 +141,6 @@
 				fill = "#390"
 				stroke = "#000"
 				stroke-width = "1px"
-				display = "none"
 			/>
 		
 			<!-- Half Field A Full-HD -->
@@ -465,31 +457,13 @@
 		
 		
 			<!-- Label with the name of the team drag:enable = "true" -->
-			<!--
-				Chromium Fit:
-					x = "470px"
-					y = "10px"
-					width = "330px"
-
-					x = "478px"
-					y = "32px"
-
-				Firefox Fit:
-					x = "455px"
-					y = "10px"
-					width = "360px"
-
-					x = "463px"
-					y = "32px"
-			-->
 			<g 
-				id = "teamLabel00"
-				display = "none"
+				id = "teamLabel"
 			>
 				<rect
-					x = "455px"
+					x = "525px"
 					y = "10px"
-					width = "360px"
+					width = "220px"
 					height = "30px"	
 					fill = "white"
 					stroke = "black"
@@ -499,12 +473,12 @@
 				/>
 		
 				<text
-					x = "463px"
+					x = "532px"
 					y = "32px"
 					font-family = "sans-serif"
 					font-size = "18px"
-					fill = "#111"
-				>LHS Chesty Lions Soccer: Varsity 2017</text>
+					fill = "#111111"
+				>Team Name/Title Label</text>
 			</g>
 		
 		

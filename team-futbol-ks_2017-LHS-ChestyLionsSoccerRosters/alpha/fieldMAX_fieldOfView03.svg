@@ -56,7 +56,7 @@
 					y = "48px"
 					font-family = "sans-serif"
 					font-size = "8px"
-					fill = "#111"
+					fill = "#111111"
 				>XXX</text>
 			
 			<!-- Viewbox -->
@@ -105,7 +105,6 @@
 				fill = "black"
 				stroke = "#000"
 				stroke-width = "1px"
-				display = "none"
 			/>
 		
 			<!-- Half Field A Half-HD -->
@@ -119,7 +118,6 @@
 				fill = "#390"
 				stroke = "#FFF"
 				stroke-width = "1px"
-				display = "none"
 			/>
 		
 			<!--	fill = "#390" -->
@@ -134,7 +132,6 @@
 				fill = "#390"
 				stroke = "#FFF"
 				stroke-width = "1px"
-				display = "none"
 			/>
 		
 			<!-- Half Field B-Alone Half-HD -->
@@ -148,7 +145,6 @@
 				fill = "#390"
 				stroke = "#000"
 				stroke-width = "1px"
-				display = "none"
 			/>
 		
 			<!-- Half Field A Full-HD -->
@@ -465,31 +461,13 @@
 		
 		
 			<!-- Label with the name of the team drag:enable = "true" -->
-			<!--
-				Chromium Fit:
-					x = "470px"
-					y = "10px"
-					width = "330px"
-
-					x = "478px"
-					y = "32px"
-
-				Firefox Fit:
-					x = "455px"
-					y = "10px"
-					width = "360px"
-
-					x = "463px"
-					y = "32px"
-			-->
 			<g 
-				id = "teamLabel00"
-				display = "none"
+				id = "teamLabel"
 			>
 				<rect
-					x = "455px"
+					x = "525px"
 					y = "10px"
-					width = "360px"
+					width = "220px"
 					height = "30px"	
 					fill = "white"
 					stroke = "black"
@@ -499,12 +477,12 @@
 				/>
 		
 				<text
-					x = "463px"
+					x = "532px"
 					y = "32px"
 					font-family = "sans-serif"
 					font-size = "18px"
-					fill = "#111"
-				>LHS Chesty Lions Soccer: Varsity 2017</text>
+					fill = "#111111"
+				>Team Name/Title Label</text>
 			</g>
 		
 		

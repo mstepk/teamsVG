@@ -1,47 +1,16 @@
-<!DOCTYPE html>
+<?xml 
+	version = "1.0" 
+	encoding = "UTF-8"
+	standalone = "no"
+?>
 
-<html>
-	<head>
-		<meta charset = "utf-8" />
+<!DOCTYPE 
+	svg 
+	PUBLIC 
+	"-//W3C//DTD SVG 1.1//EN" 
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" 
+>
 
-		<title>SVG Field using Animated Player Tokens</title>
-
-		<style>
-			svg
-			{
-				/* https://stackoverflow.com/questions/33313602/how-to-place-html-elements-over-inline-svg */
-				position: absolute;
-				left: 0;
-				top: 0;
-				/*
-				z-index: -1;
-				*/
-			}
-
-			label
-			{
-				/* To make sure that all labels have the same size and are properly aligned */
-				/*
-				display: inline-block;
-				width: 160px;
-				text-align: right;
-				*/
-			}
-
-			.ptNamesForm
-			{
-				position: relative;
-				background-color: black;
-				color: white;
-				width: fit-content;
-				left: 1290px;
-				top: 40px;
-			}
-		</style>
-	</head>
-
-	<body>
-		<div id = "fov">
 <svg 
 	version = "1.1" 
 	xmlns = "http://www.w3.org/2000/svg" 
@@ -446,30 +415,4 @@
 	</script>
 
 </svg>
-			</div>
-
-			<div class = "ptNamesForm">
-				<form
-					id = "ptNamesForm1"
-					action = "/"
-					method = "post"
-				>
-					<div>
-						<label for = "ptFirstName1">Player 1 - First Name:</label>
-						<input id = "ptFirstName1" type = "text" name = "firstName" />
-					</div>
-					<div>
-						<label for = "ptLastName1">Player 1 - Last Name:</label>
-						<input id = "ptLastName1" type = "text" name = "lastName" />
-					</div>
-					<div class = "button">
-						<button type = "submit">Attach Names to Player Tokens</button>
-					</div>
-				</form>
-			</div>
-
-		</div>
-	</body>
-
-</html>
 

@@ -1,0 +1,35 @@
+<?xml 
+	version = "1.0" 
+	encoding = "UTF-8"
+?>
+
+<!DOCTYPE 
+	svg 
+	PUBLIC 
+	"-//W3C//DTD SVG 1.1//EN" 
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" 
+>
+
+<svg 
+	version = "1.1" 
+	xmlns = "http://www.w3.org/2000/svg" 
+	xmlns:xlink = "http://www.w3.org/1999/xlink" 
+	x = "0px" 
+	y = "0px" 
+	width = "1760px" 
+	height = "990px" 
+	viewBox = "0 0 1760 990" 
+>
+	<!-- 16:9 1.77 repeating or 1.78 rounded -->
+	<!-- 16 * 110 = 1760, 16 * 120 = 1920 -->
+	<!--  9 * 110 =  990,  9 * 120 = 1080 -->
+
+	<!--
+		 1 - Goal Keeper/Goalie
+		 2 - Right Defender/Halfback-Wingback
+		 3 - Left Defender/HalfBack-Wingback
+		 4 - Right Center Defender/Fullback
+		 5 - Left Center Defender/Fullback
+		 6 - Right Midfielder/Mid
+		 7 - Right Attacker/Forward
+		 8 - Left Midfielder/Mid

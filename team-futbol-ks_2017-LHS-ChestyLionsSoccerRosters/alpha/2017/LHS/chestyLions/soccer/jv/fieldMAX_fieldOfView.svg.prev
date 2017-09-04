@@ -56,7 +56,7 @@
 					y = "48px"
 					font-family = "sans-serif"
 					font-size = "8px"
-					fill = "#111"
+					fill = "#111111"
 				>XXX</text>
 			
 			<!-- Viewbox -->
@@ -105,7 +105,6 @@
 				fill = "black"
 				stroke = "#000"
 				stroke-width = "1px"
-				display = "none"
 			/>
 		
 			<!-- Half Field A Half-HD -->
@@ -119,7 +118,6 @@
 				fill = "#390"
 				stroke = "#FFF"
 				stroke-width = "1px"
-				display = "none"
 			/>
 		
 			<!--	fill = "#390" -->
@@ -134,7 +132,6 @@
 				fill = "#390"
 				stroke = "#FFF"
 				stroke-width = "1px"
-				display = "none"
 			/>
 		
 			<!-- Half Field B-Alone Half-HD -->
@@ -148,7 +145,6 @@
 				fill = "#390"
 				stroke = "#000"
 				stroke-width = "1px"
-				display = "none"
 			/>
 		
 			<!-- Half Field A Full-HD -->
@@ -487,9 +483,9 @@
 				display = "none"
 			>
 				<rect
-					x = "455px"
+					x = "432px"
 					y = "10px"
-					width = "360px"
+					width = "415px"
 					height = "30px"	
 					fill = "white"
 					stroke = "black"
@@ -499,12 +495,12 @@
 				/>
 		
 				<text
-					x = "463px"
+					x = "440px"
 					y = "32px"
 					font-family = "sans-serif"
 					font-size = "18px"
-					fill = "#111"
-				>LHS Chesty Lions Soccer: Varsity 2017</text>
+					fill = "#111111"
+				>LHS Chesty Lions Soccer: Junior Varsity 2017</text>
 			</g>
 		
 		

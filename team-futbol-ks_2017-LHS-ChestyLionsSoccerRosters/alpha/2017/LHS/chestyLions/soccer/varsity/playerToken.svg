@@ -79,6 +79,10 @@
 			<stop offset = "0%" stop-color = "#08F" />
 			<stop offset = "100%" stop-color = "#00F" />
 		</radialGradient>
+		<!--
+			<stop offset = "0%" stop-color = "#08F" />
+			<stop offset = "100%" stop-color = "#00F" />
+		-->
 
 		<g
 			id = "playerToken00"
@@ -150,7 +154,7 @@
 										0, -0.0001
 								"
 							fill = "url(#fadeToCenterLight01)"
-							stroke = "#FFFFFF"
+							stroke = "#FFF"
 							stroke-width = "2"
 						/>
 					</a>
@@ -180,9 +184,40 @@
 				</g>
 
 				<g id = "playerToken">
+					<defs>
+						<pattern
+							id = "ptImagePattern"
+							patternUnits = "userSpaceOnUse"
+							width = "72px" height="72px"
+						>
+							<image
+								id = "ptImage"
+								xlink:href = ""
+								class = "ptImage"
+								x = "0px" y = "0px"
+								width = "72px" height="72px"
+								opacity = "0.8"
+							/>
+							<!--
+								Note: opacity on the pattern was not effective.
+								xlink:href = ""
+								xlink:href = "ptImages/matteo.png"
+							-->
+						</pattern>
+					</defs>
+
 					<use xlink:href = "#ptTopSemiCircle" />
 					<use xlink:href = "#ptBottomSemiCircle" />
 					<use xlink:href = "#ptCenterEllipse" />
+
+					<circle
+						id = "ptImageCircle"
+						class = "ptImageCircle"
+						cx = "36px"
+						cy = "36px"
+						r = "30px"
+						fill = "url(#ptImagePattern)"
+					/>
 				</g>
 			</defs>
 

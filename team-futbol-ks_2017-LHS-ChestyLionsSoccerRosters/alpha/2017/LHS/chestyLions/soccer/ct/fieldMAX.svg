@@ -151,7 +151,29 @@
 			<!-- <use xlink:href = "2017/LHS/chestyLions/soccer/varsity/playerToken.svg#playerToken00" x = "0" y= "0" /> -->
 			<use xlink:href = "playerToken.svg#playerToken00" x = "0" y= "0" />
 		</g>
-	
+
+		<g id = "teamLabel">
+			<rect
+				x = "432px"
+				y = "10px"
+				width = "416px"
+				height = "30px" 
+				fill = "white"
+				stroke = "black"
+				stroke-width = "1px"
+				rx = "5px"
+				ry = "5px"
+			/>
+			<text
+				x = "640px"
+				y = "32px"
+				text-anchor = "middle"
+				font-family = "sans-serif"
+				font-size = "18px"
+				fill = "#111"
+			>LHS Chesty Lions Soccer: C-Team 2017</text>
+		</g>
+
 	</defs>
 
 	<!--
@@ -201,6 +223,112 @@
 		y = "0" 
 		id = "fieldOfView0000"
 	/>
+
+	<use xlink:href = "#teamLabel" />
+
+	<!--
+	<g id = "">
+		<a xlink:href = "chestyLions/soccer/varsity/fieldMAX.svg">
+			<rect
+				x = "1275px"
+				y = "30px"
+				width = "450px"
+				height = "300px"
+				rx = "42px"
+				ry = "32px"
+				fill = "#222"
+				stroke = "#DDD"
+				stroke-width = "10px"
+			/>
+		</a>
+	</g>
+	-->
+
+	<!-- 
+		id = "scrollTokenForwardRight_ButtonOnRightSideOfScreenPointinRight"
+	-->
+	<g
+		id = "scrollTokenForward"
+		class = "button"
+		onclick = "focusNextToken(evt); return false;"
+	>
+		<circle
+			cx = "1070px"
+			cy = "495px"
+			r = "144px"
+			fill = "black"
+			stroke = "white"
+			stroke-width = "6px"
+			fill-opacity = "0.6"
+			stroke-opacity = "1"
+		/>
+		<polygon
+			id = "trianglePointLeft"
+			points = 
+				"
+					-216, -126 
+					0, 250 
+					216, -126
+				" 
+			fill = "#EEE" 
+			stroke = "#FFF" 
+			stroke-width = "4" 
+			transform = "translate(1070, 495) rotate(-90) scale(0.4)"
+		/>
+		<!--
+			fill = "#0F3" 
+			stroke = "#EEE" 
+		-->
+		<circle
+			cx = "1070px"
+			cy = "495px"
+			r = "2px"
+			fill = "#EEE"
+		/>
+	</g>
+
+	<!-- 
+		id = "scrollTokenBackwardLeft_ButtonOnLeftSideOfScreenPointingLeft"
+	-->
+	<g
+		id = "scrollTokenBackward"
+		class = "button"
+		onclick = "focusPrevToken(evt); return false;"
+	>
+		<circle
+			cx = "200px"
+			cy = "495px"
+			r = "144px"
+			fill = "black"
+			stroke = "white"
+			stroke-width = "6px"
+			fill-opacity = "0.6"
+			stroke-opacity = "1"
+		/>
+		<polygon
+			id = "trianglePointLeft"
+			points = 
+				"
+					-216, -126 
+					0, 250 
+					216, -126
+				" 
+			fill = "#EEE" 
+			stroke = "#FFF" 
+			stroke-width = "4" 
+			transform = "translate(200, 495) rotate(90) scale(0.4)"
+		/>
+		<!--
+			fill = "#0F3" 
+			stroke = "#EEE" 
+		-->
+		<circle
+			cx = "200px"
+			cy = "495px"
+			r = "2px"
+			fill = "#EEE"
+		/>
+	</g>
 
 	<!-- 01 -->
 	<!-- 55 -->
@@ -342,12 +470,70 @@
 		/>
 	</g>
 
+	<g id = "varsityButton">
+		<!-- Half Field B Half-HD -->
+		<a xlink:href = "../varsity/fieldMAX.svg">
+			<rect
+				x = "1275px"
+				y = "345px"
+				width = "450px"
+				height = "300px"
+				rx = "42px"
+				ry = "32px"
+				fill = "#222"
+				stroke = "#DDD"
+				stroke-width = "10px"
+			/>
+			<text
+				x = "1500px"
+				y = "527px"
+				font-family = "sans-serif"
+				font-size = "72px"
+				fill = "red"
+				text-anchor = "middle"
+				font-variant = "small-caps"
+				font-weight = "900"
+				stroke = "#111"
+				stroke-width = "1px"
+			>Varsity</text>
+		</a>
+	</g>
+
+	<g id = "juniorVarsityutton">
+		<!-- Half Field B-Alone Half-HD -->
+		<a xlink:href = "../jv/fieldMAX.svg">
+			<rect
+				x = "1275px"
+				y = "660px"
+				width = "450px"
+				height = "300px"
+				rx = "42px"
+				ry = "32px"
+				fill = "#222"
+				stroke = "#DDD"
+				stroke-width = "10px"
+			/>
+			<text
+				x = "1500px"
+				y = "842px"
+				font-family = "sans-serif"
+				font-size = "72px"
+				fill = "red"
+				text-anchor = "middle"
+				font-variant = "small-caps"
+				font-weight = "900"
+				stroke = "#111"
+				stroke-width = "1px"
+			>JV</text>
+		</a>
+	</g>
 
 	<use
 		xlink:href = "w3c-svg11.svg#svg11icon" 
 		x = "1630px"
 		y = "918px"
 		id = "svgIcon"
+		display = "none"
 	/>
 
 	<!-- Copyright 2017 Mark S Kalusha 
@@ -369,14 +555,16 @@
 	<!-- Creative Commons License -->
 	<a xlink:href = "http://creativecommons.org/licenses/GPL/2.0/">
 		<image 
-			x = "1630px"
-			y = "852px"
+			x = "1620px"
+			y = "880px"
 			width = "88px"
 			height = "62px"
 			xlink:href = "cc-GPL-a.png" 
 		>
 			<!--
 			xlink:href = "http://creativecommons.org/images/public/cc-GPL-a.png" 
+			x = "1630px"
+			y = "852px"
 			-->
 			<title>CC-GNU GPL Copyright Image</title>
 			<desc>CC-GNU GPL Copyright Graphical Pointer</desc>
@@ -405,7 +593,7 @@
 			// alert("playerTokenLabel: "+ playerTokenLabel);
 
 			var ptSize = 72;
-			var nptx = 9 + 35 + ((nptNumber - 1) * (ptSize + 2));
+			var nptx = 9 + 35 + ((Number(nptNumber) - 1) * (ptSize + 2));
 			var npty = 9 + 45;
 			if (nptNumber == 0) { nptx = 0; npty = 0; }
 
@@ -415,7 +603,7 @@
 				playerTokenElements = document.getElementsByClassName("playerToken");
 				if (nptNumber < 0) { nptNumber = playerTokenElements.length + 1; }
 				// alert("nptNumber: " + nptNumber);
-				nptx = 9 + 35 + ((nptNumber - 1) * (ptSize + 2));
+				nptx = 9 + 35 + ((Number(nptNumber) - 1) * (ptSize + 2));
 				npty = 9 + 45;
 			}
 
@@ -434,16 +622,16 @@
 
 				// https://stackoverflow.com/questions/4228356/how-to-perform-integer-division-and-get-the-remainder-in-javascript
 				if (nptNumber > carriageReturnNumber) { resetTokenJustification = 1; }
-				justificationResetCounter = ~~((nptNumber - 1) / carriageReturnNumber);
+				justificationResetCounter = ~~((Number(nptNumber) - 1) / carriageReturnNumber);
 				xJustificationFactor = resetTokenJustification * carriageReturnNumber * justificationResetCounter;
 				yJustificationFactor = ptSize * justificationResetCounter;
 				
-				nptx = 9 + 35 + ((nptNumber - xJustificationFactor - 1) * (ptSize + 2));
+				nptx = 9 + 35 + ((Number(nptNumber) - xJustificationFactor - 1) * (ptSize + 2));
 				npty = 9 + 45 + yJustificationFactor;
 			}
 
 			var nptId = "newPlayerToken" + nptNumber;
-			var nextPT = nptNumber + 1;
+			var nextPT = Number(nptNumber) + 1;
 
 			pt.setAttribute("id", nptId); // Set pt (player-token) id attr. 
 			pt.getElementsByClassName("tokenNumber").item(0).textContent = nptNumber;
@@ -479,8 +667,8 @@
 			// Fetch the document using XHR, Ajax style?
 			fetchXML
 			(
-				"http://team-futbol-ks.org/2017/LHS/chestyLions/soccer/varsity/playerToken.svg", // #playerToken00",
-				// "http://team-futbol-ks.org/playerToken.svg", // #playerToken00",
+				"http://localhost:8000/2017/LHS/chestyLions/soccer/varsity/playerToken.svg", // #playerToken00",
+				// "http://localhost:8000/playerToken.svg", // #playerToken00",
 				// http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
 				loadNewSVGDoc,
 				nptNumber
@@ -506,11 +694,11 @@
 			var ptDataDict = eval(ptDictionaryJSON);
 
 			// Set x and y default coordinates.
-			var nptx = 9 + 35 + ((nptNumber - 1) * (ptSize + 2));
+			var nptx = 9 + 35 + ((Number(nptNumber) - 1) * (ptSize + 2));
 			var npty = 9 + 45;
 			if (nptNumber == 0) { nptx = 0; npty = 0; }
 
-			// Reset x any coordinates.
+			// Reset x and y coordinates.
 			var playerTokenElements = 0;
 			var carriageReturnNumber = 16;
 			var resetTokenJustification = 0;
@@ -526,28 +714,62 @@
 
 				// https://stackoverflow.com/questions/4228356/how-to-perform-integer-division-and-get-the-remainder-in-javascript
 				if (nptNumber > carriageReturnNumber) { resetTokenJustification = 1; }
-				justificationResetCounter = ~~((nptNumber - 1) / carriageReturnNumber);
+				justificationResetCounter = ~~((Number(nptNumber) - 1) / carriageReturnNumber);
 				xJustificationFactor = resetTokenJustification * carriageReturnNumber * justificationResetCounter;
 				yJustificationFactor = ptSize * justificationResetCounter;
 				
-				nptx = 9 + 35 + ((nptNumber - xJustificationFactor - 1) * (ptSize + 2));
+				nptx = 9 + 35 + ((Number(nptNumber) - xJustificationFactor - 1) * (ptSize + 2));
 				npty = 9 + 45 + yJustificationFactor;
 			}
 
-			var nptId = "newPlayerToken" + nptNumber;
-			var ptPlayerName = ptDataDict[nptNumber - 1].ptPlayerNickName;
-			var ptJerseyNumber = ptDataDict[nptNumber - 1].ptJerseyNumber;
-			var nextPT = nptNumber + 1;
+			console.log("nptNumber", nptNumber)
+			var ptDataDictSize = ptDataDict.length;
+			console.log("ptDataDictSize", ptDataDictSize);
 
-			pt.setAttribute("id", nptId); // Set pt (player-token) id attr. 
-			pt.getElementsByClassName("tokenNumber").item(0).textContent = nptNumber;
-			pt.getElementsByClassName("ptJerseyNumber").item(0).textContent = ptJerseyNumber;
-			pt.getElementsByClassName("ptPlayerName").item(0).textContent = ptPlayerName;
+			if (nptNumber > ptDataDictSize)
+			{
+				alert("There are no more playerTokens (PTs) to add to the field, all " + ptDataDictSize + " PTs in the ptDataDict are already on the field.  To focus a player click on the token, which should enlarge it it and bring it to the center of the field.  Also you can use the previous/next left/right scroll button arrows to cycle the playerToken focus."); 
+			}
+			else
+			{
+				var nptId = "newPlayerToken" + nptNumber;
+				var ptDictArrayIndex = Number(nptNumber) - 1;
+				var ptDictEntry = ptDataDict[ptDictArrayIndex];
+				console.log("ptDictEntry", ptDictEntry);
 
-			pt.setAttribute("transform", "translate(" + nptx + "," + npty + ")"); // Set player-token x,y coordinate.
-			// pt.setAttribute("onclick", "popPT(" + nextPT + "," + ptSize + "); return false;");
-			pt.setAttribute("onclick", "focusPlayerToken(evt, this.id); return false;");
-			document.querySelector('svg').appendChild(pt);
+				var ptPlayerName = ptDictEntry.ptPlayerNickName;
+				var ptJerseyNumber = ptDictEntry.ptJerseyNumber;
+				var nextPT = Number(nptNumber) + 1;
+
+				pt.setAttribute("id", nptId); // Set pt (player-token) id attr. 
+				pt.getElementsByClassName("tokenNumber").item(0).textContent = nptNumber;
+				pt.getElementsByClassName("ptJerseyNumber").item(0).textContent = ptJerseyNumber;
+				pt.getElementsByClassName("ptPlayerName").item(0).textContent = ptPlayerName;
+
+				pt.setAttribute("transform", "translate(" + nptx + "," + npty + ")"); // Set player-token x,y coordinate.
+				// pt.setAttribute("onclick", "popPT(" + nextPT + "," + ptSize + "); return false;");
+				pt.setAttribute("onclick", "focusPlayerToken(evt, this.id); return false;");
+
+				// var ptImage = pt.getElementById("ptImage");
+				var ptImage = pt.getElementsByClassName("ptImage").item(0);
+				if (ptImage !== undefined)
+				{
+					if (ptDictEntry.ptImage !== undefined)
+					{
+						ptImage.setAttribute("xlink:href", ptDictEntry.ptImage);
+						console.log("ptImage", ptImage);
+					}
+
+					var ptImageCircle = pt.getElementsByClassName("ptImageCircle").item(0);
+					if (ptImageCircle !== undefined)
+					{
+						// ptImageCircle.setAttribute("display", "none");
+						console.log("ptImageCircle", ptImageCircle);
+					}
+				}
+				console.log("pt", pt)
+				document.querySelector('svg').appendChild(pt);
+			}
 		};
 
 		function fetchXML (url, callback, number, size, dictJSON)
@@ -733,7 +955,8 @@
 								'ptPositionNumber: "null",' +
 								'ptPositionName: "Midfielder",' +
 								'ptPositionAbbreviation: "M",' +
-								'ptStudentGradeLevel: 10' +
+								'ptStudentGradeLevel: 10,' +
+								'ptImage: "ptImages/matteo.png"' +
 							'},' +
 							'{' +
 								'tokenNumber: 13,' +
@@ -1306,13 +1529,13 @@
 					'}';
 
 			var ptDictionaryJSON = ptDictionaryJSON_V;
-			ptDictionaryJSON = ptDictionaryJSON_JV;
+			// ptDictionaryJSON = ptDictionaryJSON_JV;
 			ptDictionaryJSON = ptDictionaryJSON_CT;
 
 			fetchXML
 			(
-				"http://team-futbol-ks.org/2017/LHS/chestyLions/soccer/varsity/playerToken.svg",
-				// "http://team-futbol-ks.org/playerToken.svg",
+				"http://localhost:8000/2017/LHS/chestyLions/soccer/varsity/playerToken.svg",
+				// "http://localhost:8000/playerToken.svg",
 				// http://team-futbol-ks.org/playerToken.svg",
 				addNewPT,
 				nptNumber,
@@ -1324,18 +1547,103 @@
 		function popPT (nptNumber)
 		{
 		}
+
+		function addPlayerTokens(numPlayers)
+		{
+			var next;
+			for (next = 1; next <= numPlayers; next++)
+			{
+				pushPT(next);
+			}
+		}
 	]]>
 	</script>
 
 	<script type = "application/ecmascript">
 	<![CDATA[
+		window.onload = function ()
+		{
+			addPlayerTokens(20);
+		}
+
+		/*
+		https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload
+
+		function load ()
+		{
+			console.log("load event detected!");
+		}
+		window.onload = load;
+
+		const load = () =>
+		{
+			console.log("load event detected!");
+		} 
+		window.onload = load;
+		*/
+	]]>
+	</script>
+
+
+	<script type = "application/ecmascript">
+	<![CDATA[
+		function unFocusPlayerToken (id)
+		{
+			var pt = document.getElementById(id);
+			var ptSize = 72;
+
+			// newPlayerToken
+			// 01234567890123
+			// The nptNumber is the last part of the id, the part after 'newPlayerToken'.
+			var nptNumber = pt.id.substring(14);
+
+			// Set x and y default coordinates.
+			var nptx = 9 + 35 + ((Number(nptNumber) - 1) * (ptSize + 2));
+			var npty = 9 + 45;
+			if (nptNumber == 0) { nptx = 0; npty = 0; }
+
+			// Reset x and y coordinates.
+			var playerTokenElements = 0;
+			var carriageReturnNumber = 16;
+			var resetTokenJustification = 0;
+			var justificationResetCounter = 0;
+			var xJustificationFactor = resetTokenJustification * carriageReturnNumber * justificationResetCounter;
+			var yJustificationFactor = ptSize * justificationResetCounter;
+
+			if (nptNumber > carriageReturnNumber) { resetTokenJustification = 1; }
+			justificationResetCounter = ~~((Number(nptNumber) - 1) / carriageReturnNumber);
+			xJustificationFactor = resetTokenJustification * carriageReturnNumber * justificationResetCounter;
+			yJustificationFactor = ptSize * justificationResetCounter;
+
+			nptx = 9 + 35 + ((Number(nptNumber) - xJustificationFactor - 1) * (ptSize + 2));
+			npty = 9 + 45 + yJustificationFactor;
+
+			pt.setAttribute("transform", "scale(1), translate(" + nptx + ", " + npty + ")");
+			// Note that the x and y below do get set on the element,
+			// but the screen placement remains as if '0,0', so added the translate in the trasnform above. 
+			pt.setAttribute("x", nptx);
+			pt.setAttribute("y", npty);
+			pt.setAttribute("class", "playerToken focusFalse");
+			pt.setAttribute("class", "playerToken focusFalse");
+			// pt.setAttribute("style", "background: url(none.png);");
+
+			var ptImageCircle = pt.getElementsByClassName("ptImageCircle").item(0);
+			if (ptImageCircle !== undefined)
+			{
+				// ptImageCircle.setAttribute("display", "none");
+				console.log("ptImageCircle", ptImageCircle);
+			}
+		}
+
 		function focusPlayerToken (evt, id)
 		{
 		// function focusSVGDoc (evt, nptNumber)
 		// {
-			var playerToken = document.getElementById(id); //playerTokenId);
+			console.log("id", id);
+			var playerToken = document.getElementById(id); // playerTokenId);
+			console.log("playerToken", playerToken);
 			/*
-			// var playerTokenById = document.getElementById("newPlayerToken" + nptNumber);
+			// var playerTokenById = document.getElementById("newPlayerToken" + Number(nptNumber));
 			var playerTokenId = id;
 			var playerTokenEID = playerToken.id;
 			var target = evt.target;
@@ -1352,6 +1660,7 @@
 			playerToken.setAttribute("x", 800);
 			playerToken.setAttribute("y", 450);
 			*/
+
 			// playerToken.setAttribute("transform", "scale(3), translate(" + "0" + "," + "0" + "), translate(" + "800" + "," + "450" + ")");
 			// playerToken.setAttribute("transform", "scale(.5), translate(43.12, 25.9)");
 			// playerToken.setAttribute("transform", "scale(1), translate(599, 459)");
@@ -1376,8 +1685,8 @@
 			/*
 			fetchXML
 			(
-				evt, // "http://team-futbol-ks.org/2017/LHS/chestyLions/soccer/varsity/playerToken.svg", // #playerToken00",
-				// evt, // "http://team-futbol-ks.org/playerToken.svg", // #playerToken00",
+				evt, // "http://localhost:8000/2017/LHS/chestyLions/soccer/varsity/playerToken.svg", // #playerToken00",
+				// evt, // "http://localhost:8000/playerToken.svg", // #playerToken00",
 				// evt, // http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
 				focusSVGDoc,
 				nptNumber
@@ -1386,7 +1695,28 @@
 			/*
 			pt.setAttribute("transform", "translate(" + fieldCenterX + "," + fieldCenterY + ")"); // Set player-token x,y coordinate.
 			pt.setAttribute("onclick", "focusNewPlayerToken(" + nptNumber + ")"); return false;");
+			pt.setAttribute("onclick", "unFocusNewPlayerToken(" + nptNumber + ")"); return false;");
 			*/
+
+			// Get the token that is currently in focus and unFocus it.
+			var playerTokenElementsWithFocus = document.getElementsByClassName("focusTrue");
+			var numPlayerTokenWithFocus = playerTokenElementsWithFocus.length;
+
+			if (numPlayerTokenWithFocus == 1)
+			{
+				var ptID = playerTokenElementsWithFocus.item(0).id;
+				unFocusPlayerToken(ptID);
+			}
+
+			playerToken.setAttribute("class", "playerToken focusTrue");
+			// playerToken.setAttribute("style", "background: url(cc-GPL-a.png);");
+
+			var ptImageCircle = playerToken.getElementsByClassName("ptImageCircle").item(0);
+			if (ptImageCircle !== undefined)
+			{
+				// ptImageCircle.setAttribute("display", "inline"); // inherit
+				console.log("ptImageCircle", ptImageCircle);
+			}
 		};
 
 		// focusNewPlayerToken(0);
@@ -1395,9 +1725,185 @@
 
 	<script type = "application/ecmascript">
 	<![CDATA[
+		function focusPrevToken (evt) // scrollTokenBackward
+		{
+			var playerTokenElements = document.getElementsByClassName("playerToken");
+			var numPlayerTokens = -1;
+			if (playerTokenElements !== undefined && numPlayerTokens !== undefined)
+			{
+				console.log("playerTokenElements", playerTokenElements);
+				numPlayerTokens = playerTokenElements.length;
+	 			if (numPlayerTokensWithFocus !== undefined)
+				{
+					console.log("numPlayerTokens", numPlayerTokens);
+				}
+			}
+
+			var playerTokenElementsWithFocus = document.getElementsByClassName("focusTrue");
+			var numPlayerTokensWithFocus = -1;
+			if (playerTokenElementsWithFocus !== undefined)
+			{
+				console.log("playerTokenElementsWithFocus", playerTokenElementsWithFocus);
+				numPlayerTokensWithFocus = playerTokenElementsWithFocus.length;
+	 			if (numPlayerTokensWithFocus !== undefined)
+				{
+					console.log("numPlayerTokensWithFocus", numPlayerTokensWithFocus);
+				}
+			}
+
+			var playerTokenElementsWithoutFocus = document.getElementsByClassName("focusFalse");
+			var numPlayerTokensWithoutFocus = -1;
+			if (playerTokenElementsWithoutFocus !== undefined)
+			{
+				console.log("playerTokenElementsWithoutFocus", playerTokenElementsWithoutFocus);
+				numPlayerTokensWithoutFocus = playerTokenElementsWithoutFocus.length;
+				if(numPlayerTokensWithoutFocus !== undefined)
+				{
+					console.log("numPlayerTokensWithoutFocus", numPlayerTokensWithoutFocus);
+				}
+			}
+
+			if (numPlayerTokens > 0)
+			{
+				var pt;
+				var ptID;
+
+				if (numPlayerTokensWithFocus == 0)
+				{
+					pt = playerTokenElements.item(0);
+					ptID = pt.getAttribute("id");
+					console.log("ptID", ptID);
+
+					// If no tokens are in focus then focus on the first.
+					ptID = 'newPlayerToken1';
+					focusPlayerToken(evt, ptID);
+				}
+				else
+				{
+					var ptWithFocus;
+					var ptWithFocusID
+					if (numPlayerTokensWithFocus == 1)
+					{
+						ptWithFocus = playerTokenElementsWithFocus.item(0);
+						ptWithFocusID = ptWithFocus.getAttribute("id");
+						console.log("ptWithFocusID", ptWithFocusID);
+
+						// newPlayerToken
+						// 01234567890123
+						// The nptNumber is the last part of the id, the part after 'newPlayerToken'.
+						var nptNumber = ptWithFocusID.substring(14);
+						ptID = 'newPlayerToken' + (Number(nptNumber) - 1);
+
+						// If the first token is currently the one in focus
+						// then circle back and give focus to the last token.
+						if (nptNumber == 1) { ptID = 'newPlayerToken' + numPlayerTokens; }
+						console.log("ptID", ptID);
+
+						focusPlayerToken(evt, ptID);
+					}
+					else
+					{
+						if (numPlayerTokensWithFocus > 1)
+						{
+						}
+					}
+				}
+			}
+		}
+
+		function focusNextToken (evt) // scrollTokenForward
+		{
+			var playerTokenElements = document.getElementsByClassName("playerToken");
+			var numPlayerTokens = -1;
+			if (playerTokenElements !== undefined && numPlayerTokens !== undefined)
+			{
+				console.log("playerTokenElements", playerTokenElements);
+				numPlayerTokens = playerTokenElements.length;
+	 			if (numPlayerTokensWithFocus !== undefined)
+				{
+					console.log("numPlayerTokens", numPlayerTokens);
+				}
+			}
+
+			var playerTokenElementsWithFocus = document.getElementsByClassName("focusTrue");
+			var numPlayerTokensWithFocus = -1;
+			if (playerTokenElementsWithFocus !== undefined)
+			{
+				console.log("playerTokenElementsWithFocus", playerTokenElementsWithFocus);
+				numPlayerTokensWithFocus = playerTokenElementsWithFocus.length;
+	 			if (numPlayerTokensWithFocus !== undefined)
+				{
+					console.log("numPlayerTokensWithFocus", numPlayerTokensWithFocus);
+				}
+			}
+
+			var playerTokenElementsWithoutFocus = document.getElementsByClassName("focusFalse");
+			var numPlayerTokensWithoutFocus = -1;
+			if (playerTokenElementsWithoutFocus !== undefined)
+			{
+				console.log("playerTokenElementsWithoutFocus", playerTokenElementsWithoutFocus);
+				numPlayerTokensWithoutFocus = playerTokenElementsWithoutFocus.length;
+				if(numPlayerTokensWithoutFocus !== undefined)
+				{
+					console.log("numPlayerTokensWithoutFocus", numPlayerTokensWithoutFocus);
+				}
+			}
+
+			if (numPlayerTokens > 0)
+			{
+				var pt;
+				var ptID;
+
+				if (numPlayerTokensWithFocus == 0)
+				{
+					pt = playerTokenElements.item(0);
+					ptID = pt.getAttribute("id");
+					console.log("ptID", ptID);
+
+					// If no tokens are in focus then focus on the last.
+					ptID = 'newPlayerToken' + numPlayerTokens;
+					focusPlayerToken(evt, ptID);
+				}
+				else
+				{
+					var ptWithFocus;
+					var ptWithFocusID
+					if (numPlayerTokensWithFocus == 1)
+					{
+						ptWithFocus = playerTokenElementsWithFocus.item(0);
+						ptWithFocusID = ptWithFocus.getAttribute("id");
+						console.log("ptWithFocusID", ptWithFocusID);
+
+						// newPlayerToken
+						// 01234567890123
+						// The nptNumber is the last part of the id, the part after 'newPlayerToken'.
+						var nptNumber = ptWithFocusID.substring(14);
+						ptID = 'newPlayerToken' + (Number(nptNumber) + 1);
+
+						// If the last token is currently the one in focus
+						// then circle back and give focus to the first token.
+						if (nptNumber == numPlayerTokens) { ptID = 'newPlayerToken1'; }
+						console.log("ptID", ptID);
+
+						focusPlayerToken(evt, ptID);
+					}
+					else
+					{
+						if (numPlayerTokensWithFocus > 1)
+						{
+						}
+					}
+				}
+			}
+		}
+	]]>
+	</script>
+
+	<script type = "application/ecmascript">
+	<![CDATA[
 		function insertPlayerTokenAsUseElement (nptNumber) // (evt, nptNumber) // nptx, npty)
 		{
-			var nextPT = nptNumber + 1;
+			var nextPT = Number(nptNumber) + 1;
 			var ptSize = 72;
 			var epx = "unknown";
 			var epy = "unknown";
@@ -1413,10 +1919,10 @@
 			// alert("docWidth: " + docWidth + ", docHeight: " + docHeight);
 
 			/*
-			nptx = (35 - (ptSize / 2)) + ((nptNumber - 1) * ptSize);
+			nptx = (35 - (ptSize / 2)) + ((Number(nptNumber) - 1) * ptSize);
 			npty = (45 - (ptSize / 2));
 			*/
-			var nptx = 9 + 35 + ((nptNumber - 1) * (ptSize + 2));
+			var nptx = 9 + 35 + ((Number(nptNumber) - 1) * (ptSize + 2));
 			var npty = 9 + 45;
 
 			// https://stackoverflow.com/questions/16488884/add-svg-element-to-existing-svg-using-dom

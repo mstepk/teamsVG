@@ -160,7 +160,7 @@
 				</a>
 			</g>
 	
-			<g>	
+			<g display = "none">	
 				<!--	fill = "#390" -->
 				<!-- Half Field B Half-HD -->
 				<!-- y = "330px" -->
@@ -191,7 +191,7 @@
 				</a>
 			</g>
 	
-			<g>
+			<g display = "none">
 				<!-- Half Field B-Alone Half-HD -->
 				<a xlink:href = "chestyLions/soccer/ct/fieldMAX.svg">
 					<rect
