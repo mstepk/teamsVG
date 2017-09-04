@@ -1,0 +1,409 @@
+<?xml 
+	version = "1.0" 
+	encoding = "UTF-8"
+?>
+
+<!DOCTYPE 
+	svg 
+	PUBLIC 
+	"-//W3C//DTD SVG 1.1//EN" 
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" 
+>
+
+<svg 
+	version = "1.1" 
+	xmlns = "http://www.w3.org/2000/svg" 
+	xmlns:xlink = "http://www.w3.org/1999/xlink" 
+	x = "0px" 
+	y = "0px" 
+	width = "112px" 
+	height = "205px" 
+	viewBox = "0 0 112 205" 
+	style = "background-color: #000;"
+>
+
+	<!--
+	x = "0px" 
+	y = "0px" 
+	width = "102px" 
+	height = "12px" 
+	viewBox = "0 0 102 12" 
+	-->
+
+	<defs>
+		<rect 
+			id = "progressBar00"
+			x = "1px" 
+			y = "1px" 
+			width = "100px" 
+			height = "10px" 
+			rx = "3px"
+			ry = "3px"
+			fill = "#F00"
+			stroke = "#FFF"
+			stroke-width = "1.5"
+		/>
+
+		<rect 
+			id = "progressBar05"
+			x = "1px" 
+			y = "1px" 
+			width = "5px" 
+			height = "10px" 
+			rx = "3px"
+			ry = "3px"
+			fill = "#0F0"
+			stroke = "#FFF"
+			stroke-width = "1.5"
+		/>
+
+		<rect 
+			id = "progressBar50"
+			x = "1px" 
+			y = "1px" 
+			width = "50px" 
+			height = "10px" 
+			rx = "3px"
+			ry = "3px"
+			fill = "#0F0"
+			stroke = "#FFF"
+			stroke-width = "1.5"
+		/>
+
+		<rect 
+			id = "progressBar95"
+			x = "1px" 
+			y = "1px" 
+			width = "95px" 
+			height = "10px" 
+			rx = "3px"
+			ry = "3px"
+			fill = "#0F0"
+			stroke = "#FFF"
+			stroke-width = "1.5"
+		/>
+
+		<rect 
+			id = "progressBar100"
+			x = "1px" 
+			y = "1px" 
+			width = "100px" 
+			height = "10px" 
+			rx = "3px"
+			ry = "3px"
+			fill = "#0F0"
+			stroke = "#FFF"
+			stroke-width = "1.5"
+		/>
+
+		<rect 
+			id = "progressBar10"
+			x = "1px" 
+			y = "1px" 
+			width = "10px" 
+			height = "10px" 
+			rx = "3px"
+			ry = "3px"
+			fill = "#0F0"
+			stroke = "#FFF"
+			stroke-width = "1.5"
+		/>
+
+		<rect 
+			id = "progressBar20"
+			x = "1px" 
+			y = "1px" 
+			width = "20px" 
+			height = "10px" 
+			rx = "3px"
+			ry = "3px"
+			fill = "#0F0"
+			stroke = "#FFF"
+			stroke-width = "1.5"
+		/>
+
+		<rect 
+			id = "progressBar30"
+			x = "1px" 
+			y = "1px" 
+			width = "30px" 
+			height = "10px" 
+			rx = "3px"
+			ry = "3px"
+			fill = "#0F0"
+			stroke = "#FFF"
+			stroke-width = "1.5"
+		/>
+
+		<rect 
+			id = "progressBar40"
+			x = "1px" 
+			y = "1px" 
+			width = "40px" 
+			height = "10px" 
+			rx = "3px"
+			ry = "3px"
+			fill = "#0F0"
+			stroke = "#FFF"
+			stroke-width = "1.5"
+		/>
+
+		<rect 
+			id = "progressBar50"
+			x = "1px" 
+			y = "1px" 
+			width = "50px" 
+			height = "10px" 
+			rx = "3px"
+			ry = "3px"
+			fill = "#0F0"
+			stroke = "#FFF"
+			stroke-width = "1.5"
+		/>
+
+		<rect 
+			id = "progressBar60"
+			x = "1px" 
+			y = "1px" 
+			width = "60px" 
+			height = "10px" 
+			rx = "3px"
+			ry = "3px"
+			fill = "#0F0"
+			stroke = "#FFF"
+			stroke-width = "1.5"
+		/>
+
+		<rect 
+			id = "progressBar70"
+			x = "1px" 
+			y = "1px" 
+			width = "70px" 
+			height = "10px" 
+			rx = "3px"
+			ry = "3px"
+			fill = "#0F0"
+			stroke = "#FFF"
+			stroke-width = "1.5"
+		/>
+
+		<rect 
+			id = "progressBar80"
+			x = "1px" 
+			y = "1px" 
+			width = "80px" 
+			height = "10px" 
+			rx = "3px"
+			ry = "3px"
+			fill = "#0F0"
+			stroke = "#FFF"
+			stroke-width = "1.5"
+		/>
+
+		<rect 
+			id = "progressBar90"
+			x = "1px" 
+			y = "1px" 
+			width = "90px" 
+			height = "10px" 
+			rx = "3px"
+			ry = "3px"
+			fill = "#0F0"
+			stroke = "#FFF"
+			stroke-width = "1.5"
+		/>
+
+	</defs>
+
+	<rect 
+		id = "cover"
+		x = "0px" 
+		y = "0px" 
+		width = "112px" 
+		height = "205px" 
+		fill = "#5AF"
+	/>
+
+	<!-- 00 -->
+	   <use 
+			xlink:href = "#progressBar00" 
+			x = "5" 
+			y = "5" 
+			id = "pBar00_00"
+		/>
+
+	<!-- 05 -->
+	   <use 
+			xlink:href = "#progressBar00" 
+			x = "5" 
+			y = "20" 
+			id = "pBar00_05"
+		/>
+
+	   <use 
+			xlink:href = "#progressBar05" 
+			x = "5" 
+			y = "20" 
+			id = "pBar_05"
+		/>
+
+	<!-- 10 -->
+	   <use 
+			xlink:href = "#progressBar00" 
+			x = "5" 
+			y = "35" 
+			id = "pBar00_10"
+		/>
+
+	   <use 
+			xlink:href = "#progressBar10" 
+			x = "5" 
+			y = "35" 
+			id = "pBar_10"
+		/>
+
+	<!-- 20 -->
+	   <use 
+			xlink:href = "#progressBar00" 
+			x = "5" 
+			y = "50" 
+			id = "pBar00_20"
+		/>
+
+	   <use 
+			xlink:href = "#progressBar20" 
+			x = "5" 
+			y = "50" 
+			id = "pBar_20"
+		/>
+
+	<!-- 30 -->
+	   <use 
+			xlink:href = "#progressBar00" 
+			x = "5" 
+			y = "65" 
+			id = "pBar00_30"
+		/>
+
+	   <use 
+			xlink:href = "#progressBar30" 
+			x = "5" 
+			y = "65" 
+			id = "pBar_30"
+		/>
+
+	<!-- 40 -->
+	   <use 
+			xlink:href = "#progressBar00" 
+			x = "5" 
+			y = "80" 
+			id = "pBar00_40"
+		/>
+
+	   <use 
+			xlink:href = "#progressBar40" 
+			x = "5" 
+			y = "80" 
+			id = "pBar_40"
+		/>
+
+	<!-- 50 -->
+	   <use 
+			xlink:href = "#progressBar00" 
+			x = "5" 
+			y = "95" 
+			id = "pBar00_50"
+		/>
+
+	   <use 
+			xlink:href = "#progressBar50" 
+			x = "5" 
+			y = "95" 
+			id = "pBar_50"
+		/>
+
+	<!-- 60 -->
+	   <use 
+			xlink:href = "#progressBar00" 
+			x = "5" 
+			y = "110" 
+			id = "pBar00_60"
+		/>
+
+	   <use 
+			xlink:href = "#progressBar60" 
+			x = "5" 
+			y = "110" 
+			id = "pBar_60"
+		/>
+
+	<!-- 70 -->
+	   <use 
+			xlink:href = "#progressBar00" 
+			x = "5" 
+			y = "125" 
+			id = "pBar00_70"
+		/>
+
+	   <use 
+			xlink:href = "#progressBar70" 
+			x = "5" 
+			y = "125" 
+			id = "pBar_70"
+		/>
+
+	<!-- 80 -->
+	   <use 
+			xlink:href = "#progressBar00" 
+			x = "5" 
+			y = "140" 
+			id = "pBar00_80"
+		/>
+
+	   <use 
+			xlink:href = "#progressBar80" 
+			x = "5" 
+			y = "140" 
+			id = "pBar_80"
+		/>
+
+	<!-- 90 -->
+	   <use 
+			xlink:href = "#progressBar00" 
+			x = "5" 
+			y = "155" 
+			id = "pBar00_90"
+		/>
+
+	   <use 
+			xlink:href = "#progressBar90" 
+			x = "5" 
+			y = "155" 
+			id = "pBar_90"
+		/>
+
+	<!-- 95 -->
+	   <use 
+			xlink:href = "#progressBar00" 
+			x = "5" 
+			y = "170" 
+			id = "pBar00_95"
+		/>
+
+	   <use 
+			xlink:href = "#progressBar95" 
+			x = "5" 
+			y = "170" 
+			id = "pBar_95"
+		/>
+
+	<!-- 100 -->
+	   <use 
+			xlink:href = "#progressBar100" 
+			x = "5" 
+			y = "185" 
+			id = "pBar100"
+		/>
+
+</svg>
+

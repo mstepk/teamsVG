@@ -2,8 +2,18 @@ This project explores SVG interfaces using ECMAScript/Javascript to manipulate t
 This project intends to explore mixed markup compound documents (XHTML, XForms, MathML, SVG) and embedded semantic data via RDFa.
 This project explores a team management interface with an initial focus on a soccer/futbol template or configuration or theme or build.
 
-The author intends for the project to be licsenced and distributed under the GPL.
-The author has been dabbling with this exploration and revising these document/graphic/interface types without any version control for a few years now.
-The author mainly tests the project in Chromium but the project intends to be functional in Webkit and Gecko based browsers.
+my author = { MSK => "Mark S. Kalusha",  WHO = "?" };
+The $author intends that the project be useful and bugfree.
+The $author has been dabbling with this exploration and revising these document/graphic/interface types without any version control for a few years now.
+The $author mainly tests the project in Chromium but the project intends to be functional in Webkit and Gecko based browsers.
 
-Author: MSK
+Copyright 2011 Mark S. Kalusha
+Copying: See COPYING.MSK
+This program, libraries it uses, and documentation are distributed under the terms of the GNU General Public License, meaning this is Free Software.
+
+Other Authors: None at this time, WHO?
+Other authors, if you fork early please indicate your liscence terms in the highest level directory to which you commit and call the file COPYING.$author->{WHO}
+
+I don't plan to write Perl here, but since that is my among my daily fair I give it its props.
+
+MSK is a taken username on GITHub so I used mstepk instead.

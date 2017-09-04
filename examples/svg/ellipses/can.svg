@@ -1,0 +1,146 @@
+<?xml 
+	version = "1.0" 
+	encoding = "UTF-8"
+?>
+
+<!DOCTYPE 
+	svg 
+	PUBLIC 
+	"-//W3C//DTD SVG 1.1//EN" 
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" 
+>
+
+<svg 
+	version = "1.1" 
+	xmlns = "http://www.w3.org/2000/svg" 
+	xmlns:xlink = "http://www.w3.org/1999/xlink" 
+	x = "0px" 
+	y = "0px" 
+	width = "1600px" 
+	height = "900px" 
+	viewBox = "0 0 1600 900" 
+>
+
+	<!-- Family Ellipse --> 
+	<rect
+		x = "16px"
+		y = "16px"
+		width = "1120"
+		height = "630"
+		rx = "10px"
+		ry = "10px"
+		fill = "#222222"
+		stroke = "#000000"
+		stroke-width = "8"
+	/>
+
+	<!--
+		M: absolute "moveto" command
+			x, y
+		a: relative "elliptical arc" command
+			rx (horizontal radii)
+			ry (vertical radii)
+			x-axis-rotation (positive rotation clockwise)
+			large-arc-flag
+			sweep-flag (positive sweep clockwise)
+	-->
+	<defs>
+		<g id = "ellipse">
+			<path 
+				d = 
+					"
+						M 
+							176, 331  
+						a  
+							400, 
+							225 
+							0 
+							1,
+							1 
+							0, 0.0001 
+					"
+				fill = "#00CCFF" 
+				stroke = "#FFFFFF" 
+				stroke-width = "40"
+			/>
+		</g>
+	
+		<g id = "vertical">
+			<path 
+				d = 
+					"
+						M 547.6, 294
+						v 76.5
+					"
+				fill = "#FFFFFF"
+				stroke = "#FFFFFF" 
+				stroke-width = "4"
+			/>
+		</g>
+
+		<g id = "halfEllipseTop">
+			<path 
+				d = 
+					"
+						M 
+							176, 331  
+						a  
+							400, 
+							225 
+							0 
+							1,
+							1 
+							800, 0.0001 
+					"
+				fill = "#FFCC00" 
+				stroke = "#FFFFFF" 
+				stroke-width = "40"
+			/>
+		</g>
+			
+		<g id = "halfEllipseBottom">
+			<path 
+				d = 
+					"
+						M 
+							176, 305  
+						a  
+							400, 
+							225 
+							0 
+							1,
+							0 
+							800, 0.0001 
+					"
+				fill = "#00CCFF" 
+				stroke = "#FFFFFF" 
+				stroke-width = "40"
+			/>
+		</g>
+	
+		<g id = "stackOf5Ellipses">
+			<use xlink:href = "#ellipse" transform = "translate(400, 200) scale(0.1, 0.1)" />
+			<use xlink:href = "#ellipse" transform = "translate(400, 250) scale(0.1, 0.1)" />
+			<use xlink:href = "#ellipse" transform = "translate(400, 300) scale(0.1, 0.1)" />
+			<use xlink:href = "#ellipse" transform = "translate(400, 350) scale(0.1, 0.1)" />
+			<use xlink:href = "#ellipse" transform = "translate(400, 400) scale(0.1, 0.1)" />
+		</g>
+	</defs>
+	
+	<use xlink:href = "#ellipse" />
+
+	<use xlink:href = "#stackOf5Ellipses" />
+	<use xlink:href = "#stackOf5Ellipses" transform = "translate(260, 0)" />
+	
+	<defs>
+		<g id = "can">
+			<use xlink:href = "#ellipse" transform = "translate(530, 260) scale(0.1, 0.1)" />
+			<use xlink:href = "#halfEllipseBottom" transform = "translate(530, 340) scale(0.1, 0.1)" />
+			<use xlink:href = "#vertical" />
+			<use xlink:href = "#vertical" transform = "translate(80, 0)" />
+		</g>
+	</defs>
+	
+	<use xlink:href = "#can" />
+</svg>
+

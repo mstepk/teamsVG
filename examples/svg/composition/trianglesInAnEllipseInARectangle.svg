@@ -1,0 +1,90 @@
+<?xml 
+	version = "1.0" 
+	encoding = "UTF-8"
+?>
+
+<!DOCTYPE 
+	svg 
+	PUBLIC 
+	"-//W3C//DTD SVG 1.1//EN" 
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" 
+>
+
+<svg 
+	version = "1.1" 
+	xmlns = "http://www.w3.org/2000/svg" 
+	xmlns:xlink = "http://www.w3.org/1999/xlink" 
+	x = "0px" 
+	y = "0px" 
+	width = "1600px" 
+	height = "900px" 
+	viewBox = "0 0 1600 900" 
+>
+
+	<!-- Family Ellipse --> 
+
+	<rect
+		x = "16px"
+		y = "16px"
+		width = "1120"
+		height = "630"
+		rx = "10px"
+		ry = "10px"
+		fill = "#222222"
+		stroke = "#000000"
+		stroke-width = "8"
+	/>
+
+	<!--
+		M: absolute "moveto" command
+			x, y
+		a: relative "elliptical arc" command
+			rx (horizontal radii)
+			ry (vertical radii)
+			x-axis-rotation (positive rotation clockwise)
+			large-arc-flag
+			sweep-flag (positive sweep clockwise)
+	-->
+
+	<path 
+		d = 
+			"
+				M 
+					96, 331  
+				a  
+					480, 
+					270 
+					0 
+					1,
+					1 
+					0, .0001 
+			"
+		fill = "#00CCFF" 
+		stroke = "#FFFFFF" 
+		stroke-width = "4"
+	/>
+
+	<g 
+		transform = "translate(576, 331)"
+	>
+		<polygon 
+			id = "triangle"
+			points = 
+				"
+					-216, -126 
+					0, 250 
+					216, -126
+				" 
+			fill = "#00FF33" 
+			stroke = "#EEEEEE" 
+			stroke-width = "4" 
+		/>
+		<!-- fill = "#CCFF00" --> 
+		<use 
+			xlink:href = "#triangle" 
+			transform = "rotate(180)"
+		/>
+	</g>
+
+</svg>
+
