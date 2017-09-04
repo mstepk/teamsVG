@@ -9,7 +9,7 @@ Short APP Design GOAL Statement
 	{
 		{ 
 			submode-a: { '+':"add/sub player tokens", '-':"view/edit player" },
-			submode-b: { '+':"scroll focus right to higher numbers", '-':"scroll focus left to lower numbers" }
+			submode-b: { '+_upArrow':"scroll focus right to higher numbers", '-_downArrow':"scroll focus left to lower numbers" }
 		}
 	}
 
@@ -29,10 +29,14 @@ View/Edit Token Functional Requirements
   the position is determined by the playerTokenId token-number which keys to a position-description
   clicking the token number opens input box that allows entering the players name (keyborad/with mini-button for submit)
 
-- clicking the upper portion of a token allows you edit its background or icon/symbol
+- clicking the upper portion of a token allows you edit its jersey number, background, or icon/symbol
   need to able to find and upload media files and store them for later re-association
 
 - clicking the lower portion of a token allows you fill out contact info
   opens up goal areas as contact-attribute scroll buttons
   opens up save/post/upload button
+
+
+First users will be LHS Chesty Lions Soccer, former website for them was below:
+http://chestylionssoccer.wixsite.com/mysite
 

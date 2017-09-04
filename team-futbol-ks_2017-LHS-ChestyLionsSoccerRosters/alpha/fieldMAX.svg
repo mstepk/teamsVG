@@ -365,7 +365,7 @@
 			fetchXML
 			(
 				// "http://localhost:8000/playerToken.svg", // #playerToken00",
-				"http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
+				http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
 				loadNewSVGDoc,
 				nptNumber
 			);
@@ -477,6 +477,7 @@
 			playerToken.setAttribute("y", 450);
 			*/
 			// playerToken.setAttribute("transform", "scale(3), translate(" + "0" + "," + "0" + "), translate(" + "800" + "," + "450" + ")");
+			// playerToken.setAttribute("transform", "scale(.5), translate(43.12, 25.9)");
 			// playerToken.setAttribute("transform", "scale(1), translate(599, 459)");
 			// playerToken.setAttribute("transform", "scale(2), translate(281.5, 211.6)");
 			// (72 + 1200) / (2 * 3) = 1272 / 6 = 212
@@ -486,7 +487,11 @@
 			// playerToken.setAttribute("transform", "scale(3), translate(175.6, 129)");
 			// playerToken.setAttribute("transform", "scale(4), translate(122.55, 87.75)");
 			// playerToken.setAttribute("transform", "scale(5), translate(90.7, 63)");
-			playerToken.setAttribute("transform", "scale(6), translate(69.6, 46.52)");
+			// playerToken.setAttribute("transform", "scale(6), translate(69.6, 46.52)");
+			// playerToken.setAttribute("transform", "scale(7), translate(54.5, 34.8)");
+			// playerToken.setAttribute("transform", "scale(8), translate(43.12, 25.9)");
+			// playerToken.setAttribute("transform", "scale(9), translate(34.34, 19)");
+			playerToken.setAttribute("transform", "scale(10), translate(27.3, 13.5)");
 			playerToken.setAttribute("fill-opacity", "0.6");
 			playerToken.setAttribute("stroke-opacity", "0.2");
 		// }
