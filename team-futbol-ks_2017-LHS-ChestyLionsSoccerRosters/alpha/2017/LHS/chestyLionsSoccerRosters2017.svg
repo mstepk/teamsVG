@@ -150,8 +150,60 @@
 		<g id = "playerToken01">
 			<use xlink:href = "playerToken.svg#playerToken00" x = "0" y= "0" />
 		</g>
+
+		<g id = "teamLabel" >
+			<rect
+				x = "522px"
+				y = "10px"
+				width = "238px"
+				height = "30px" 
+				fill = "white"
+				stroke = "black"
+				stroke-width = "1px"
+				rx = "5px"
+				ry = "5px"
+			/>
 	
-	</defs>
+			<text
+				x = "641px"
+				y = "32px"
+				text-anchor = "middle"
+				font-family = "sans-serif"
+				font-size = "18px"
+				fill = "#111"
+			>LHS Chesty Lions Soccer</text>
+		</g>
+
+		<g id = "varsityButton">
+			<!-- Half Field A Half-HD -->
+			<a xlink:href = "chestyLions/soccer/varsity/fieldMAX.svg">
+				<rect
+					x = "1275px"
+					y = "30px"
+					width = "450px"
+					height = "300px"
+					rx = "42px"
+					ry = "32px"
+					fill = "#222"
+					stroke = "#DDD"
+					stroke-width = "10px"
+				/>
+				<text
+					x = "1500px"
+					y = "212px"
+					font-family = "sans-serif"
+					font-size = "72px"
+					fill = "red"
+					text-anchor = "middle"
+					font-variant = "small-caps"
+					font-weight = "900"
+					stroke = "#111"
+					stroke-width = "1px"
+				>Varsity</text>
+			</a>
+		</g>
+
+</defs>
 
 	<!--
 		The width property represents the length of the field.
@@ -200,6 +252,10 @@
 		y = "0" 
 		id = "fieldOfView0000"
 	/>
+
+	<use xlink:href = "#teamLabel" />
+
+	<use xlink:href = "#varsityButton" />
 
 	<!-- 01 -->
 	<!-- 55 -->

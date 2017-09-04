@@ -131,7 +131,7 @@
 				/>
 			</g>
 	
-			<g>	
+			<g display = "none">	
 				<!-- Half Field A Half-HD -->
 				<a xlink:href = "chestyLions/soccer/varsity/fieldMAX.svg">
 					<rect
@@ -179,7 +179,7 @@
 					<text
 						x = "1500px"
 						y = "527px"
-							font-family = "sans-serif"
+						font-family = "sans-serif"
 						font-size = "72px"
 						fill = "red"
 						text-anchor = "middle"
@@ -233,12 +233,14 @@
 					stroke = "#FFF"
 					stroke-width = "2px"
 				/>
+				<!-- Barely see the y in upper left.
 				<text
 					font-family = "sans-serif"
 					font-size = "72px"
 					fill = "#111"
 					text-anchor = "middle"
 				>Chesty</text>
+				-->
 			</g>
 		
 			<!-- Half Field B Full-HD -->
@@ -254,12 +256,14 @@
 					stroke = "#FFF"
 					stroke-width = "2px"
 				/>
+				<!-- Barely see the s in upper left.
 				<text
 					font-family = "sans-serif"
 					font-size = "72px"
 					fill = "#111"
 					text-anchor = "middle"
 				>Lions</text>
+				-->
 			</g>
 		
 			<!-- 
@@ -563,8 +567,19 @@
 		
 		
 			<!-- Label with the name of the team drag:enable = "true" -->
+			<!--
+					x = "522px"
+					y = "10px"
+				Without text-anchor = "middle":
+					x = "530px"
+					y = "32px"
+				with:
+					x = "641px"
+					y = "32px"
+			-->
 			<g 
-				id = "teamLabel"
+				id = "teamLabel00"
+				style = "display: none;"
 			>
 				<rect
 					x = "522px"
@@ -579,8 +594,9 @@
 				/>
 		
 				<text
-					x = "530px"
+					x = "641px"
 					y = "32px"
+					text-anchor = "middle"
 					font-family = "sans-serif"
 					font-size = "18px"
 					fill = "#111"
