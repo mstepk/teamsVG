@@ -1534,7 +1534,8 @@
 
 			fetchXML
 			(
-				"http://localhost:8000/2017/LHS/chestyLions/soccer/varsity/playerToken.svg",
+				"http://localhost:8000/chestyLions/soccer/varsity/playerToken.svg",
+				// "http://localhost:8000/2017/LHS/chestyLions/soccer/varsity/playerToken.svg",
 				// "http://localhost:8000/playerToken.svg",
 				// http://team-futbol-ks.org/playerToken.svg",
 				addNewPT,
