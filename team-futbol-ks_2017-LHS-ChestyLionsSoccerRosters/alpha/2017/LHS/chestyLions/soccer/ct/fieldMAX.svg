@@ -148,8 +148,8 @@
 		</radialGradient>
 
 		<g id = "playerToken01">
-			<!-- <use xlink:href = "2017/LHS/chestyLions/soccer/varsity/playerToken.svg#playerToken00" x = "0" y= "0" /> -->
-			<use xlink:href = "playerToken.svg#playerToken00" x = "0" y= "0" />
+			<!-- <use xlink:href = "chestyLions/soccer/playerToken.svg#playerToken00" x = "0" y= "0" /> -->
+			<use xlink:href = "../playerToken.svg#playerToken00" x = "0" y= "0" />
 		</g>
 
 		<g id = "teamLabel">
@@ -361,10 +361,10 @@
 	</use>
 
 	<!--
-		xlink:href = "2017/LHS/chestyLions/soccer/varsity/playerToken.svg#playerToken00" 
+		xlink:href = "chestyLions/soccer/playerToken.svg#playerToken00" 
 	-->
 	<use 
-		xlink:href = "playerToken.svg#playerToken00" 
+		xlink:href = "../playerToken.svg#playerToken00" 
 		x = "72" 
 		y = "72" 
 		id = "player02"
@@ -667,7 +667,7 @@
 			// Fetch the document using XHR, Ajax style?
 			fetchXML
 			(
-				"http://localhost:8000/2017/LHS/chestyLions/soccer/varsity/playerToken.svg", // #playerToken00",
+				"http://localhost:8000/chestyLions/soccer/playerToken.svg", // #playerToken00",
 				// "http://localhost:8000/playerToken.svg", // #playerToken00",
 				// http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
 				loadNewSVGDoc,
@@ -1534,8 +1534,7 @@
 
 			fetchXML
 			(
-				"http://localhost:8000/chestyLions/soccer/varsity/playerToken.svg",
-				// "http://localhost:8000/2017/LHS/chestyLions/soccer/varsity/playerToken.svg",
+				"http://localhost:8000/chestyLions/soccer/playerToken.svg",
 				// "http://localhost:8000/playerToken.svg",
 				// http://team-futbol-ks.org/playerToken.svg",
 				addNewPT,
@@ -1686,7 +1685,7 @@
 			/*
 			fetchXML
 			(
-				evt, // "http://localhost:8000/2017/LHS/chestyLions/soccer/varsity/playerToken.svg", // #playerToken00",
+				evt, // "http://localhost:8000/chestyLions/soccer/playerToken.svg", // #playerToken00",
 				// evt, // "http://localhost:8000/playerToken.svg", // #playerToken00",
 				// evt, // http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
 				focusSVGDoc,
@@ -1938,8 +1937,8 @@
 
 			// http://taye.me/blog/svg/a-guide-to-svg-use-elements/
 			// Set pt (player-token) xlink:href attr. 
-			pt.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "playerToken.svg#playerToken00");
-			// pt.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "2017/LHS/chestyLions/soccer/varsity/playerToken.svg#playerToken00");
+			pt.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "../playerToken.svg#playerToken00");
+			// pt.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "chestyLions/soccer/playerToken.svg#playerToken00");
 
 			// Get number from playerToken by class tokenNumber.
 			// It is a text element inside an oval/ellipse graphic, g -> (path + text).
