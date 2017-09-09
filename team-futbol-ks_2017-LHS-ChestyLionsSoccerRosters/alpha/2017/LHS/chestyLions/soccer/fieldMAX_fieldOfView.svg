@@ -504,9 +504,19 @@
 					font-family = "sans-serif"
 					font-size = "18px"
 					fill = "#111"
-				>LHS Chesty Lions Soccer: Varsity 2017</text>
+				>LHS Chesty Lions Soccer 2017</text>
 			</g>
-		
+
+<!--	
+msk@msk-ThinkPad-T530:~/Documents/projects/public/teamsVG/team-futbol-ks_2017-LHS-ChestyLionsSoccerRosters/alpha/2017/LHS$ diff3 chestyLions/soccer/varsity/fieldMAX_fieldOfView.svg chestyLions/soccer/jv/fieldMAX_fieldOfView.svg chestyLions/soccer/ct/fieldMAX_fieldOfView.svg | sed -e 's/\t/   /g'
+====
+1:507c
+              >LHS Chesty Lions Soccer: Varsity 2017</text>
+2:507c
+              >LHS Chesty Lions Soccer: Junior Varsity 2017</text>
+3:507c
+              >LHS Chesty Lions Soccer: C-Team 2017</text>
+-->	
 		
 			<!--
 				If none are correct can you list the numbers for each position?
