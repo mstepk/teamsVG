@@ -529,7 +529,7 @@
 	</g>
 
 	<use
-		xlink:href = "w3c-svg11.svg#svg11icon" 
+		xlink:href = "../w3c-svg11.svg#svg11icon" 
 		x = "1630px"
 		y = "918px"
 		id = "svgIcon"
@@ -559,7 +559,7 @@
 			y = "880px"
 			width = "88px"
 			height = "62px"
-			xlink:href = "cc-GPL-a.png" 
+			xlink:href = "../cc-GPL-a.png" 
 		>
 			<!--
 			xlink:href = "http://creativecommons.org/images/public/cc-GPL-a.png" 
@@ -1709,7 +1709,7 @@
 			}
 
 			playerToken.setAttribute("class", "playerToken focusTrue");
-			// playerToken.setAttribute("style", "background: url(cc-GPL-a.png);");
+			// playerToken.setAttribute("style", "background: url(../cc-GPL-a.png);");
 
 			var ptImageCircle = playerToken.getElementsByClassName("ptImageCircle").item(0);
 			if (ptImageCircle !== undefined)
