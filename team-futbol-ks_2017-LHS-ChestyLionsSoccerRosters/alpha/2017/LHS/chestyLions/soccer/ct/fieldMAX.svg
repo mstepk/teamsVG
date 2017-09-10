@@ -154,9 +154,9 @@
 
 		<g id = "teamLabel">
 			<rect
-				x = "432px"
+				x = "455px"
 				y = "10px"
-				width = "416px"
+				width = "360px"
 				height = "30px" 
 				fill = "white"
 				stroke = "black"
@@ -165,7 +165,7 @@
 				ry = "5px"
 			/>
 			<text
-				x = "640px"
+				x = "635px"
 				y = "32px"
 				text-anchor = "middle"
 				font-family = "sans-serif"
@@ -445,7 +445,7 @@
 
 	<g
 		id = "pushNewPlayerToken"
-		onclick = "pushPT(-1); return false;"
+		onclick = "pushPT(-1, false); return false;"
 	>
 		<rect
 			x = "1307px"
@@ -499,7 +499,7 @@
 		</a>
 	</g>
 
-	<g id = "juniorVarsityutton">
+	<g id = "juniorVarsityButton">
 		<!-- Half Field B-Alone Half-HD -->
 		<a xlink:href = "../jv/fieldMAX.svg">
 			<rect
@@ -687,11 +687,11 @@
 
 	<script type = "application/ecmascript">
 	<![CDATA[
-		function addNewPT (newPT, nptNumber, ptSize, ptDictionaryJSON)
+		function addNewPT (newPT, nptNumber, ptSize, ptArray)
 		{
 			// Import new player token into the current DOM
 			var pt = document.importNode(newPT.documentElement.getElementById("playerToken00"), true);
-			var ptDataDict = eval(ptDictionaryJSON);
+			var ptDataDict = ptArray;
 
 			// Set x and y default coordinates.
 			var nptx = 9 + 35 + ((Number(nptNumber) - 1) * (ptSize + 2));
@@ -790,747 +790,100 @@
 			xhr.send(null);
 		};
 
-		function pushPT (nptNumber)
+		// https://stackoverflow.com/questions/7346563/loading-local-json-file
+		function fetchJSON (teamId, callback, teamDictionary)
 		{
-			/*
-				: Varsity = 19 players :
+			var xhr = new XMLHttpRequest();
+			xhr.overrideMimeType("application/json");
+			// xhr.open('GET', teamId + '/team.json', true);
+			xhr.open('GET', 'team.json', true);
 
-				 1. Ross Brungardt GK 11 00
+			xhr.onreadystatechange =
+				function (teamDictionary)
+				{
+					if (xhr.readyState === 4) // && xhr.status === "200")
+					{
+						// Required use of an anonymous callback 
+						// as .open() will NOT return a value but simply returns undefined in asynchronous mode
+						callback(xhr.responseText, teamDictionary);
+						console.log("teamDictionary", teamDictionary);
+						addPlayerTokens(teamDictionary);
+					}
+				};
+			xhr.send(null);
+		}
 
-				 +  6 defenders
-				 2. Ja’Melle Dye D 12 2
-				 3. Robbie Kleibohmer D 12 9
-				 4. Jack Anderson D 11 5
-				 5. Garrett Hart D 11 15
-				 6. Trey Hulse D 11 3
-				 7. Gary Schmidt D 11 4
+		/*
+			: Varsity = 19 playe/rs :
+			 1. Ross Brungardt GK 11 00
+			 +  6 defenders
+			 2. Ja’Melle Dye D 12 2
+			 3. Robbie Kleibohmer D 12 9
+			 4. Jack Anderson D 11 5
+			 5. Garrett Hart D 11 15
+			 6. Trey Hulse D 11 3
+			 7. Gary Schmidt D 11 4
+			 +  9 midfielders
+			 8. Ben Matthews M 12 19
+			 9. Joseph Minder M 12 17
+			10. Dario Ramirez M 12 14
+			11. Cole Shupert M 11 10
+			12. Matteo Kalusha-Aguirre M 10 12
+			13. Kanak Masten M 10 18
+			14. Mason Anderson M 9 13
+			15. Tanner Glanton M 9 16
+			16. Alec Murphy M 9 11
+			 +  3 forwards
+			17. Quentin Harrington F 12 6
+			18. Anton Martinez de Velasco F 12 7
+			19. Will Yanek F 11 8
 
-				 +  9 midfielders
-				 8. Ben Matthews M 12 19
-				 9. Joseph Minder M 12 17
-				10. Dario Ramirez M 12 14
-				11. Cole Shupert M 11 10
-				12. Matteo Kalusha-Aguirre M 10 12
-				13. Kanak Masten M 10 18
-				14. Mason Anderson M 9 13
-				15. Tanner Glanton M 9 16
-				16. Alec Murphy M 9 11
+			: Junior Varsity = 19 players :
+			 1. Luke Dunlap 11 11
+			 2. Hunter Jones 11 5
+			 3. Spencer King 11 12
+			 4. Paul Lyan 11 18
+			 5. Nathan Stoddard 11 13
+			 6. Brandon Thimmesch 11 7
+			 7. Andrew Williams 11 22
+			 8. Cooper Wright 11 10
+			 9. Joseph Hawker 10 19
+			10. Ben Hoopes 10 00
+			11. Nicholai Jost-Epp 10 15
+			12. Jordan Lavin 10 6
+			13. Peyton Mallory 10 14
+			14. Max Northrop 10 8
+			15. Alex Stark 10 17
+			16. Jackson Theilen 10 00
+			17. Aidan Truong 10 3
+			18. Nicholas Davies 9 2
+			19. Abdalla Eltom 9 9
 
-				 +  3 forwards
-				17. Quentin Harrington F 12 6
-				18. Anton Martinez de Velasco F 12 7
-				19. Will Yanek F 11 8
-			*/
+			: C-Team = 20 players :
+			 1. Trey Kelly 10 21
+			 2. Guillermo Rodriguez 10 10
+			 3. Wheeler Battaglia-Davis 9 11
+			 4. Ben Cohen 9 5
+			 5. Alex Culbertson 9 3
+			 6. Evan Day 9 16
+			 7. Brevin Flory 9 8
+			 8. Ethan Gaddie 9 12
+			 9. Omar Gonzalez 9 7
+			10. Salvador Good 9 2
+			11. Sam Gordon-Ross 9 18
+			12. Carter Knox 9 4
+			13. Sam Mandigo 9 14
+			14. Ike Phillips 9 17
+			15. Chase Reed 9 15
+			16. Isaac Seybold 9 9
+			17. Daniel Sikes 9 6
+			18. Trenton Snyder 9 19 / 0
+			19. Giovanni Ventello 9 13
+			20. Adam Walther 9 20 / 00
+		*/
 
-			var ptDictionaryJSON_V = '' + // '{[{ptPlayerName: "JaMelle"}]}'
-					'{' + 
-						'[' +
-							'{' +
-								'tokenNumber: 1,' +
-								'ptJerseyNumber: "00",' +
-								'ptPlayerNickName: "Ross",' +
-								'ptPlayerFirstName: "Ross",' +
-								'ptPlayerLastName: "Brungardt",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Goal Keeper",' +
-								'ptPositionAbbreviation: "GK",' +
-								'ptStudentGradeLevel: 11' +
-							'},' +
-							'{' +
-								'tokenNumber: 2,' +
-								'ptJerseyNumber: 2,' +
-								'ptPlayerNickName: "JaMelle",' +
-								'ptPlayerFirstName: "JaMelle",' +
-								'ptPlayerLastName: "Dye",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Defender",' +
-								'ptPositionAbbreviation: "D",' +
-								'ptStudentGradeLevel: 12' +
-							'},' +
-							'{' +
-								'tokenNumber: 3,' +
-								'ptJerseyNumber: 12,' +
-								'ptPlayerNickName: "Robbie",' +
-								'ptPlayerFirstName: "Robbie",' +
-								'ptPlayerLastName: "Kleibohmer",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Defender",' +
-								'ptPositionAbbreviation: "D",' +
-								'ptStudentGradeLevel: 12' +
-							'},' +
-							'{' +
-								'tokenNumber: 4,' +
-								'ptJerseyNumber: 5,' +
-								'ptPlayerNickName: "Jack",' +
-								'ptPlayerFirstName: "Jack",' +
-								'ptPlayerLastName: "Anderson",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Defender",' +
-								'ptPositionAbbreviation: "D",' +
-								'ptStudentGradeLevel: 11' +
-							'},' +
-							'{' +
-								'tokenNumber: 5,' +
-								'ptJerseyNumber: 15,' +
-								'ptPlayerNickName: "Garrett",' +
-								'ptPlayerFirstName: "Garrett",' +
-								'ptPlayerLastName: "Hart",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Defender",' +
-								'ptPositionAbbreviation: "D",' +
-								'ptStudentGradeLevel: 11' +
-							'},' +
-							'{' +
-								'tokenNumber: 6,' +
-								'ptJerseyNumber: 3,' +
-								'ptPlayerNickName: "Trey",' +
-								'ptPlayerFirstName: "Hulse",' +
-								'ptPlayerLastName: "Hart",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Defender",' +
-								'ptPositionAbbreviation: "D",' +
-								'ptStudentGradeLevel: 11' +
-							'},' +
-							'{' +
-								'tokenNumber: 7,' +
-								'ptJerseyNumber: 4,' +
-								'ptPlayerNickName: "Gary",' +
-								'ptPlayerFirstName: "Schmidt",' +
-								'ptPlayerLastName: "Hart",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Defender",' +
-								'ptPositionAbbreviation: "D",' +
-								'ptStudentGradeLevel: 11' +
-							'},' +
-							'{' +
-								'tokenNumber: 8,' +
-								'ptJerseyNumber: 19,' +
-								'ptPlayerNickName: "Ben",' +
-								'ptPlayerFirstName: "Ben",' +
-								'ptPlayerLastName: "Matthews",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Midfielder",' +
-								'ptPositionAbbreviation: "M",' +
-								'ptStudentGradeLevel: 12' +
-							'},' +
-							'{' +
-								'tokenNumber: 9,' +
-								'ptJerseyNumber: 17,' +
-								'ptPlayerNickName: "Joey",' +
-								'ptPlayerFirstName: "Joseph",' +
-								'ptPlayerLastName: "Minder",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Midfielder",' +
-								'ptPositionAbbreviation: "M",' +
-								'ptStudentGradeLevel: 12' +
-							'},' +
-							'{' +
-								'tokenNumber: 10,' +
-								'ptJerseyNumber: 14,' +
-								'ptPlayerNickName: "Dario",' +
-								'ptPlayerFirstName: "Dario",' +
-								'ptPlayerLastName: "Ramirez",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Midfielder",' +
-								'ptPositionAbbreviation: "M",' +
-								'ptStudentGradeLevel: 12' +
-							'},' +
-							'{' +
-								'tokenNumber: 11,' +
-								'ptJerseyNumber: 10,' +
-								'ptPlayerNickName: "Cole",' +
-								'ptPlayerFirstName: "Cole",' +
-								'ptPlayerLastName: "Shupert",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Midfielder",' +
-								'ptPositionAbbreviation: "M",' +
-								'ptStudentGradeLevel: 11' +
-							'},' +
-							'{' +
-								'tokenNumber: 12,' +
-								'ptJerseyNumber: 12,' +
-								'ptPlayerNickName: "Matteo",' +
-								'ptPlayerFirstName: "Matteo",' +
-								'ptPlayerLastName: "Kalusha-Aguirre",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Midfielder",' +
-								'ptPositionAbbreviation: "M",' +
-								'ptStudentGradeLevel: 10,' +
-								'ptImage: "../ptImages/matteo.png"' +
-							'},' +
-							'{' +
-								'tokenNumber: 13,' +
-								'ptJerseyNumber: 18,' +
-								'ptPlayerNickName: "Kanak",' +
-								'ptPlayerFirstName: "Kanak",' +
-								'ptPlayerLastName: "Masten",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Midfielder",' +
-								'ptPositionAbbreviation: "M",' +
-								'ptStudentGradeLevel: 10' +
-							'},' +
-							'{' +
-								'tokenNumber: 14,' +
-								'ptJerseyNumber: 13,' +
-								'ptPlayerNickName: "Mason",' +
-								'ptPlayerFirstName: "Mason",' +
-								'ptPlayerLastName: "Anderson",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Midfielder",' +
-								'ptPositionAbbreviation: "M",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 15,' +
-								'ptJerseyNumber: 16,' +
-								'ptPlayerNickName: "Tanner",' +
-								'ptPlayerFirstName: "Tanner",' +
-								'ptPlayerLastName: "Glanton",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Midfielder",' +
-								'ptPositionAbbreviation: "M",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 16,' +
-								'ptJerseyNumber: 11,' +
-								'ptPlayerNickName: "Alec",' +
-								'ptPlayerFirstName: "Alec",' +
-								'ptPlayerLastName: "Murphy",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Midfielder",' +
-								'ptPositionAbbreviation: "M",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 17,' +
-								'ptJerseyNumber: 6,' +
-								'ptPlayerNickName: "Quentin",' +
-								'ptPlayerFirstName: "Quentin",' +
-								'ptPlayerLastName: "Harrington",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Forward",' +
-								'ptPositionAbbreviation: "F",' +
-								'ptStudentGradeLevel: 12' +
-							'},' +
-							'{' +
-								'tokenNumber: 18,' +
-								'ptJerseyNumber: 7,' +
-								'ptPlayerNickName: "Anton",' +
-								'ptPlayerFirstName: "Anton",' +
-								'ptPlayerLastName: "Martinez de Velasco",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Forward",' +
-								'ptPositionAbbreviation: "F",' +
-								'ptStudentGradeLevel: 12' +
-							'},' +
-							'{' +
-								'tokenNumber: 19,' +
-								'ptJerseyNumber: 8,' +
-								'ptPlayerNickName: "Will",' +
-								'ptPlayerFirstName: "William",' +
-								'ptPlayerLastName: "Yanek",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "Forward",' +
-								'ptPositionAbbreviation: "F",' +
-								'ptStudentGradeLevel: 11' +
-							'}' +
-						']' +
-					'}';
-
-			/*
-				: Junior Varsity = 19 players :
-
-				 1. Luke Dunlap 11 11
-				 2. Hunter Jones 11 5
-				 3. Spencer King 11 12
-				 4. Paul Lyan 11 18
-				 5. Nathan Stoddard 11 13
-				 6. Brandon Thimmesch 11 7
-				 7. Andrew Williams 11 22
-				 8. Cooper Wright 11 10
-				 9. Joseph Hawker 10 19
-				10. Ben Hoopes 10 00
-				11. Nicholai Jost-Epp 10 15
-				12. Jordan Lavin 10 6
-				13. Peyton Mallory 10 14
-				14. Max Northrop 10 8
-				15. Alex Stark 10 17
-				16. Jackson Theilen 10 00
-				17. Aidan Truong 10 3
-				18. Nicholas Davies 9 2
-				19. Abdalla Eltom 9 9
-			*/
-
-			var ptDictionaryJSON_JV = '' +
-					'{' + 
-						'[' +
-							'{' +
-								'tokenNumber: 1,' +
-								'ptJerseyNumber: 11,' +
-								'ptPlayerNickName: "Luke",' +
-								'ptPlayerFirstName: "Luke",' +
-								'ptPlayerLastName: "Dunlap",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 11' +
-							'},' +
-							'{' +
-								'tokenNumber: 2,' +
-								'ptJerseyNumber: 5,' +
-								'ptPlayerNickName: "Hunter",' +
-								'ptPlayerFirstName: "Hunter",' +
-								'ptPlayerLastName: "Jones",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 11' +
-							'},' +
-							'{' +
-								'tokenNumber: 3,' +
-								'ptJerseyNumber: 12,' +
-								'ptPlayerNickName: "Spencer",' +
-								'ptPlayerFirstName: "Spencer",' +
-								'ptPlayerLastName: "King",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 11' +
-							'},' +
-							'{' +
-								'tokenNumber: 4,' +
-								'ptJerseyNumber: 18,' +
-								'ptPlayerNickName: "Paul",' +
-								'ptPlayerFirstName: "Paul",' +
-								'ptPlayerLastName: "Lyan",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 11' +
-							'},' +
-							'{' +
-								'tokenNumber: 5,' +
-								'ptJerseyNumber: 13,' +
-								'ptPlayerNickName: "Nathan",' +
-								'ptPlayerFirstName: "Nathan",' +
-								'ptPlayerLastName: "Stoddard",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 11' +
-							'},' +
-							'{' +
-								'tokenNumber: 6,' +
-								'ptJerseyNumber: 7,' +
-								'ptPlayerNickName: "Brandon",' +
-								'ptPlayerFirstName: "Brandon",' +
-								'ptPlayerLastName: "Thimmesch",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 11' +
-							'},' +
-							'{' +
-								'tokenNumber: 7,' +
-								'ptJerseyNumber: 22,' +
-								'ptPlayerNickName: "Drew",' +
-								'ptPlayerFirstName: "Andrew",' +
-								'ptPlayerLastName: "Williams",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 11' +
-							'},' +
-							'{' +
-								'tokenNumber: 8,' +
-								'ptJerseyNumber: 10,' +
-								'ptPlayerNickName: "Cooper",' +
-								'ptPlayerFirstName: "Cooper",' +
-								'ptPlayerLastName: "Wright",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 11' +
-							'},' +
-							'{' +
-								'tokenNumber: 9,' +
-								'ptJerseyNumber: 19,' +
-								'ptPlayerNickName: "Joe",' +
-								'ptPlayerFirstName: "Joseph",' +
-								'ptPlayerLastName: "Hawker",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 10' +
-							'},' +
-							'{' +
-								'tokenNumber: 10,' +
-								'ptJerseyNumber: "00",' +
-								'ptPlayerNickName: "Ben",' +
-								'ptPlayerFirstName: "Benjiman",' +
-								'ptPlayerLastName: "Hoopes",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 10' +
-							'},' +
-							'{' +
-								'tokenNumber: 11,' +
-								'ptJerseyNumber: 15,' +
-								'ptPlayerNickName: "Nicholai",' +
-								'ptPlayerFirstName: "Nicholai",' +
-								'ptPlayerLastName: "Jost-Epp",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 10' +
-							'},' +
-							'{' +
-								'tokenNumber: 12,' +
-								'ptJerseyNumber: 6,' +
-								'ptPlayerNickName: "Jordan",' +
-								'ptPlayerFirstName: "Jordan",' +
-								'ptPlayerLastName: "Lavin",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 10' +
-							'},' +
-							'{' +
-								'tokenNumber: 13,' +
-								'ptJerseyNumber: 14,' +
-								'ptPlayerNickName: "Peyton",' +
-								'ptPlayerFirstName: "Peyton",' +
-								'ptPlayerLastName: "Mallory",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 10' +
-							'},' +
-							'{' +
-								'tokenNumber: 14,' +
-								'ptJerseyNumber: 8,' +
-								'ptPlayerNickName: "Max",' +
-								'ptPlayerFirstName: "Max",' +
-								'ptPlayerLastName: "Northrop",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 10' +
-							'},' +
-							'{' +
-								'tokenNumber: 15,' +
-								'ptJerseyNumber: 17,' +
-								'ptPlayerNickName: "Alex",' +
-								'ptPlayerFirstName: "Alex",' +
-								'ptPlayerLastName: "Stark",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 10' +
-							'},' +
-							'{' +
-								'tokenNumber: 16,' +
-								'ptJerseyNumber: "00",' +
-								'ptPlayerNickName: "Jackson",' +
-								'ptPlayerFirstName: "Jackson",' +
-								'ptPlayerLastName: "Theilen",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 10' +
-							'},' +
-							'{' +
-								'tokenNumber: 17,' +
-								'ptJerseyNumber: 3,' +
-								'ptPlayerNickName: "Aidan",' +
-								'ptPlayerFirstName: "Aidan",' +
-								'ptPlayerLastName: "Truong",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 10' +
-							'},' +
-							'{' +
-								'tokenNumber: 18,' +
-								'ptJerseyNumber: 2,' +
-								'ptPlayerNickName: "Nick",' +
-								'ptPlayerFirstName: "Nicholas",' +
-								'ptPlayerLastName: "Davies",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 19,' +
-								'ptJerseyNumber: 9,' +
-								'ptPlayerNickName: "Abdalla",' +
-								'ptPlayerFirstName: "Abdalla",' +
-								'ptPlayerLastName: "Eltom",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'}' +
-						']' +
-					'}';
-
-			/*
-				: C-Team = 20 players :
-
-				 1. Trey Kelly 10 21
-				 2. Guillermo Rodriguez 10 10
-				 3. Wheeler Battaglia-Davis 9 11
-				 4. Ben Cohen 9 5
-				 5. Alex Culbertson 9 3
-				 6. Evan Day 9 16
-				 7. Brevin Flory 9 8
-				 8. Ethan Gaddie 9 12
-				 9. Omar Gonzalez 9 7
-				10. Salvador Good 9 2
-				11. Sam Gordon-Ross 9 18
-				12. Carter Knox 9 4
-				13. Sam Mandigo 9 14
-				14. Ike Phillips 9 17
-				15. Chase Reed 9 15
-				16. Isaac Seybold 9 9
-				17. Daniel Sikes 9 6
-				18. Trenton Snyder 9 19 / 0
-				19. Giovanni Ventello 9 13
-				20. Adam Walther 9 20 / 00
-			*/
-
-			var ptDictionaryJSON_CT = '' +
-					'{' + 
-						'[' +
-							'{' +
-								'tokenNumber: 1,' +
-								'ptJerseyNumber: 21,' +
-								'ptPlayerNickName: "Trey",' +
-								'ptPlayerFirstName: "Trey",' +
-								'ptPlayerLastName: "Kelly",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 10' +
-							'},' +
-							'{' +
-								'tokenNumber: 2,' +
-								'ptJerseyNumber: 10,' +
-								'ptPlayerNickName: "Guillermo",' +
-								'ptPlayerFirstName: "Guillermo",' +
-								'ptPlayerLastName: "Rodriguez",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 10' +
-							'},' +
-							'{' +
-								'tokenNumber: 3,' +
-								'ptJerseyNumber: 11,' +
-								'ptPlayerNickName: "Wheeler",' +
-								'ptPlayerFirstName: "Wheeler",' +
-								'ptPlayerLastName: "Battaglia-Davis",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 4,' +
-								'ptJerseyNumber: 5,' +
-								'ptPlayerNickName: "Ben",' +
-								'ptPlayerFirstName: "Ben",' +
-								'ptPlayerLastName: "Cohen",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 5,' +
-								'ptJerseyNumber: 3,' +
-								'ptPlayerNickName: "Alex",' +
-								'ptPlayerFirstName: "Alex",' +
-								'ptPlayerLastName: "Culbertson",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 6,' +
-								'ptJerseyNumber: 16,' +
-								'ptPlayerNickName: "Evan",' +
-								'ptPlayerFirstName: "Evan",' +
-								'ptPlayerLastName: "Day",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 7,' +
-								'ptJerseyNumber: 8,' +
-								'ptPlayerNickName: "Brevin",' +
-								'ptPlayerFirstName: "Brevin",' +
-								'ptPlayerLastName: "Flory",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 8,' +
-								'ptJerseyNumber: 12,' +
-								'ptPlayerNickName: "Ethan",' +
-								'ptPlayerFirstName: "Ethan",' +
-								'ptPlayerLastName: "Gaddie",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 9,' +
-								'ptJerseyNumber: 7,' +
-								'ptPlayerNickName: "Omar",' +
-								'ptPlayerFirstName: "Omar",' +
-								'ptPlayerLastName: "Gonzalez",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 10,' +
-								'ptJerseyNumber: 2,' +
-								'ptPlayerNickName: "Salvador",' +
-								'ptPlayerFirstName: "Salvador",' +
-								'ptPlayerLastName: "Good",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 11,' +
-								'ptJerseyNumber: 18,' +
-								'ptPlayerNickName: "Sam",' +
-								'ptPlayerFirstName: "Sam G-R",' +
-								'ptPlayerLastName: "Gordon-Ross ",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 12,' +
-								'ptJerseyNumber: 4,' +
-								'ptPlayerNickName: "Carter",' +
-								'ptPlayerFirstName: "Carter",' +
-								'ptPlayerLastName: "Knox",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 13,' +
-								'ptJerseyNumber: 14,' +
-								'ptPlayerNickName: "Sam M",' +
-								'ptPlayerFirstName: "Sam",' +
-								'ptPlayerLastName: "",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 14,' +
-								'ptJerseyNumber: 17,' +
-								'ptPlayerNickName: "Ike",' +
-								'ptPlayerFirstName: "Ike",' +
-								'ptPlayerLastName: "Phillips",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 15,' +
-								'ptJerseyNumber: 15,' +
-								'ptPlayerNickName: "Chase",' +
-								'ptPlayerFirstName: "Chase",' +
-								'ptPlayerLastName: "Reed",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 16,' +
-								'ptJerseyNumber: 9,' +
-								'ptPlayerNickName: "Isaac",' +
-								'ptPlayerFirstName: "Isaac",' +
-								'ptPlayerLastName: "Seybold",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 17,' +
-								'ptJerseyNumber: 6,' +
-								'ptPlayerNickName: "Daniel",' +
-								'ptPlayerFirstName: "Daniel",' +
-								'ptPlayerLastName: "Sikes",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 18,' +
-								'ptJerseyNumber: 19,' + // 0
-								'ptPlayerNickName: "Trenton",' +
-								'ptPlayerFirstName: "Trenton",' +
-								'ptPlayerLastName: "Snyder",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 19,' +
-								'ptJerseyNumber: 13,' +
-								'ptPlayerNickName: "Giovanni",' +
-								'ptPlayerFirstName: "Giovanni",' +
-								'ptPlayerLastName: "Ventello",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'},' +
-							'{' +
-								'tokenNumber: 20,' +
-								'ptJerseyNumber: 20,' + // "00"
-								'ptPlayerNickName: "Adam",' +
-								'ptPlayerFirstName: "Adam",' +
-								'ptPlayerLastName: "Walther",' +
-								'ptPositionNumber: "null",' +
-								'ptPositionName: "null",' +
-								'ptPositionAbbreviation: "A",' +
-								'ptStudentGradeLevel: 9' +
-							'}' +
-						']' +
-					'}';
-
-			var ptDictionaryJSON = ptDictionaryJSON_V;
-			// ptDictionaryJSON = ptDictionaryJSON_JV;
-			ptDictionaryJSON = ptDictionaryJSON_CT;
+		function pushPT (nptNumber, teamDictionary)
+		{
 
 			fetchXML
 			(
@@ -1540,20 +893,44 @@
 				addNewPT,
 				nptNumber,
 				72,
-				ptDictionaryJSON
+				teamDictionary.ptArray
 			);
 		};
+
+		function parseJSON (response, teamDictionary)
+		{
+			// Parse JSON string into object.
+			var td = JSON.parse(response);
+			teamDictionary.teamName = td.teamName;
+			teamDictionary.ptArray = td.ptArray;
+		}
+
+		function getTeamDictionary (teamPath)
+		{
+			console.log("teamPath", teamPath);
+			var splitPath = teamPath.split('/');
+			console.log("splitPath", splitPath);
+			var teamPage = splitPath[splitPath.length - 1];
+			console.log("teamPage", teamPage);
+			var teamSubDir = splitPath[splitPath.length - 2];
+			console.log("teamSubDir", teamSubDir);
+
+			// Fetch the team.json
+			var teamDictionary = JSON.parse('{}');
+			fetchJSON(teamSubDir, parseJSON, teamDictionary);
+		}
 
 		function popPT (nptNumber)
 		{
 		}
 
-		function addPlayerTokens(numPlayers)
+		function addPlayerTokens(teamDictionary)
 		{
+			var numPlayers = teamDictionary.ptArray.length;
 			var next;
 			for (next = 1; next <= numPlayers; next++)
 			{
-				pushPT(next);
+				pushPT(next, teamDictionary);
 			}
 		}
 	]]>
@@ -1563,7 +940,8 @@
 	<![CDATA[
 		window.onload = function ()
 		{
-			addPlayerTokens(20);
+			var teamPath = window.location.pathname;
+			getTeamDictionary(teamPath);
 		}
 
 		/*

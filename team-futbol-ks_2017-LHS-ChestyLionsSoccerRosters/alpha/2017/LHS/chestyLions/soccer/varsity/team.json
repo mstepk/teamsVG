@@ -1,0 +1,216 @@
+{
+	"teamName": "LHS Chesty Lions Soccer: Varsity 2017",
+	"ptArray":
+	[
+		{
+			"tokenNumber": 1,
+			"ptJerseyNumber": "00",
+			"ptPlayerNickName": "Ross",
+			"ptPlayerFirstName": "Ross",
+			"ptPlayerLastName": "Brungardt",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Goal Keeper",
+			"ptPositionAbbreviation": "GK",
+			"ptStudentGradeLevel": 11
+		},
+		{
+			"tokenNumber": 2,
+			"ptJerseyNumber": 2,
+			"ptPlayerNickName": "JaMelle",
+			"ptPlayerFirstName": "JaMelle",
+			"ptPlayerLastName": "Dye",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Defender",
+			"ptPositionAbbreviation": "D",
+			"ptStudentGradeLevel": 12
+		},
+		{
+			"tokenNumber": 3,
+			"ptJerseyNumber": 12,
+			"ptPlayerNickName": "Robbie",
+			"ptPlayerFirstName": "Robbie",
+			"ptPlayerLastName": "Kleibohmer",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Defender",
+			"ptPositionAbbreviation": "D",
+			"ptStudentGradeLevel": 12
+		},
+		{
+			"tokenNumber": 4,
+			"ptJerseyNumber": 5,
+			"ptPlayerNickName": "Jack",
+			"ptPlayerFirstName": "Jack",
+			"ptPlayerLastName": "Anderson",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Defender",
+			"ptPositionAbbreviation": "D",
+			"ptStudentGradeLevel": 11
+		},
+		{
+			"tokenNumber": 5,
+			"ptJerseyNumber": 15,
+			"ptPlayerNickName": "Garrett",
+			"ptPlayerFirstName": "Garrett",
+			"ptPlayerLastName": "Hart",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Defender",
+			"ptPositionAbbreviation": "D",
+			"ptStudentGradeLevel": 11
+		},
+		{
+			"tokenNumber": 6,
+			"ptJerseyNumber": 3,
+			"ptPlayerNickName": "Trey",
+			"ptPlayerFirstName": "Hulse",
+			"ptPlayerLastName": "Hart",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Defender",
+			"ptPositionAbbreviation": "D",
+			"ptStudentGradeLevel": 11
+		},
+		{
+			"tokenNumber": 7,
+			"ptJerseyNumber": 4,
+			"ptPlayerNickName": "Gary",
+			"ptPlayerFirstName": "Schmidt",
+			"ptPlayerLastName": "Hart",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Defender",
+			"ptPositionAbbreviation": "D",
+			"ptStudentGradeLevel": 11
+		},
+		{
+			"tokenNumber": 8,
+			"ptJerseyNumber": 19,
+			"ptPlayerNickName": "Ben",
+			"ptPlayerFirstName": "Ben",
+			"ptPlayerLastName": "Matthews",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Midfielder",
+			"ptPositionAbbreviation": "M",
+			"ptStudentGradeLevel": 12
+		},
+		{
+			"tokenNumber": 9,
+			"ptJerseyNumber": 17,
+			"ptPlayerNickName": "Joey",
+			"ptPlayerFirstName": "Joseph",
+			"ptPlayerLastName": "Minder",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Midfielder",
+			"ptPositionAbbreviation": "M",
+			"ptStudentGradeLevel": 12
+		},
+		{
+			"tokenNumber": 10,
+			"ptJerseyNumber": 14,
+			"ptPlayerNickName": "Dario",
+			"ptPlayerFirstName": "Dario",
+			"ptPlayerLastName": "Ramirez",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Midfielder",
+			"ptPositionAbbreviation": "M",
+			"ptStudentGradeLevel": 12
+		},
+		{
+			"tokenNumber": 11,
+			"ptJerseyNumber": 10,
+			"ptPlayerNickName": "Cole",
+			"ptPlayerFirstName": "Cole",
+			"ptPlayerLastName": "Shupert",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Midfielder",
+			"ptPositionAbbreviation": "M",
+			"ptStudentGradeLevel": 11
+		},
+		{
+			"tokenNumber": 12,
+			"ptJerseyNumber": 12,
+			"ptPlayerNickName": "Matteo",
+			"ptPlayerFirstName": "Matteo",
+			"ptPlayerLastName": "Kalusha-Aguirre",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Midfielder",
+			"ptPositionAbbreviation": "M",
+			"ptStudentGradeLevel": 10,
+			"ptImage": "../ptImages/matteo.png"
+		},
+		{
+			"tokenNumber": 13,
+			"ptJerseyNumber": 18,
+			"ptPlayerNickName": "Kanak",
+			"ptPlayerFirstName": "Kanak",
+			"ptPlayerLastName": "Masten",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Midfielder",
+			"ptPositionAbbreviation": "M",
+			"ptStudentGradeLevel": 10
+		},
+		{
+			"tokenNumber": 14,
+			"ptJerseyNumber": 13,
+			"ptPlayerNickName": "Mason",
+			"ptPlayerFirstName": "Mason",
+			"ptPlayerLastName": "Anderson",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Midfielder",
+			"ptPositionAbbreviation": "M",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 15,
+			"ptJerseyNumber": 16,
+			"ptPlayerNickName": "Tanner",
+			"ptPlayerFirstName": "Tanner",
+			"ptPlayerLastName": "Glanton",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Midfielder",
+			"ptPositionAbbreviation": "M",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 16,
+			"ptJerseyNumber": 11,
+			"ptPlayerNickName": "Alec",
+			"ptPlayerFirstName": "Alec",
+			"ptPlayerLastName": "Murphy",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Midfielder",
+			"ptPositionAbbreviation": "M",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 17,
+			"ptJerseyNumber": 6,
+			"ptPlayerNickName": "Quentin",
+			"ptPlayerFirstName": "Quentin",
+			"ptPlayerLastName": "Harrington",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Forward",
+			"ptPositionAbbreviation": "F",
+			"ptStudentGradeLevel": 12
+		},
+		{
+			"tokenNumber": 18,
+			"ptJerseyNumber": 7,
+			"ptPlayerNickName": "Anton",
+			"ptPlayerFirstName": "Anton",
+			"ptPlayerLastName": "Martinez de Velasco",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Forward",
+			"ptPositionAbbreviation": "F",
+			"ptStudentGradeLevel": 12
+		},
+		{
+			"tokenNumber": 19,
+			"ptJerseyNumber": 8,
+			"ptPlayerNickName": "Will",
+			"ptPlayerFirstName": "William",
+			"ptPlayerLastName": "Yanek",
+			"ptPositionNumber": "null",
+			"ptPositionName": "Forward",
+			"ptPositionAbbreviation": "F",
+			"ptStudentGradeLevel": 11
+		}
+	]
+}

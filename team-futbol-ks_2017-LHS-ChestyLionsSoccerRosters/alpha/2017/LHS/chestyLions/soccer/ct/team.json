@@ -1,0 +1,226 @@
+{
+	"teamName": "LHS Chesty Lions Soccer: C-Team 2017",
+	"ptArray":
+	[
+		{
+			"tokenNumber": 1,
+			"ptJerseyNumber": 21,
+			"ptPlayerNickName": "Trey",
+			"ptPlayerFirstName": "Trey",
+			"ptPlayerLastName": "Kelly",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 10
+		},
+		{
+			"tokenNumber": 2,
+			"ptJerseyNumber": 10,
+			"ptPlayerNickName": "Guillermo",
+			"ptPlayerFirstName": "Guillermo",
+			"ptPlayerLastName": "Rodriguez",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 10
+		},
+		{
+			"tokenNumber": 3,
+			"ptJerseyNumber": 11,
+			"ptPlayerNickName": "Wheeler",
+			"ptPlayerFirstName": "Wheeler",
+			"ptPlayerLastName": "Battaglia-Davis",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 4,
+			"ptJerseyNumber": 5,
+			"ptPlayerNickName": "Ben",
+			"ptPlayerFirstName": "Ben",
+			"ptPlayerLastName": "Cohen",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 5,
+			"ptJerseyNumber": 3,
+			"ptPlayerNickName": "Alex",
+			"ptPlayerFirstName": "Alex",
+			"ptPlayerLastName": "Culbertson",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 6,
+			"ptJerseyNumber": 16,
+			"ptPlayerNickName": "Evan",
+			"ptPlayerFirstName": "Evan",
+			"ptPlayerLastName": "Day",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 7,
+			"ptJerseyNumber": 8,
+			"ptPlayerNickName": "Brevin",
+			"ptPlayerFirstName": "Brevin",
+			"ptPlayerLastName": "Flory",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 8,
+			"ptJerseyNumber": 12,
+			"ptPlayerNickName": "Ethan",
+			"ptPlayerFirstName": "Ethan",
+			"ptPlayerLastName": "Gaddie",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 9,
+			"ptJerseyNumber": 7,
+			"ptPlayerNickName": "Omar",
+			"ptPlayerFirstName": "Omar",
+			"ptPlayerLastName": "Gonzalez",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 10,
+			"ptJerseyNumber": 2,
+			"ptPlayerNickName": "Salvador",
+			"ptPlayerFirstName": "Salvador",
+			"ptPlayerLastName": "Good",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 11,
+			"ptJerseyNumber": 18,
+			"ptPlayerNickName": "Sam",
+			"ptPlayerFirstName": "Sam G-R",
+			"ptPlayerLastName": "Gordon-Ross ",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 12,
+			"ptJerseyNumber": 4,
+			"ptPlayerNickName": "Carter",
+			"ptPlayerFirstName": "Carter",
+			"ptPlayerLastName": "Knox",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 13,
+			"ptJerseyNumber": 14,
+			"ptPlayerNickName": "Sam M",
+			"ptPlayerFirstName": "Sam",
+			"ptPlayerLastName": "",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 14,
+			"ptJerseyNumber": 17,
+			"ptPlayerNickName": "Ike",
+			"ptPlayerFirstName": "Ike",
+			"ptPlayerLastName": "Phillips",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 15,
+			"ptJerseyNumber": 15,
+			"ptPlayerNickName": "Chase",
+			"ptPlayerFirstName": "Chase",
+			"ptPlayerLastName": "Reed",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 16,
+			"ptJerseyNumber": 9,
+			"ptPlayerNickName": "Isaac",
+			"ptPlayerFirstName": "Isaac",
+			"ptPlayerLastName": "Seybold",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 17,
+			"ptJerseyNumber": 6,
+			"ptPlayerNickName": "Daniel",
+			"ptPlayerFirstName": "Daniel",
+			"ptPlayerLastName": "Sikes",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 18,
+			"ptJerseyNumber": 19,
+			"ptPlayerNickName": "Trenton",
+			"ptPlayerFirstName": "Trenton",
+			"ptPlayerLastName": "Snyder",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 19,
+			"ptJerseyNumber": 13,
+			"ptPlayerNickName": "Giovanni",
+			"ptPlayerFirstName": "Giovanni",
+			"ptPlayerLastName": "Ventello",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		},
+		{
+			"tokenNumber": 20,
+			"ptJerseyNumber": 20,
+			"ptPlayerNickName": "Adam",
+			"ptPlayerFirstName": "Adam",
+			"ptPlayerLastName": "Walther",
+			"ptPositionNumber": "null",
+			"ptPositionName": "null",
+			"ptPositionAbbreviation": "A",
+			"ptStudentGradeLevel": 9
+		}
+	]
+}
