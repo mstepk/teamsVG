@@ -342,106 +342,166 @@
 				stroke-width = "4px"
 			>LHS</text>
 		</a>
-		<a xlink:href = "https://goo.gl/photos/tJrDw6doFo7PJuPL8">
-			<circle
-				cx = "635px"
-				cy = "495px"
-				r = "12px"
-				fill = "#222"
-				stroke = "#DDD"
-				stroke-width = "2px"
-				transform = "translate(0, -48)"
-			/>
-			<text
-				x = "635px"
-				y = "499px"
-				font-family = "sans-serif"
-				font-size = "10px"
-				fill = "#DDD"
-				text-anchor = "middle"
-				transform = "translate(0, -48)"
-			>G0</text>
-		</a>
-		<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157685729584933">
-			<circle
-				cx = "635px"
-				cy = "495px"
-				r = "12px"
-				fill = "#222"
-				stroke = "#DDD"
-				stroke-width = "2px"
-				transform = "translate(-48, 48)"
-			/>
-			<text
-				x = "635px"
-				y = "499px"
-				font-family = "sans-serif"
-				font-size = "10px"
-				fill = "#DDD"
-				text-anchor = "middle"
-				transform = "translate(-48, 48)"
-			>P1</text>
-		</a>
-		<a xlink:href = "https://youtu.be/RwcCtOFvBsc">
-			<circle
-				cx = "635px"
-				cy = "495px"
-				r = "12px"
-				fill = "#222"
-				stroke = "#DDD"
-				stroke-width = "2px"
-				transform = "translate(-22, 66)"
-			/>
-			<text
-				x = "635px"
-				y = "499px"
-				font-family = "sans-serif"
-				font-size = "10px"
-				fill = "#DDD"
-				text-anchor = "middle"
-				transform = "translate(-22, 66)"
-			>V1</text>
-		</a>
-		<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157688357102205">
-			<circle
-				cx = "635px"
-				cy = "495px"
-				r = "12px"
-				fill = "#222"
-				stroke = "#DDD"
-				stroke-width = "2px"
-				transform = "translate(48, 48)"
-			/>
-			<text
-				x = "635px"
-				y = "499px"
-				font-family = "sans-serif"
-				font-size = "10px"
-				fill = "#DDD"
-				text-anchor = "middle"
-				transform = "translate(48, 48)"
-			>P2</text>
-		</a>
-		<a xlink:href = "https://youtu.be/LmGgKDN9vBw">
-			<circle
-				cx = "635px"
-				cy = "495px"
-				r = "12px"
-				fill = "#222"
-				stroke = "#DDD"
-				stroke-width = "2px"
-				transform = "translate(22, 66)"
-			/>
-			<text
-				x = "635px"
-				y = "499px"
-				font-family = "sans-serif"
-				font-size = "10px"
-				fill = "#DDD"
-				text-anchor = "middle"
-				transform = "translate(22, 66)"
-			>V2</text>
-		</a>
+
+		<g>
+			<a xlink:href = "https://goo.gl/photos/tJrDw6doFo7PJuPL8">
+				<!--
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					x = "635px"
+					y = "499px"
+					transform = "translate(0, -48)"
+				-->
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "18px"
+					fill = "#222"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, -58)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "14px"
+					fill = "#DDD"
+					text-anchor = "middle"
+					transform = "translate(0, -57)"
+				>G0</text>
+			</a>
+		</g>
+
+		<g transform = "translate(-32, 32)"> <!-- MHS .vs. LHS -->
+			<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157685729584933">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#222"
+					stroke = "yellow"
+					stroke-width = "2px"
+					transform = "translate(-48, 48)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#DDD"
+					text-anchor = "middle"
+					transform = "translate(-48, 48)"
+				>P1</text>
+			</a>
+			<a xlink:href = "https://youtu.be/RwcCtOFvBsc">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#222"
+					stroke = "yellow"
+					stroke-width = "2px"
+					transform = "translate(-22, 66)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#DDD"
+					text-anchor = "middle"
+					transform = "translate(-22, 66)"
+				>V1</text>
+			</a>
+		</g>
+
+		<g transform = "translate(32, 32)"> <!-- THS .vs. LHS -->
+			<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157688357102205">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#222"
+					stroke = "#2F4"
+					stroke-width = "2px"
+					transform = "translate(48, 48)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#DDD"
+					text-anchor = "middle"
+					transform = "translate(48, 48)"
+				>P2</text>
+			</a>
+			<a xlink:href = "https://youtu.be/LmGgKDN9vBw">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#222"
+					stroke = "#2F4"
+					stroke-width = "2px"
+					transform = "translate(22, 66)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#DDD"
+					text-anchor = "middle"
+					transform = "translate(22, 66)"
+				>V2</text>
+			</a>
+		</g>
+
+		<g transform = "translate(0, 0)"> <!-- LHS .vs. WRHS -->
+			<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157686468592434">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#222"
+					stroke = "red"
+					stroke-width = "2px"
+					transform = "translate(-44, 58)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#DDD"
+					text-anchor = "middle"
+					transform = "translate(-44, 58)"
+				>P3</text>
+			</a>
+			<a xlink:href = "https://youtu.be/oFSCngkckqs">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#222"
+					stroke = "red"
+					stroke-width = "2px"
+					transform = "translate(44, 58)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#DDD"
+					text-anchor = "middle"
+					transform = "translate(44, 58)"
+				>V3</text>
+			</a>
+		</g>
 	</g>
 
 	<use
@@ -683,6 +743,59 @@
 			stroke = "white" stroke-width = "16px"
 		/>
 	</g>
+
+	<!--
+		http://www.clker.com/cliparts/j/k/X/T/Q/A/lion-footprint-md.png
+		http://www.clker.com/clipart-lion-footprint.html
+		http://www.clker.com/cliparts/j/k/X/T/Q/A/lion-footprint.svg
+		http://www.clker.com/clipart-lions-paw-print.html
+		http://www.clker.com/disclaimer.html
+			x = "520px"
+			y = "337px"
+			x = "600px"
+			y = "450px"
+			x = "520px"
+			y = "598px"
+	-->
+	<a xlink:href = "lion-footprint-md.png">
+		<image 
+			x = "519px"
+			y = "620px"
+			width = "231px"
+			height = "297px"
+			xlink:href = "lion-footprint-md.png"
+			opacity = "0.35"
+		>
+			<title>Lion Footprint clip</title>
+			<desc>SHARED BY: OCAL 05-05-2011</desc>
+		</image>
+	</a>
+
+	<!--
+                <pattern
+                        id = "ptImage"
+                        patternUnits = "userSpaceOnUse"
+                        width = "72px" height="72px"
+                >
+                        <image
+                                id = "ptNativeImage"
+                                xlink:href = "matteo_croppedTo_393x393_headShotCaracas.png"
+                                x = "0px" y = "0px"
+                                width = "72px" height="72px"
+                                opacity = "0.9"
+                        />
+                </pattern>
+
+                <g id = "ptUnderGuide">
+                        <circle
+                                cx = "36px"
+                                cy = "36px"
+                                r = "30px"
+                                fill = "url(#ptImage)"
+                                stroke = "#000"
+                                stroke-width = "3px"
+                        />
+	-->
 
 	<!--
 	<use
