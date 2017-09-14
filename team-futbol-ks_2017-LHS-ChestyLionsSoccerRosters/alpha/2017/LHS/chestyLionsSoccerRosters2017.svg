@@ -148,7 +148,7 @@
 		</radialGradient>
 
 		<g id = "playerToken01">
-			<use xlink:href = "playerToken.svg#playerToken00" x = "0" y= "0" />
+			<use xlink:href = "chestyLions/soccer/playerToken.svg#playerToken00" x = "0" y= "0" />
 		</g>
 
 		<g id = "teamLabel" >
@@ -547,6 +547,51 @@
 			>Varsity</text>
 		</a>
 	</g>
+	<g
+		id = "googlPhotosVarsityButton"
+		transform = "translate(-185, -143)"
+	>
+		<!--
+				r = "32px"
+				y = "210px"
+				y = "224px"
+		transform = "translate(-185, -143)"
+		-->
+		<a xlink:href = "https://photos.app.goo.gl/4vF2z8YmFHJDnim52">
+			<circle
+				cx = "1500px"
+				cy = "212px"
+				r = "42px"
+				fill = "#222"
+				stroke = "#DDD"
+				stroke-width = "4px"
+			/>
+			<text
+				x = "1500px"
+				y = "202px"
+				font-family = "sans-serif"
+				font-size = "16px"
+				text-anchor = "middle"
+				fill = "white"
+			>Google</text>
+			<text
+				x = "1500px"
+				y = "218px"
+				font-family = "sans-serif"
+				font-size = "16px"
+				text-anchor = "middle"
+				fill = "white"
+			>Photos</text>
+			<text
+				x = "1500px"
+				y = "234px"
+				font-family = "sans-serif"
+				font-size = "16px"
+				text-anchor = "middle"
+				fill = "white"
+			>Varsity</text>
+		</a>
+	</g>
 
 	<g id = "juniorVarsityButton">
 		<!-- Half Field B Half-HD -->
@@ -576,6 +621,45 @@
 			>JV</text>
 		</a>
 	</g>
+	<g
+		id = "googlPhotosJuniorVarsityButton"
+		transform = "translate(-185, -143)"
+	>
+		<a xlink:href = "https://photos.app.goo.gl/LvaySvqvS8GonB1y2">
+			<circle
+				cx = "1500px"
+				cy = "528px"
+				r = "42px"
+				fill = "#222"
+				stroke = "#DDD"
+				stroke-width = "4px"
+			/>
+			<text
+				x = "1500px"
+				y = "518px"
+				font-family = "sans-serif"
+				font-size = "16px"
+				text-anchor = "middle"
+				fill = "white"
+			>Google</text>
+			<text
+				x = "1500px"
+				y = "534px"
+				font-family = "sans-serif"
+				font-size = "16px"
+				text-anchor = "middle"
+				fill = "white"
+			>Photos</text>
+			<text
+				x = "1500px"
+				y = "550px"
+				font-family = "sans-serif"
+				font-size = "16px"
+				text-anchor = "middle"
+				fill = "white"
+			>JV</text>
+		</a>
+	</g>
 
 	<g id = "cTeamButton">
 		<!-- Half Field B-Alone Half-HD -->
@@ -602,6 +686,45 @@
 				font-weight = "900"
 				stroke = "#111"
 				stroke-width = "1px"
+			>C-Team</text>
+		</a>
+	</g>
+	<g
+		id = "googlPhotosJuniorVarsityButton"
+		transform = "translate(-185, -143)"
+	>
+		<a xlink:href = "https://photos.app.goo.gl/Rh343hOpePVpHQvl1">
+			<circle
+				cx = "1500px"
+				cy = "843px"
+				r = "42px"
+				fill = "#222"
+				stroke = "#DDD"
+				stroke-width = "4px"
+			/>
+			<text
+				x = "1500px"
+				y = "833px"
+				font-family = "sans-serif"
+				font-size = "16px"
+				text-anchor = "middle"
+				fill = "white"
+			>Google</text>
+			<text
+				x = "1500px"
+				y = "849px"
+				font-family = "sans-serif"
+				font-size = "16px"
+				text-anchor = "middle"
+				fill = "white"
+			>Photos</text>
+			<text
+				x = "1500px"
+				y = "865px"
+				font-family = "sans-serif"
+				font-size = "16px"
+				text-anchor = "middle"
+				fill = "white"
 			>C-Team</text>
 		</a>
 	</g>
@@ -637,7 +760,7 @@
 	</use>
 
 	<use 
-		xlink:href = "playerToken.svg#playerToken00" 
+		xlink:href = "chestyLions/soccer/playerToken.svg#playerToken00" 
 		x = "72" 
 		y = "72" 
 		id = "player02"
