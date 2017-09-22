@@ -90,7 +90,12 @@
 			</g>
 
 
+			<!--
 			<g style = "display: none;">
+					fill = "black"
+					stroke = "#000"
+			-->
+			<g>
 				<!-- Full Field Landscape Full-HD (10-px = 1-meter, 1-px = 0.1-meter = 10-cm) -->
 				<rect
 					x = "35px"
@@ -99,13 +104,13 @@
 					height = "900px"
 					rx = "0px"
 					ry = "0px"
-					fill = "black"
-					stroke = "#000"
-					stroke-width = "1px"
+					fill = "#390"
+					stroke = "white"
+					stroke-width = "3px"
 				/>
 				<text
-					x = "600px"
-					y = "450px"
+					x = "635px"
+					y = "495px"
 					font-family = "sans-serif"
 					font-size = "72px"
 					fill = "#111"
@@ -220,7 +225,8 @@
 				</a>
 			</g>
 
-			<g>
+			<!-- <g> -->
+			<g display = "none">
 				<!-- Half Field A Full-HD -->
 				<rect
 					x = "35px"
@@ -244,7 +250,8 @@
 			</g>
 		
 			<!-- Half Field B Full-HD -->
-			<g>		
+			<!-- <g> -->
+			<g display = "none">
 				<rect
 					x = "635px"
 					y = "45px"
@@ -329,6 +336,7 @@
 			-->
 			<!-- Half-field Line -->
 			<line
+				display = "none"
 				x1 = "635px"
 				y1 = "45px"
 				x2 = "635px"
@@ -602,7 +610,9 @@
 					fill = "#111"
 				>LHS Chesty Lions Soccer</text>
 			</g>
-		
+			<!--
+				Put the title on a text-path, arcing over the claws.
+			-->	
 		
 			<!--
 				If none are correct can you list the numbers for each position?

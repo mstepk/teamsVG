@@ -151,11 +151,14 @@
 			<use xlink:href = "chestyLions/soccer/playerToken.svg#playerToken00" x = "0" y= "0" />
 		</g>
 
-		<g id = "teamLabel" >
+		<g
+			id = "teamLabel"
+			display = "none"
+		>
 			<rect
-				x = "522px"
+				x = "518px"
 				y = "10px"
-				width = "238px"
+				width = "246px"
 				height = "30px" 
 				fill = "white"
 				stroke = "black"
@@ -318,6 +321,167 @@
 	/>
 
 	<use xlink:href = "#teamLabel" />
+
+	<g
+		id = "teamLabel"
+	>
+		<rect
+			x = "495px"
+			y = "60px"
+			width = "290px"
+			height = "42px" 
+			fill = "white"
+			stroke = "black"
+			stroke-width = "2px"
+			rx = "5px"
+			ry = "5px"
+		/>
+
+		<text
+			x = "639px"
+			y = "90px"
+			text-anchor = "middle"
+			font-family = "sans-serif"
+			font-size = "28px"
+			font-variant = "small-caps"
+			font-weight = "900"
+			fill = "#111"
+		>Chesty Lions Soccer</text>
+	</g>
+
+	<!--
+		<a xlink:href = "lion-footprint.svg">
+		transform = "scale(2), translate(117, 50)"
+		transform = "scale(3), translate(12, -31)"
+	-->
+	<!--
+					id = "fullTransparencyListShapeBackdropForCentering"
+					x = "155px"
+					y = "258px"
+					width = "85px"
+					height = "65px"
+	-->
+	<g
+		id = "lionsPawBigSVG"
+		transform = "scale(2.5), translate(54, 2)"
+	> <!-- need to fix the width and height of the paw footprint, it has way to much margin/padding. -->
+		<a xlink:href = "lion-footprint.svg">
+			<image 
+				x = "0px"
+				y = "0px"
+				xlink:href = "lion-footprint.svg"
+				opacity = "0.35"
+			>
+				<title>Lion Footprint Clip SVG from CLIKR</title>
+				<desc>SHARED BY: OCAL 05-05-2011</desc>
+			</image>
+			<g id = "coachingStaffList">
+				<a xlink:href = " http://chestylionssoccer.wixsite.com/mysite">
+				<rect
+					id = "fullTransparencyListShapeBackdropForCentering"
+					x = "154px"
+					y = "244px"
+					width = "87px"
+					height = "78px"
+					fill = "green"
+					stroke = "grey"
+					stroke-width = "1px"
+					rx = "4px"
+					ry = "4px"
+					opacity = "0.0"
+				/>
+				<text
+					x = "197.5px"
+					y = "258px"
+					fill = "white"
+					font-size = "9px"
+					font-family = "sans-serif"
+				>
+					<tspan text-decoration = "underline" text-anchor = "middle">Head Coach</tspan>
+				</text>
+				<text
+					x = "197.5px"
+					y = "258px"
+					fill = "white"
+					font-size = "9px"
+					font-family = "sans-serif"
+				>
+					<tspan dy = "11px" text-anchor = "middle">Mike Murphy</tspan>
+				</text>
+				<text
+					x = "197.5px"
+					y = "288px"
+					fill = "white"
+					font-size = "9px"
+					font-family = "sans-serif"
+					font-decoration = "underline"
+				>
+					<tspan text-decoration = "underline" text-anchor = "middle">Assistant Coaches</tspan>
+				</text>
+				<text
+					x = "197.5px"
+					y = "288px"
+					fill = "white"
+					font-size = "9px"
+					font-family = "sans-serif"
+					font-decoration = "underline"
+				>
+					<tspan dy = "11px" text-anchor = "middle">Stan Rasmussen</tspan>
+				</text>
+				<text
+					x = "197.5px"
+					y = "287px"
+					fill = "white"
+					font-size = "9px"
+					font-family = "sans-serif"
+					font-decoration = "underline"
+				>
+					<tspan dy = "20px" text-anchor = "middle">Brandon Daley</tspan>
+				</text>
+				<text
+					x = "197.5px"
+					y = "287px"
+					fill = "white"
+					font-size = "9px"
+					font-family = "sans-serif"
+					font-decoration = "underline"
+				>
+					<tspan dy = "29px" text-anchor = "middle">Mike Lee</tspan>
+				</text>
+				</a>
+			</g>
+		</a>
+		<!--
+			font-family="'Lucida Grande', sans-serif"
+			x = "140px"
+			y = "260px"
+		-->
+		<!--
+		<text
+			x = "175px"
+			y = "258px"
+			fill = "white"
+			font-size = "10px"
+			font-family = "sans-serif"
+		>
+			<tspan text-decoration = "underline">Head Coach</tspan>
+			<tspan x = "175px" dy = "12px">Mike Murphy</tspan>
+		</text>
+		<text
+			x = "158px"
+			y = "287px"
+			fill = "white"
+			font-size = "10px"
+			font-family = "sans-serif"
+			font-decoration = "underline"
+		>
+			<tspan text-decoration = "underline">Assistant Coaches</tspan>
+			<tspan x = "158px" dy = "12px">Stan Rasmussen</tspan>
+			<tspan x = "158px" dy = "10px">Brandon Daley</tspan>
+			<tspan x = "158px" dy = "10px">Mike Lee</tspan>
+		</text>
+		-->
+	</g>
 
 	<!-- Center Circle -->
 	<g id = "centerCircle">
@@ -519,6 +683,7 @@
 		display = "none"
 	/>
 
+
 	<g id = "varsityButton">
 		<!-- Half Field A Half-HD -->
 		<a xlink:href = "chestyLions/soccer/varsity/fieldMAX.svg">
@@ -547,6 +712,7 @@
 			>Varsity</text>
 		</a>
 	</g>
+
 	<g
 		id = "googlPhotosVarsityButton"
 		transform = "translate(-185, -143)"
@@ -593,6 +759,7 @@
 		</a>
 	</g>
 
+
 	<g id = "juniorVarsityButton">
 		<!-- Half Field B Half-HD -->
 		<a xlink:href = "chestyLions/soccer/jv/fieldMAX.svg">
@@ -621,6 +788,7 @@
 			>JV</text>
 		</a>
 	</g>
+
 	<g
 		id = "googlPhotosJuniorVarsityButton"
 		transform = "translate(-185, -143)"
@@ -661,6 +829,7 @@
 		</a>
 	</g>
 
+
 	<g id = "cTeamButton">
 		<!-- Half Field B-Alone Half-HD -->
 		<a xlink:href = "chestyLions/soccer/ct/fieldMAX.svg">
@@ -689,8 +858,9 @@
 			>C-Team</text>
 		</a>
 	</g>
+
 	<g
-		id = "googlPhotosJuniorVarsityButton"
+		id = "googlPhotosCTeamButton"
 		transform = "translate(-185, -143)"
 	>
 		<a xlink:href = "https://photos.app.goo.gl/Rh343hOpePVpHQvl1">
@@ -728,6 +898,7 @@
 			>C-Team</text>
 		</a>
 	</g>
+
 
 	<!-- 01 -->
 	<!-- 55 -->
@@ -868,6 +1039,29 @@
 	</g>
 
 	<!--
+		From fieldOfView, full-HD MAX field dims:
+                                        x = "35px"
+                                        y = "45px"
+                                        width = "1200px"
+                                        height = "900px"
+	-->
+
+	<g id = "lionsPawSVG" display = "none">
+		<a xlink:href = "lion-footprint.svg">
+			<image 
+				x = "435px"
+				y = "570px"
+				xlink:href = "lion-footprint.svg"
+				opacity = "0.35"
+			>
+				<title>Lion Footprint Clip SVG from CLIKR</title>
+				<desc>SHARED BY: OCAL 05-05-2011</desc>
+			</image>
+		</a>
+	</g>
+
+	<g id = "lionsPawMidPNG" display = "none">
+	<!--
 		http://www.clker.com/cliparts/j/k/X/T/Q/A/lion-footprint-md.png
 		http://www.clker.com/clipart-lion-footprint.html
 		http://www.clker.com/cliparts/j/k/X/T/Q/A/lion-footprint.svg
@@ -880,19 +1074,20 @@
 			x = "520px"
 			y = "598px"
 	-->
-	<a xlink:href = "lion-footprint-md.png">
-		<image 
-			x = "519px"
-			y = "620px"
-			width = "231px"
-			height = "297px"
-			xlink:href = "lion-footprint-md.png"
-			opacity = "0.35"
-		>
-			<title>Lion Footprint clip</title>
-			<desc>SHARED BY: OCAL 05-05-2011</desc>
-		</image>
-	</a>
+		<a xlink:href = "lion-footprint-md.png">
+			<image 
+				x = "519px"
+				y = "620px"
+				width = "231px"
+				height = "297px"
+				xlink:href = "lion-footprint-md.png"
+				opacity = "0.35"
+			>
+				<title>Lion Footprint clip</title>
+				<desc>SHARED BY: OCAL 05-05-2011</desc>
+			</image>
+		</a>
+	</g>
 
 	<!--
                 <pattern
@@ -1107,6 +1302,7 @@
 		{
 			fetchXML
 			(
+				// ln -s chestyLions/soccer/playerToken.svg playerToken.svg
 				"http://localhost:8000/playerToken.svg",
 				// http://team-futbol-ks.org/playerToken.svg",
 				addNewPT,
