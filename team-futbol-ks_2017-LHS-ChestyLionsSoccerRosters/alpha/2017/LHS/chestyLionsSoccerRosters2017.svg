@@ -633,7 +633,7 @@
 					fill = "#222"
 					stroke = "red"
 					stroke-width = "2px"
-					transform = "translate(-44, 58)"
+					transform = "translate(-16.5, 110)"
 				/>
 				<text
 					x = "635px"
@@ -642,7 +642,7 @@
 					font-size = "10px"
 					fill = "#DDD"
 					text-anchor = "middle"
-					transform = "translate(-44, 58)"
+					transform = "translate(-16.5, 110)"
 				>P3</text>
 			</a>
 			<a xlink:href = "https://youtu.be/oFSCngkckqs">
@@ -653,7 +653,7 @@
 					fill = "#222"
 					stroke = "red"
 					stroke-width = "2px"
-					transform = "translate(44, 58)"
+					transform = "translate(16.5, 110)"
 				/>
 				<text
 					x = "635px"
@@ -662,11 +662,87 @@
 					font-size = "10px"
 					fill = "#DDD"
 					text-anchor = "middle"
-					transform = "translate(44, 58)"
+					transform = "translate(16.5, 110)"
 				>V3</text>
 			</a>
 		</g>
 	</g>
+
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#DDD"
+					stroke = "yellow"
+					stroke-width = "2.5px"
+					transform = "translate(-43, 57)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(-43, 57)"
+				>4</text>
+
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#DDD"
+					stroke = "red"
+					stroke-width = "2.5px"
+					transform = "translate(-15.5, 70)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(-15.5, 70)"
+				>5</text>
+
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#DDD"
+					stroke = "red"
+					stroke-width = "2.5px"
+					transform = "translate(15.5, 70)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(15.5, 70)"
+				>6</text>
+
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#DDD"
+					stroke = "#2F4"
+					stroke-width = "2.5px"
+					transform = "translate(43, 57)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(43, 57)"
+				>7</text>
 
 	<use
 		xlink:href = "#varsityButton00"
