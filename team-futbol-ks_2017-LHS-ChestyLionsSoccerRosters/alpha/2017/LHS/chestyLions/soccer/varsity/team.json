@@ -132,8 +132,7 @@
 			"ptPositionNumber": "null",
 			"ptPositionName": "Midfielder",
 			"ptPositionAbbreviation": "M",
-			"ptStudentGradeLevel": 10,
-			"ptImage": "../ptImages/matteo.png"
+			"ptStudentGradeLevel": 10
 		},
 		{
 			"tokenNumber": 13,
