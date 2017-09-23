@@ -505,6 +505,7 @@
 
 	<!-- Varsity Buttons -->
 	<g id = "varsityButton">
+		<!-- Now points to single-page multi-roster, but makes for an extra click, should trigger that ... TODO -->
 		<!-- Half Field A Half-HD -->
 		<a xlink:href = "chestyLions/soccer/fieldMAX.svg">
 			<rect
@@ -613,6 +614,7 @@
 
 	<!-- Junior Varsity (JV) Buttons -->
 	<g id = "juniorVarsityButton">
+		<!-- Now points to single-page multi-roster, but makes for an extra click, should trigger that ... TODO -->
 		<!-- Half Field B Half-HD -->
 		<a xlink:href = "chestyLions/soccer/fieldMAX.svg">
 			<rect
@@ -715,6 +717,7 @@
 
 	<!-- C-Team (CT) Buttons -->
 	<g id = "cTeamButton">
+		<!-- Now points to single-page multi-roster, but makes for an extra click, should trigger that ... TODO -->
 		<!-- Half Field B-Alone Half-HD -->
 		<a xlink:href = "chestyLions/soccer/fieldMAX.svg">
 			<rect
