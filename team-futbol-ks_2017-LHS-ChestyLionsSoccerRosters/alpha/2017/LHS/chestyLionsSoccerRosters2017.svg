@@ -486,6 +486,7 @@
 		-->
 	</g>
 
+
 	<use
 		xlink:href = "#varsityButton00"
 		display = "none"
@@ -502,9 +503,10 @@
 	/>
 
 
+	<!-- Varsity Buttons -->
 	<g id = "varsityButton">
 		<!-- Half Field A Half-HD -->
-		<a xlink:href = "chestyLions/soccer/varsity/fieldMAX.svg">
+		<a xlink:href = "chestyLions/soccer/fieldMAX.svg">
 			<rect
 				x = "1275px"
 				y = "30px"
@@ -577,10 +579,42 @@
 		</a>
 	</g>
 
+	<g
+		id = "teamRosterVarsityButton"
+		transform = "translate(-185, 79)"
+	>
+		<a xlink:href = "chestyLions/soccer/varsity/fieldMAX.svg">
+			<circle
+				cx = "1500px"
+				cy = "212px"
+				r = "42px"
+				fill = "#222"
+				stroke = "#DDD"
+				stroke-width = "4px"
+			/>
+			<text
+				x = "1500px"
+				y = "211px"
+				font-family = "sans-serif"
+				font-size = "16px"
+				text-anchor = "middle"
+				fill = "white"
+			>Varsity</text>
+			<text
+				x = "1500px"
+				y = "227px"
+				font-family = "sans-serif"
+				font-size = "16px"
+				text-anchor = "middle"
+				fill = "white"
+			>Roster</text>
+		</a>
+	</g>
 
+	<!-- Junior Varsity (JV) Buttons -->
 	<g id = "juniorVarsityButton">
 		<!-- Half Field B Half-HD -->
-		<a xlink:href = "chestyLions/soccer/jv/fieldMAX.svg">
+		<a xlink:href = "chestyLions/soccer/fieldMAX.svg">
 			<rect
 				x = "1275px"
 				y = "345px"
@@ -647,10 +681,42 @@
 		</a>
 	</g>
 
+	<g
+		id = "teamRosterJuniorVarsityButton"
+		transform = "translate(-185, 79)"
+	>
+		<a xlink:href = "chestyLions/soccer/jv/fieldMAX.svg">
+			<circle
+				cx = "1500px"
+				cy = "527px"
+				r = "42px"
+				fill = "#222"
+				stroke = "#DDD"
+				stroke-width = "4px"
+			/>
+			<text
+				x = "1500px"
+				y = "523px"
+				font-family = "sans-serif"
+				font-size = "16px"
+				text-anchor = "middle"
+				fill = "white"
+			>JV</text>
+			<text
+				x = "1500px"
+				y = "539px"
+				font-family = "sans-serif"
+				font-size = "16px"
+				text-anchor = "middle"
+				fill = "white"
+			>Roster</text>
+		</a>
+	</g>
 
+	<!-- C-Team (CT) Buttons -->
 	<g id = "cTeamButton">
 		<!-- Half Field B-Alone Half-HD -->
-		<a xlink:href = "chestyLions/soccer/ct/fieldMAX.svg">
+		<a xlink:href = "chestyLions/soccer/fieldMAX.svg">
 			<rect
 				x = "1275px"
 				y = "660px"
@@ -717,6 +783,37 @@
 		</a>
 	</g>
 
+	<g
+		id = "teamRosterCTeamButton"
+		transform = "translate(-185, 394)"
+	>
+		<a xlink:href = "chestyLions/soccer/ct/fieldMAX.svg">
+			<circle
+				cx = "1500px"
+				cy = "527px"
+				r = "42px"
+				fill = "#222"
+				stroke = "#DDD"
+				stroke-width = "4px"
+			/>
+			<text
+				x = "1500px"
+				y = "523px"
+				font-family = "sans-serif"
+				font-size = "16px"
+				text-anchor = "middle"
+				fill = "white"
+			>JV</text>
+			<text
+				x = "1500px"
+				y = "539px"
+				font-family = "sans-serif"
+				font-size = "16px"
+				text-anchor = "middle"
+				fill = "white"
+			>Roster</text>
+		</a>
+	</g>
 
 	<!-- Center Circle -->
 	<g id = "centerCircle">
