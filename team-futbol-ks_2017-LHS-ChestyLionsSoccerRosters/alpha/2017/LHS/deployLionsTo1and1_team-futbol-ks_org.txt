@@ -11,8 +11,6 @@ Last login: Sat Sep 16 14:24:36 2017 from 24.124.53.174
 root@localhost:~# rm -rf /var/www/html/2017
 
 
-msk@msk-ThinkPad-T530:~/Documents/projects/public/teamsVG/team-futbol-ks_2017-LHS-ChestyLionsSoccerRosters/alpha$ scp -Cpr 2017/ root@74.208.88.47/var/www/html/
-cp: cannot create directory 'root@74.208.88.47/var/www/html/': No such file or directory
 msk@msk-ThinkPad-T530:~/Documents/projects/public/teamsVG/team-futbol-ks_2017-LHS-ChestyLionsSoccerRosters/alpha$ scp -Cpr 2017/ root@74.208.88.47:/var/www/html/
 root@74.208.88.47's password: 
 w3c-svg11.svg                                                                                                  100%   20KB  20.2KB/s   00:00    
@@ -81,4 +79,85 @@ root@localhost:~# find /var/www/html/2017/ -path "*.svg" | xargs grep -ne localh
 
 find /var/www/html/2017/ -path "*.svg" | xargs grep -ne localhost | sed -e 's/\t/ /g' | cut -d ':' -f 1 | sort | uniq | xargs sed -i -e 's|localhost:8000|team-futbol-ks.org/2017/LHS|g'
 
+
+...
+
+
+msk@msk-ThinkPad-T530:~/Documents/projects/public/teamsVG/team-futbol-ks_2017-LHS-ChestyLionsSoccerRosters/alpha$ scp -Cpr 2017/ root@74.208.88.47:/var/www/html/
+root@74.208.88.47's password: 
+w3c-svg11.svg                                                                                                        100%   20KB  20.2KB/s   00:00    
+lion-footprint.svg                                                                                                   100%   34KB  34.1KB/s   00:00    
+deployLionsTo1and1_team-futbol-ks_org.txt                                                                            100% 6569     6.4KB/s   00:00    
+playerToken.svg                                                                                                      100% 8736     8.5KB/s   00:00    
+lion-footprint-big.svg                                                                                               100%   34KB  34.1KB/s   00:00    
+lions.svg                                                                                                            100%   41KB  40.9KB/s   00:00    
+buildAndDeploy.txt                                                                                                   100% 1703     1.7KB/s   00:00    
+fieldMAX_fieldOfView.svg                                                                                             100%   13KB  12.9KB/s   00:00    
+lion-footprint-md.png                                                                                                100% 8107     7.9KB/s   00:00    
+cc-GPL-a.png                                                                                                         100% 4061     4.0KB/s   00:00    
+fieldMAX.svg                                                                                                         100%   38KB  38.2KB/s   00:00    
+team.json                                                                                                            100% 5360     5.2KB/s   00:00    
+fieldMAX.svg                                                                                                         100%   41KB  40.5KB/s   00:00    
+w3c-svg11.svg                                                                                                        100%   20KB  20.2KB/s   00:00    
+fieldMAX.svg                                                                                                         100%   38KB  38.2KB/s   00:00    
+team.json                                                                                                            100% 5455     5.3KB/s   00:00    
+playerToken.svg                                                                                                      100% 8736     8.5KB/s   00:00    
+fieldMAX.svg                                                                                                         100%   38KB  38.2KB/s   00:00    
+team.json                                                                                                            100% 5604     5.5KB/s   00:00    
+matteo.png                                                                                                           100%  183KB 182.7KB/s   00:00    
+fieldMAX_fieldOfView.svg                                                                                             100%   11KB  11.0KB/s   00:00    
+cc-GPL-a.png                                                                                                         100% 4061     4.0KB/s   00:00    
+chestyLionsSoccerRosters2017.svg                                                                                     100%   41KB  40.9KB/s   00:00    
+
+root@localhost:~# find /var/www/html/2017/ -path "*.svg" | xargs grep -ne localhost | sed -e 's/\t/ /g' | cut -d ':' -f 1 | sort | uniq | xargs ls -lAhtr
+-rw-rw-r-- 1 root root 39K Sep 10 03:02 /var/www/html/2017/LHS/chestyLions/soccer/varsity/fieldMAX.svg
+-rw-rw-r-- 1 root root 39K Sep 10 03:16 /var/www/html/2017/LHS/chestyLions/soccer/jv/fieldMAX.svg
+-rw-rw-r-- 1 root root 39K Sep 10 03:21 /var/www/html/2017/LHS/chestyLions/soccer/ct/fieldMAX.svg
+-rw-rw-r-- 1 root root 41K Sep 10 23:24 /var/www/html/2017/LHS/chestyLions/soccer/fieldMAX.svg
+-rw-rw-r-- 1 root root 41K Sep 23 19:16 /var/www/html/2017/LHS/lions.svg
+-rw-rw-r-- 1 root root 41K Sep 23 19:16 /var/www/html/2017/LHS/chestyLionsSoccerRosters2017.svg
+
+root@localhost:~# date
+Sat Sep 23 19:25:03 UTC 2017
+
+root@localhost:~# find /var/www/html/2017/ -path "*.svg" | xargs grep -ne localhost | sed -e 's/\t/ /g' | cut -d ':' -f 1 | sort | uniq | xargs sed -i -e 's|localhost:8000|team-futbol-ks.org/2017/LHS|g'
+
+root@localhost:~# find /var/www/html/2017/ -path "*.svg" | xargs grep -ne localhost | sed -e 's/\t/ /g' | cut -d ':' -f 1 | sort | uniq | xargs ls -lhtr
+total 0
+
+root@localhost:~# find /var/www/html/2017/ -path "*.svg" | xargs grep -ne team-futbol-ks.org | sed -e 's/\t/ /g' | cut -d ':' -f 1 | sort | uniq | xargs ls -lhtr
+-rw-rw-r-- 1 root root 41K Sep 23 19:25 /var/www/html/2017/LHS/chestyLions/soccer/fieldMAX.svg
+-rw-rw-r-- 1 root root 39K Sep 23 19:25 /var/www/html/2017/LHS/chestyLions/soccer/ct/fieldMAX.svg
+-rw-rw-r-- 1 root root 41K Sep 23 19:25 /var/www/html/2017/LHS/chestyLionsSoccerRosters2017.svg
+-rw-rw-r-- 1 root root 39K Sep 23 19:25 /var/www/html/2017/LHS/chestyLions/soccer/jv/fieldMAX.svg
+-rw-rw-r-- 1 root root 39K Sep 23 19:25 /var/www/html/2017/LHS/chestyLions/soccer/varsity/fieldMAX.svg
+-rw-rw-r-- 1 root root 41K Sep 23 19:25 /var/www/html/2017/LHS/lions.svg
+
+root@localhost:~# du -ch .; du -ch /var/www/html; df -h
+4.0K	./.cache
+28K	.
+28K	total
+52K	/var/www/html/2017/LHS/chestyLions/soccer/jv
+52K	/var/www/html/2017/LHS/chestyLions/soccer/ct
+52K	/var/www/html/2017/LHS/chestyLions/soccer/varsity
+188K	/var/www/html/2017/LHS/chestyLions/soccer/ptImages
+444K	/var/www/html/2017/LHS/chestyLions/soccer
+448K	/var/www/html/2017/LHS/chestyLions
+696K	/var/www/html/2017/LHS
+700K	/var/www/html/2017
+804K	/var/www/html
+804K	total
+Filesystem             Size  Used Avail Use% Mounted on
+udev                   474M     0  474M   0% /dev
+tmpfs                   99M   11M   88M  11% /run
+/dev/mapper/vg00-lv01   47G  2.0G   43G   5% /
+tmpfs                  492M     0  492M   0% /dev/shm
+tmpfs                  5.0M     0  5.0M   0% /run/lock
+tmpfs                  492M     0  492M   0% /sys/fs/cgroup
+/dev/sda1              464M   54M  382M  13% /boot
+
+root@localhost:~# free -m
+              total        used        free      shared  buff/cache   available
+Mem:            983         217          28          18         738         714
+Swap:          1951           4        1947
 
