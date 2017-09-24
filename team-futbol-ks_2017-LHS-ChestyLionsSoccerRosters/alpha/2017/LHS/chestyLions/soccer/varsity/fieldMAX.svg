@@ -644,7 +644,7 @@
 			document.querySelector('svg').appendChild(pt); // document.documentElement.appendChild(pt);
 		};
 
-		function fetchXML (url, callback, number)
+		function fetchXML_internalTeamDict (url, callback, number)
 		{
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET', url, true);
@@ -665,7 +665,7 @@
 		function addNewPlayerToken (nptNumber)
 		{
 			// Fetch the document using XHR, Ajax style?
-			fetchXML
+			fetchXML_internalTeamDict
 			(
 				"http://localhost:8000/chestyLions/soccer/playerToken.svg", // #playerToken00",
 				// "http://localhost:8000/playerToken.svg", // #playerToken00",
@@ -728,7 +728,26 @@
 
 			if (nptNumber > ptDataDictSize)
 			{
-				alert("There are no more playerTokens (PTs) to add to the field, all " + ptDataDictSize + " PTs in the ptDataDict are already on the field.  To focus a player click on the token, which should enlarge it it and bring it to the center of the field.  Also you can use the previous/next left/right scroll button arrows to cycle the playerToken focus."); 
+				if (ptDataDictSize == 0)
+				{
+					var playerTokenElements = document.getElementsByClassName("playerToken");
+					var numPlayerTokens = -1;
+
+					console.log("Should load the ptDataDict here, and add any on-screen tokens that are missing from the dict.");
+
+					if (playerTokenElements !== undefined && numPlayerTokens !== undefined)
+					{
+						console.log("playerTokenElements", playerTokenElements);
+						numPlayerTokens = playerTokenElements.length;
+			 			if (numPlayerTokens !== undefined)
+						{
+							ptDataDictSize = numPlayerTokens;
+							console.log("ptDataDictSize", ptDataDictSize);
+							console.log("numPlayerTokens", numPlayerTokens);
+						}
+					}
+				}
+				alert("There are no more playerTokens (PTs) to add to the field, all " + ptDataDictSize + " PTs in the ptDataDict are already on the field.  To focus a player click on the token, which should enlarge it and bring it to the center of the field.  Also you can use the previous/next left/right scroll button arrows to cycle the playerToken focus. Click the center-circle for a sample starting line-up animation."); 
 			}
 			else
 			{
@@ -884,6 +903,16 @@
 
 		function pushPT (nptNumber, teamDictionary)
 		{
+			if (teamDictionary === false)
+			{
+				console.log("teamDictionary", teamDictionary);
+				teamDictionary = JSON.parse('{ "ptArray": [] }');
+				console.log("teamDictionary", teamDictionary);
+			}
+			else
+			{
+				console.log("teamDictionary.ptArray.length", teamDictionary.ptArray.length);
+			}
 
 			fetchXML
 			(
@@ -1059,15 +1088,19 @@
 			playerToken.setAttribute("stroke-opacity", "1");
 		// }
 
+			// var teamPath = window.location.pathname;
+			// getTeamDictionary(teamPath);
+
 			// Fetch the document using XHR, Ajax style?
 			/*
-			fetchXML
+			fetchXML_internalTeamDict
 			(
 				evt, // "http://localhost:8000/chestyLions/soccer/playerToken.svg", // #playerToken00",
 				// evt, // "http://localhost:8000/playerToken.svg", // #playerToken00",
 				// evt, // http://team-futbol-ks.org/playerToken.svg", //fieldMAX.svg
 				focusSVGDoc,
 				nptNumber
+				// window.location.pathname
 			);
 			*/
 			/*
