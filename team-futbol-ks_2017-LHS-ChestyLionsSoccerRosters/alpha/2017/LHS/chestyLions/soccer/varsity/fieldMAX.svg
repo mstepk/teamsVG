@@ -244,6 +244,34 @@
 	</g>
 	-->
 
+	<!-- Center Circle -->
+	<g
+		id = "centerCircle"
+		onclick = "startingLineupAnimation(evt); return false;"
+	>
+		<circle
+			cx = "635px"
+			cy = "495px"
+			r = "91.5px"
+			fill = "green"
+			stroke = "white"
+			stroke-width = "3px"
+		/>
+		<!--
+		<text
+			x = "637px"
+			y = "521px"
+			font-family = "sans-serif"
+			font-size = "72px"
+			font-weight = "900"
+			fill = "#DDD"
+			text-anchor = "middle"
+			stroke = "#222"
+			stroke-width = "4px"
+		>LHS</text>
+		-->
+	</g>
+
 	<!-- 
 		id = "scrollTokenForwardRight_ButtonOnRightSideOfScreenPointinRight"
 	-->
@@ -747,6 +775,17 @@
 						}
 					}
 				}
+
+				// Get the token that is currently in focus and unFocus it.
+				var playerTokenElementsWithFocus = document.getElementsByClassName("focusTrue");
+				var numPlayerTokenWithFocus = playerTokenElementsWithFocus.length;
+
+				if (numPlayerTokenWithFocus == 1)
+				{
+					var ptID = playerTokenElementsWithFocus.item(0).id;
+					unFocusPlayerToken(ptID);
+				}
+
 				alert("There are no more playerTokens (PTs) to add to the field, all " + ptDataDictSize + " PTs in the ptDataDict are already on the field.  To focus a player click on the token, which should enlarge it and bring it to the center of the field.  Also you can use the previous/next left/right scroll button arrows to cycle the playerToken focus. Click the center-circle for a sample starting line-up animation."); 
 			}
 			else
@@ -990,7 +1029,6 @@
 		*/
 	]]>
 	</script>
-
 
 	<script type = "application/ecmascript">
 	<![CDATA[
@@ -1306,6 +1344,87 @@
 					}
 				}
 			}
+		}
+	]]>
+	</script>
+
+	<script type = "application/ecmascript">
+	<![CDATA[
+		function startingLineupAnimation (id)
+		{
+			// Get the token that is currently in focus and unFocus it.
+			var playerTokenElementsWithFocus = document.getElementsByClassName("focusTrue");
+			var numPlayerTokenWithFocus = playerTokenElementsWithFocus.length;
+			var ptID = 1;
+
+			if (numPlayerTokenWithFocus == 1)
+			{
+				ptID = playerTokenElementsWithFocus.item(0).id;
+				unFocusPlayerToken(ptID);
+			}
+
+			document.getElementById('scrollTokenForward').setAttribute("display", "none");
+			document.getElementById('scrollTokenBackward').setAttribute("display", "none");
+
+			var playerTokenElements = document.getElementsByClassName("playerToken");
+			var playerToken = document.getElementById("newPlayerToken" + ptID);
+
+			document.getElementById('newPlayerToken2').setAttribute("transform", "translate(89, 9)"); // Jamelle // 118
+			document.getElementById('newPlayerToken4').setAttribute("transform", "translate(161, 9)"); // Jack
+			document.getElementById('newPlayerToken5').setAttribute("transform", "translate(233, 9)"); // Garrett
+			document.getElementById('newPlayerToken9').setAttribute("transform", "translate(305, 9)"); // Joey
+			document.getElementById('newPlayerToken14').setAttribute("transform", "translate(377, 9)"); // Mason
+			document.getElementById('newPlayerToken15').setAttribute("transform", "translate(820, 9)"); // Tanner
+			document.getElementById('newPlayerToken16').setAttribute("transform", "translate(892, 9)"); // Alec
+
+			// Goalie - Ross
+			playerToken = document.getElementById('newPlayerToken1');
+			playerToken.setAttribute("transform", "scale(1), translate(53, 459)"); // 100
+			// playerToken.setAttribute("transform", "translate(47, 0)");
+
+			// Center Back - Robbie
+			playerToken = document.getElementById('newPlayerToken3');
+			playerToken.setAttribute("transform", "scale(1), translate(164, 459)"); // 212
+
+			// Left Back - Gary
+			playerToken = document.getElementById('newPlayerToken7');
+			playerToken.setAttribute("transform", "scale(1), translate(222, 258)");
+
+			// Right Back - Trey
+			playerToken = document.getElementById('newPlayerToken6');
+			playerToken.setAttribute("transform", "scale(1), translate(222, 660)");
+
+			// Left Wing - Matteo
+			playerToken = document.getElementById('newPlayerToken12');
+			playerToken.setAttribute("transform", "scale(1), translate(341, 79)"); // (360, 54) (340, 126)
+
+			// Right Wing - Will
+			playerToken = document.getElementById('newPlayerToken19');
+			playerToken.setAttribute("transform", "scale(1), translate(342, 839)"); // (360, 864)
+
+			// Center Mid - Dario
+			playerToken = document.getElementById('newPlayerToken10');
+			playerToken.setAttribute("transform", "scale(1), translate(461, 459)"); // (461, 459)
+
+			// Left Mid - Cole
+			playerToken = document.getElementById('newPlayerToken11');
+			playerToken.setAttribute("transform", "scale(1), translate(403, 288)"); // (415, 258) 288 pinch-in
+
+			// Right Mid - Ben
+			playerToken = document.getElementById('newPlayerToken8');
+			playerToken.setAttribute("transform", "scale(1), translate(403, 630)"); // (403, 660) 630 pinch-in
+
+			// Center Forward - Quentin
+			playerToken = document.getElementById('newPlayerToken17');
+			playerToken.setAttribute("transform", "scale(1), translate(555, 459)"); // (555, 459)
+
+			// Left Forward - Anton
+			playerToken = document.getElementById('newPlayerToken18');
+			playerToken.setAttribute("transform", "scale(1), translate(525, 150)"); // (415, 258) 288 pinch-in
+
+			// Right Forward - Kanak
+			playerToken = document.getElementById('newPlayerToken13');
+			playerToken.setAttribute("transform", "scale(1), translate(525, 768)"); // (415, 258) 288 pinch-in
 		}
 	]]>
 	</script>
