@@ -904,6 +904,7 @@
 				>V1</text>
 		<g transform = "translate(680, -442)"> - MHS .vs. LHS -
 		-->
+		<!-- G01 --> <!-- yellow --> <!-- tie -->
 		<g transform = "translate(742, -440)"> <!-- MHS .vs. LHS -->
 			<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157685729584933">
 				<circle
@@ -966,6 +967,7 @@
 					transform = "translate(48, 48)"
 					transform = "translate(22, 66)"
 		-->
+		<!-- G-02 --> <!-- green #2F4 --> <!-- win -->
 		<g transform = "translate(774, -440)"> <!-- THS .vs. LHS -->
 			<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157688357102205">
 				<circle
@@ -1014,6 +1016,7 @@
 					transform = "translate(-16.5, 110)"
 					transform = "translate(16.5, 110)"
 		-->
+		<!-- G03 --> <!-- red --> <!-- loss -->
 		<g transform = "translate(806, -440)"> <!-- LHS .vs. WRHS -->
 			<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157686468592434">
 				<circle
@@ -1065,7 +1068,7 @@
 		7: transform = "translate(43, 57)"
 			fill = "#DDD"
 	-->
-	<!-- yellow -->
+	<!-- G04 --> <!-- yellow #DD2 --> <!-- tie -->
 	<g transform = "translate(838, -424)">
 		<circle
 			cx = "635px"
@@ -1087,7 +1090,7 @@
 		>4</text>
 	</g>
 
-	<!-- red -->
+	<!-- G05 --> <!-- red --> <!-- loss -->
 	<g transform = "translate(872, -424)">
 		<circle
 			cx = "635px"
@@ -1109,7 +1112,7 @@
 		>5</text>
 	</g>
 
-	<!-- red -->
+	<!-- G06 --> <!-- red --> <!-- loss -->
 	<g transform = "translate(904, -424)">
 		<circle
 			cx = "635px"
@@ -1142,7 +1145,7 @@
 			stroke = "#DDD"
 			stroke-width = "4px"
 	-->
-	<!-- green #3F5 -->
+	<!-- G07 --> <!-- green #3F5 --> <!-- win -->
 	<g transform = "translate(936, -424)">
 		<circle
 			cx = "635px"
@@ -1162,6 +1165,50 @@
 			text-anchor = "middle"
 			transform = "translate(0, 0)"
 		>7</text>
+	</g>
+
+	<!-- G08 --> <!-- green #3F5 --> <!-- win -->
+	<g transform = "translate(968, -424)">
+		<circle
+			cx = "635px"
+			cy = "495px"
+			r = "12px"
+			fill = "#3F5"
+			stroke = "#DDD"
+			stroke-width = "2px"
+			transform = "translate(0, 0)"
+		/>
+		<text
+			x = "635px"
+			y = "499px"
+			font-family = "sans-serif"
+			font-size = "10px"
+			fill = "#222"
+			text-anchor = "middle"
+			transform = "translate(0, 0)"
+		>8</text>
+	</g>
+
+	<!-- G09 --> <!-- yellow #DD2 --> <!-- tie -->
+	<g transform = "translate(968, -424)">
+		<circle
+			cx = "635px"
+			cy = "495px"
+			r = "12px"
+			fill = "#DD2"
+			stroke = "#DDD"
+			stroke-width = "2px"
+			transform = "translate(0, 0)"
+		/>
+		<text
+			x = "635px"
+			y = "499px"
+			font-family = "sans-serif"
+			font-size = "10px"
+			fill = "#222"
+			text-anchor = "middle"
+			transform = "translate(0, 0)"
+		>9</text>
 	</g>
 
 	<!-- 01 -->
