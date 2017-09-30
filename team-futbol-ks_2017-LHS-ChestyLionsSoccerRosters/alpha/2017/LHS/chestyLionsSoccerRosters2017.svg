@@ -42,7 +42,6 @@
 	<!--
 		:: LHS Chesty Lions Soccer Team Rosters Fall 2017 ::
 
-
 		Head Coach: Mike Murphy
 		Varsity Assistant & Goalkeepers: Stan Rasmussen
 		JV Assistant: Brandon Daley
@@ -124,6 +123,72 @@
 		Trenton Snyder 9 19 / 0
 		Giovanni Ventello 9 13
 		Adam Walther 9 20 / 00
+	-->
+
+	<!--
+		:: LHS Chesty Lions Soccer Fall 2017 Schedule ::
+
+		08-25 Away => Friday 6:15PM .vs. Manhatten
+		           => Tie: 1-1
+
+		08-29 Away => Tuesday 6:15PM .vs. Topeka
+		           => Win: 2-1
+
+		09-07 Home => Thursday 6:15PM vs. Washburn Rural
+		           => Loss: 2-3
+
+		09-12 Away => Tuesday 6:15PM .vs. Shawnee Mission South
+		           => Loss: 1-3
+
+		09-14 Home => Thursday 6:15PM .vs. Shawnee Mission North
+		           => Tie: 1-1
+
+		09-19 Home => Tuesday 6:15PM .vs. Shawnee Mission East
+		           => Loss: 0-3
+
+		09-21 Away => Thursday 6:15PM .vs. Olathe West
+		           => Win: 3-0
+
+		09-26 Away => Tuesday 6:15PM .vs. Shawnee Mission West
+		           => Win: 3-1
+
+		09-28 Away => Thursday 6:15PM .vs. Lawrence Free State
+		           => Tie: 2-2
+
+		10-03 Home => Tuesday 6:15PM .vs. Shawnee Mission Northwest
+		           => :
+
+		10-05 Home => Thursday 6:15PM .vs. Olathe North
+		           => :
+
+		10-10 Away => Tuesday 6:15PM .vs. Olathe South
+		           => :
+
+		10-12 Home => Thursday 6:15PM .vs. Olathe Northwest
+		           => :
+
+		10-13 Home => Friday 6:15PM .vs. Wyandotte
+		           => :
+
+		10-17 Away => Tuesday 6:15PM .vs. T.B.D.
+		           => :
+
+		10-19 Away => Thursday 6:15PM .vs. Shawnee Heights
+		           => :
+	-->
+
+	<!--
+		Varsity Record  Fall 2017
+
+		G01 => T: 1-1
+		G02 => W: 2-1
+		G03 => L: 2-3
+		G04 => L: 1-3
+		G05 => T: 1-1
+		G06 => L: 0-3
+		G07 => W: 3-0
+		G08 => W: 3-1
+	        G09 => T: 2-2
 	-->
 
 	<defs> 
@@ -873,6 +938,31 @@
 			</a>
 		</g>
 
+
+	<!--
+		Varsity Record  Fall 2017
+
+		G01 => T: 1-1
+		G02 => W: 2-1
+		G03 => L: 2-3
+		G04 => L: 1-3
+		G05 => T: 1-1
+		G06 => L: 0-3
+		G07 => W: 3-0
+		G08 => W: 3-1
+	        G09 => T: 2-2
+	        G10 => WTL: 0-0
+	        G11 => WTL: 0-0
+	        G12 => WTL: 0-0
+	        G13 => WTL: 0-0
+	        G14 => WTL: 0-0
+		Sunflower Meet
+	        G15 => WTL: 0-0
+
+		http://www.sunflowerleague.org/public/scorestanding/genie/403/school/1/
+	-->
+
+
 		<!--
 			from center-circle position
 		<g transform = "translate(-32, 32)">
@@ -1068,30 +1158,8 @@
 		7: transform = "translate(43, 57)"
 			fill = "#DDD"
 	-->
-	<!-- G04 --> <!-- yellow #DD2 --> <!-- tie -->
+	<!-- G04 --> <!-- red #F00 --> <!-- loss -->
 	<g transform = "translate(838, -424)">
-		<circle
-			cx = "635px"
-			cy = "495px"
-			r = "12px"
-			fill = "#DD2"
-			stroke = "#DDD"
-			stroke-width = "2px"
-			transform = "translate(0, 0)"
-		/>
-		<text
-			x = "635px"
-			y = "499px"
-			font-family = "sans-serif"
-			font-size = "10px"
-			fill = "#222"
-			text-anchor = "middle"
-			transform = "translate(0, 0)"
-		>4</text>
-	</g>
-
-	<!-- G05 --> <!-- red --> <!-- loss -->
-	<g transform = "translate(872, -424)">
 		<circle
 			cx = "635px"
 			cy = "495px"
@@ -1109,10 +1177,32 @@
 			fill = "#222"
 			text-anchor = "middle"
 			transform = "translate(0, 0)"
+		>4</text>
+	</g>
+
+	<!-- G05 --> <!-- yellow #DD2 --> <!-- tie -->
+	<g transform = "translate(872, -424)">
+		<circle
+			cx = "635px"
+			cy = "495px"
+			r = "12px"
+			fill = "#DD2"
+			stroke = "#DDD"
+			stroke-width = "2px"
+			transform = "translate(0, 0)"
+		/>
+		<text
+			x = "635px"
+			y = "499px"
+			font-family = "sans-serif"
+			font-size = "10px"
+			fill = "#222"
+			text-anchor = "middle"
+			transform = "translate(0, 0)"
 		>5</text>
 	</g>
 
-	<!-- G06 --> <!-- red --> <!-- loss -->
+	<!-- G06 --> <!-- red #F00 --> <!-- loss -->
 	<g transform = "translate(904, -424)">
 		<circle
 			cx = "635px"
@@ -1190,7 +1280,7 @@
 	</g>
 
 	<!-- G09 --> <!-- yellow #DD2 --> <!-- tie -->
-	<g transform = "translate(968, -424)">
+	<g transform = "translate(1000, -424)">
 		<circle
 			cx = "635px"
 			cy = "495px"
@@ -1210,6 +1300,54 @@
 			transform = "translate(0, 0)"
 		>9</text>
 	</g>
+
+	<!-- G10 --> <!-- yellow #DD2 --> <!-- tie -->
+	<!--
+	<g transform = "translate(1032, -424)">
+		<circle
+			cx = "635px"
+			cy = "495px"
+			r = "12px"
+			fill = "#DD2"
+			stroke = "#DDD"
+			stroke-width = "2px"
+			transform = "translate(0, 0)"
+		/>
+		<text
+			x = "635px"
+			y = "499px"
+			font-family = "sans-serif"
+			font-size = "10px"
+			fill = "#222"
+			text-anchor = "middle"
+			transform = "translate(0, 0)"
+		>10</text>
+	</g>
+	-->
+
+	<!-- G11 --> <!-- yellow #DD2 --> <!-- tie -->
+	<!--
+	<g transform = "translate(1064, -424)">
+		<circle
+			cx = "635px"
+			cy = "495px"
+			r = "12px"
+			fill = "#DD2"
+			stroke = "#DDD"
+			stroke-width = "2px"
+			transform = "translate(0, 0)"
+		/>
+		<text
+			x = "635px"
+			y = "499px"
+			font-family = "sans-serif"
+			font-size = "10px"
+			fill = "#222"
+			text-anchor = "middle"
+			transform = "translate(0, 0)"
+		>11</text>
+	</g>
+	-->
 
 	<!-- 01 -->
 	<!-- 55 -->
