@@ -1321,7 +1321,7 @@
 			</g>
 		
 			<!-- G05 --> <!-- yellow #DD2 --> <!-- tie -->
-			<g transform = "translate(872, -424)">
+			<g transform = "translate(870, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
@@ -1343,7 +1343,7 @@
 			</g>
 		
 			<!-- G06 --> <!-- red #F00 --> <!-- loss -->
-			<g transform = "translate(904, -424)">
+			<g transform = "translate(902, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
@@ -1376,7 +1376,7 @@
 					stroke-width = "4px"
 			-->
 			<!-- G07 --> <!-- green #3F5 --> <!-- win -->
-			<g transform = "translate(936, -424)">
+			<g transform = "translate(934, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
@@ -1398,7 +1398,7 @@
 			</g>
 		
 			<!-- G08 --> <!-- green #3F5 --> <!-- win -->
-			<g transform = "translate(968, -424)">
+			<g transform = "translate(966, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
@@ -1420,7 +1420,7 @@
 			</g>
 		
 			<!-- G09 --> <!-- yellow #DD2 --> <!-- tie -->
-			<g transform = "translate(1000, -424)">
+			<g transform = "translate(998, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
@@ -1443,7 +1443,7 @@
 		
 			<!-- G10 --> <!-- yellow #DD2 --> <!-- tie -->
 			<!--
-			<g transform = "translate(1032, -424)">
+			<g transform = "translate(1030, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
@@ -1467,7 +1467,7 @@
 		
 			<!-- G11 --> <!-- yellow #DD2 --> <!-- tie -->
 			<!--
-			<g transform = "translate(1064, -424)">
+			<g transform = "translate(1062, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
@@ -1605,7 +1605,7 @@
 			</g>
 		
 			<!-- G05 --> <!-- red #F00 --> <!-- loss -->
-			<g transform = "translate(872, -424)">
+			<g transform = "translate(870, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
@@ -1627,7 +1627,7 @@
 			</g>
 		
 			<!-- G06 --> <!-- green #3F5 --> <!-- win -->
-			<g transform = "translate(904, -424)">
+			<g transform = "translate(902, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
@@ -1649,7 +1649,7 @@
 			</g>
 		
 			<!-- G07 --> <!-- green #3F5 --> <!-- win -->
-			<g transform = "translate(936, -424)">
+			<g transform = "translate(934, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
@@ -1671,7 +1671,7 @@
 			</g>
 		
 			<!-- G08 --> <!-- red #F00 --> <!-- loss -->
-			<g transform = "translate(968, -424)">
+			<g transform = "translate(966, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
@@ -1693,7 +1693,7 @@
 			</g>
 		
 			<!-- G09 --> <!-- green #3F5 --> <!-- win -->
-			<g transform = "translate(1000, -424)">
+			<g transform = "translate(998, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
@@ -1715,7 +1715,7 @@
 			</g>
 		
 			<!-- G10 --> <!-- yellow #DD2 --> <!-- tie -->
-			<g transform = "translate(1032, -424)">
+			<g transform = "translate(1030, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
@@ -1737,7 +1737,7 @@
 			</g>
 		
 			<!-- G11 --> <!-- red #F00 --> <!-- loss -->
-			<g transform = "translate(1064, -424)">
+			<g transform = "translate(1062, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
