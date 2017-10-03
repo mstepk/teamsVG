@@ -105,7 +105,7 @@
 
 		Trey Kelly 10 21
 		Guillermo Rodriguez 10 10
-		Wheeler Battaglia-Davis 9 11
+		Wheeler Battaglia-Davis 9 11 (top goal scorer was moved up to JV, first game missing from C-Team was Sept. 2nd)
 		Ben Cohen 9 5
 		Alex Culbertson 9 3
 		Evan Day 9 16
@@ -178,7 +178,7 @@
 	-->
 
 	<!--
-		Varsity Record  Fall 2017
+		Varsity Record Fall 2017
 
 		G01 => T: 1-1
 		G02 => W: 2-1
@@ -188,7 +188,26 @@
 		G06 => L: 0-3
 		G07 => W: 3-0
 		G08 => W: 3-1
-	        G09 => T: 2-2
+		G09 => T: 2-2
+	-->
+
+	<!--
+		Junior Varsity Record Fall 2017
+	-->
+
+	<!--
+		C-Team Record Fall 2017
+		G01 => L: ?-?
+		G02 => W: ?-?
+		G03 => T: ?-?
+		G04 => W: ?-?
+		G05 => L: ?-?
+		G06 => W: ?-?
+		G07 => W: ?-?
+		G08 => L: ?-?
+		G09 => W: ?-?
+		G10 => T: ?-?
+		G11 => L: 0-2
 	-->
 
 	<defs> 
@@ -939,415 +958,831 @@
 		</g>
 
 
-	<!--
-		Varsity Record  Fall 2017
-
-		G01 => T: 1-1
-		G02 => W: 2-1
-		G03 => L: 2-3
-		G04 => L: 1-3
-		G05 => T: 1-1
-		G06 => L: 0-3
-		G07 => W: 3-0
-		G08 => W: 3-1
-	        G09 => T: 2-2
-	        G10 => WTL: 0-0
-	        G11 => WTL: 0-0
-	        G12 => WTL: 0-0
-	        G13 => WTL: 0-0
-	        G14 => WTL: 0-0
-		Sunflower Meet
-	        G15 => WTL: 0-0
-
-		http://www.sunflowerleague.org/public/scorestanding/genie/403/school/1/
-	-->
-
-
 		<!--
-			from center-circle position
-		<g transform = "translate(-32, 32)">
-					cx = "635px"
-					cy = "495px"
-					r = "12px"
-					transform = "translate(-48, 48)"
-				/>
-				<text
-					x = "635px"
-					y = "499px"
-				<circle
-					cx = "635px"
-					cy = "495px"
-					r = "12px"
-					fill = "#222"
-					stroke = "yellow"
-					stroke-width = "2px"
-					transform = "translate(-22, 66)"
-				/>
-				<text
-					x = "635px"
-					y = "499px"
-					font-family = "sans-serif"
-					font-size = "10px"
-					fill = "#DDD"
-					text-anchor = "middle"
-					transform = "translate(-22, 66)"
-				>V1</text>
-		<g transform = "translate(680, -442)"> - MHS .vs. LHS -
+			Varsity Record Fall 2017
+	
+			G01 => T: 1-1
+			G02 => W: 2-1
+			G03 => L: 2-3
+			G04 => L: 1-3
+			G05 => T: 1-1
+			G06 => L: 0-3
+			G07 => W: 3-0
+			G08 => W: 3-1
+			G09 => T: 2-2
+			G10 => WTL: 0-0
+			G11 => WTL: 0-0
+			G12 => WTL: 0-0
+			G13 => WTL: 0-0
+			G14 => WTL: 0-0
+			Sunflower Meet
+			G15 => WTL: 0-0
+	
+			http://www.sunflowerleague.org/public/scorestanding/genie/403/school/1/
 		-->
-		<!-- G01 --> <!-- yellow --> <!-- tie -->
-		<g transform = "translate(742, -440)"> <!-- MHS .vs. LHS -->
-			<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157685729584933">
-				<circle
-					cx = "635px"
-					cy = "495px"
-					r = "12px"
-					fill = "#222"
-					stroke = "yellow"
-					stroke-width = "2px"
-					transform = "translate(0, 0)"
-				/>
-				<text
-					x = "635px"
-					y = "499px"
-					font-family = "sans-serif"
-					font-size = "10px"
-					fill = "#DDD"
-					text-anchor = "middle"
-					transform = "translate(0, 0)"
-				>P1</text>
-			</a>
-			<a xlink:href = "https://youtu.be/RwcCtOFvBsc">
-				<circle
-					cx = "635px"
-					cy = "495px"
-					r = "12px"
-					fill = "#222"
-					stroke = "yellow"
-					stroke-width = "2px"
-					transform = "translate(0, 32)"
-				/>
-				<text
-					x = "635px"
-					y = "499px"
-					font-family = "sans-serif"
-					font-size = "10px"
-					fill = "#DDD"
-					text-anchor = "middle"
-					transform = "translate(0, 32)"
-				>V1</text>
-			</a>
+
+		<g
+			id = "gamePhotoAndVideoLinks"
+			transform = "translate(0, 32)"
+		>
+			<!--
+				from center-circle position
+			<g transform = "translate(-32, 32)">
+						cx = "635px"
+						cy = "495px"
+						r = "12px"
+						transform = "translate(-48, 48)"
+					/>
+					<text
+						x = "635px"
+						y = "499px"
+					<circle
+						cx = "635px"
+						cy = "495px"
+						r = "12px"
+						fill = "#222"
+						stroke = "yellow"
+						stroke-width = "2px"
+						transform = "translate(-22, 66)"
+					/>
+					<text
+						x = "635px"
+						y = "499px"
+						font-family = "sans-serif"
+						font-size = "10px"
+						fill = "#DDD"
+						text-anchor = "middle"
+						transform = "translate(-22, 66)"
+					>V1</text>
+			<g transform = "translate(680, -442)"> - MHS .vs. LHS -
+			-->
+			<!-- G01 --> <!-- yellow --> <!-- tie -->
+			<g transform = "translate(742, -440)"> <!-- MHS .vs. LHS -->
+				<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157685729584933">
+					<circle
+						cx = "635px"
+						cy = "495px"
+						r = "12px"
+						fill = "#222"
+						stroke = "yellow"
+						stroke-width = "2px"
+						transform = "translate(0, 0)"
+					/>
+					<text
+						x = "635px"
+						y = "499px"
+						font-family = "sans-serif"
+						font-size = "10px"
+						fill = "#DDD"
+						text-anchor = "middle"
+						transform = "translate(0, 0)"
+					>P</text>
+				</a>
+				<a xlink:href = "https://youtu.be/RwcCtOFvBsc">
+					<circle
+						cx = "635px"
+						cy = "495px"
+						r = "12px"
+						fill = "#222"
+						stroke = "yellow"
+						stroke-width = "2px"
+						transform = "translate(0, 32)"
+					/>
+					<text
+						x = "635px"
+						y = "499px"
+						font-family = "sans-serif"
+						font-size = "10px"
+						fill = "#DDD"
+						text-anchor = "middle"
+						transform = "translate(0, 32)"
+					>V</text>
+				</a>
+			</g>
+	
+			<!--
+	                                <rect 
+	                                        x = "0px"
+	                                        y = "0px"
+	                                        rx = "36px"
+	                                        ry = "36px"
+	                                        width = "1760px"
+	                                        height = "990px"
+	                                        fill = "#040"
+	                                        stroke = "white"
+	                                        stroke-width = "10px"
+	                                />
+			-->
+	
+			<!--
+			<g transform = "translate(32, 32)">
+						transform = "translate(48, 48)"
+						transform = "translate(22, 66)"
+			-->
+			<!-- G-02 --> <!-- green #2F4 --> <!-- win -->
+			<g transform = "translate(774, -440)"> <!-- THS .vs. LHS -->
+				<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157688357102205">
+					<circle
+						cx = "635px"
+						cy = "495px"
+						r = "12px"
+						fill = "#222"
+						stroke = "#2F4"
+						stroke-width = "2px"
+						transform = "translate(0, 0)"
+					/>
+					<text
+						x = "635px"
+						y = "499px"
+						font-family = "sans-serif"
+						font-size = "10px"
+						fill = "#DDD"
+						text-anchor = "middle"
+						transform = "translate(0, 0)"
+					>P</text>
+				</a>
+				<a xlink:href = "https://youtu.be/LmGgKDN9vBw">
+					<circle
+						cx = "635px"
+						cy = "495px"
+						r = "12px"
+						fill = "#222"
+						stroke = "#2F4"
+						stroke-width = "2px"
+						transform = "translate(0, 32)"
+					/>
+					<text
+						x = "635px"
+						y = "499px"
+						font-family = "sans-serif"
+						font-size = "10px"
+						fill = "#DDD"
+						text-anchor = "middle"
+						transform = "translate(0, 32)"
+					>V</text>
+				</a>
+			</g>
+	
+			<!--
+			<g transform = "translate(0, 0)">
+						transform = "translate(-16.5, 110)"
+						transform = "translate(16.5, 110)"
+			-->
+			<!-- G03 --> <!-- red --> <!-- loss -->
+			<g transform = "translate(806, -440)"> <!-- LHS .vs. WRHS -->
+				<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157686468592434">
+					<circle
+						cx = "635px"
+						cy = "495px"
+						r = "12px"
+						fill = "#222"
+						stroke = "red"
+						stroke-width = "2px"
+						transform = "translate(0, 0)"
+					/>
+					<text
+						x = "635px"
+						y = "499px"
+						font-family = "sans-serif"
+						font-size = "10px"
+						fill = "#DDD"
+						text-anchor = "middle"
+						transform = "translate(0, 0)"
+					>P</text>
+				</a>
+				<a xlink:href = "https://youtu.be/oFSCngkckqs">
+					<circle
+						cx = "635px"
+						cy = "495px"
+						r = "12px"
+						fill = "#222"
+						stroke = "red"
+						stroke-width = "2px"
+						transform = "translate(0, 32)"
+					/>
+					<text
+						x = "635px"
+						y = "499px"
+						font-family = "sans-serif"
+						font-size = "10px"
+						fill = "#DDD"
+						text-anchor = "middle"
+						transform = "translate(0, 32)"
+					>V</text>
+				</a>
+			</g>
+
+			<!-- G04 --> <!-- red --> <!-- loss -->
+			<g transform = "translate(838, -440)"> <!-- LHS .vs. SMSHS -->
+				<a xlink:href = "https://youtu.be/V0zWPhzqH-I">
+					<circle
+						cx = "635px"
+						cy = "495px"
+						r = "12px"
+						fill = "#222"
+						stroke = "red"
+						stroke-width = "2px"
+						transform = "translate(0, 32)"
+					/>
+					<text
+						x = "635px"
+						y = "499px"
+						font-family = "sans-serif"
+						font-size = "10px"
+						fill = "#DDD"
+						text-anchor = "middle"
+						transform = "translate(0, 32)"
+					>V</text>
+				</a>
+			</g>
+
+			<!-- G07 --> <!-- green #2F4 --> <!-- win -->
+			<g transform = "translate(934, -440)"> <!-- LHS .vs. OWHS -->
+				<a xlink:href = "https://youtu.be/UqrxHXecoUk">
+					<circle
+						cx = "635px"
+						cy = "495px"
+						r = "12px"
+						fill = "#222"
+						stroke = "#2F4"
+						stroke-width = "2px"
+						transform = "translate(0, 32)"
+					/>
+					<text
+						x = "635px"
+						y = "499px"
+						font-family = "sans-serif"
+						font-size = "10px"
+						fill = "#DDD"
+						text-anchor = "middle"
+						transform = "translate(0, 32)"
+					>V</text>
+				</a>
+			</g>
 		</g>
 
-		<!--
-                                <rect 
-                                        x = "0px"
-                                        y = "0px"
-                                        rx = "36px"
-                                        ry = "36px"
-                                        width = "1760px"
-                                        height = "990px"
-                                        fill = "#040"
-                                        stroke = "white"
-                                        stroke-width = "10px"
-                                />
-		-->
-
-		<!--
-		<g transform = "translate(32, 32)">
-					transform = "translate(48, 48)"
-					transform = "translate(22, 66)"
-		-->
-		<!-- G-02 --> <!-- green #2F4 --> <!-- win -->
-		<g transform = "translate(774, -440)"> <!-- THS .vs. LHS -->
-			<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157688357102205">
+		<g
+			id = "varsityStandings"
+			transform = "translate(0, -16)"
+		>
+			<!-- G01 --> <!-- yellow #DD2 --> <!-- tie -->
+			<g transform = "translate(742, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
 					r = "12px"
+					fill = "#DD2"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
 					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>1</text>
+			</g>
+		
+			<!-- G02 --> <!-- green #3F5 --> <!-- win -->
+			<g transform = "translate(774, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#3F5"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>2</text>
+			</g>
+		
+			<!-- G03 --> <!-- red #F00 --> <!-- loss -->
+			<g transform = "translate(806, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#F00"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>3</text>
+			</g>
+		
+			<!--
+				4: transform = "translate(-43, 57)"
+				5: transform = "translate(-15.5, 70)"
+				6: transform = "translate(15.5, 70)"
+				7: transform = "translate(43, 57)"
+					fill = "#DDD"
+			-->
+			<!-- G04 --> <!-- red #F00 --> <!-- loss -->
+			<g transform = "translate(838, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#F00"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>4</text>
+			</g>
+		
+			<!-- G05 --> <!-- yellow #DD2 --> <!-- tie -->
+			<g transform = "translate(872, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#DD2"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>5</text>
+			</g>
+		
+			<!-- G06 --> <!-- red #F00 --> <!-- loss -->
+			<g transform = "translate(904, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#F00"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>6</text>
+			</g>
+		
+			<!--
+					r = "12px"
+					fill = "#3F5"
 					stroke = "#2F4"
-					stroke-width = "2px"
-					transform = "translate(0, 0)"
-				/>
-				<text
-					x = "635px"
-					y = "499px"
-					font-family = "sans-serif"
-					font-size = "10px"
-					fill = "#DDD"
-					text-anchor = "middle"
-					transform = "translate(0, 0)"
-				>P2</text>
-			</a>
-			<a xlink:href = "https://youtu.be/LmGgKDN9vBw">
+					stroke-width = "2.5px"
+		
+					r = "14px"
+					fill = "#3F5"
+					stroke = "#DDD"
+					stroke-width = "4px"
+			-->
+			<!-- G07 --> <!-- green #3F5 --> <!-- win -->
+			<g transform = "translate(936, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
 					r = "12px"
-					fill = "#222"
-					stroke = "#2F4"
+					fill = "#3F5"
+					stroke = "#DDD"
 					stroke-width = "2px"
-					transform = "translate(0, 32)"
+					transform = "translate(0, 0)"
 				/>
 				<text
 					x = "635px"
 					y = "499px"
 					font-family = "sans-serif"
 					font-size = "10px"
-					fill = "#DDD"
+					fill = "#222"
 					text-anchor = "middle"
-					transform = "translate(0, 32)"
-				>V2</text>
-			</a>
+					transform = "translate(0, 0)"
+				>7</text>
+			</g>
+		
+			<!-- G08 --> <!-- green #3F5 --> <!-- win -->
+			<g transform = "translate(968, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#3F5"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>8</text>
+			</g>
+		
+			<!-- G09 --> <!-- yellow #DD2 --> <!-- tie -->
+			<g transform = "translate(1000, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#DD2"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>9</text>
+			</g>
+		
+			<!-- G10 --> <!-- yellow #DD2 --> <!-- tie -->
+			<!--
+			<g transform = "translate(1032, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#DD2"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>10</text>
+			</g>
+			-->
+		
+			<!-- G11 --> <!-- yellow #DD2 --> <!-- tie -->
+			<!--
+			<g transform = "translate(1064, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#DD2"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>11</text>
+			</g>
+			-->
+		</g>
+	</g>
+
+
+	<!--
+		Junior Varsity Record Fall 2017
+	-->
+
+
+	<!--
+		C-Team Record Fall 2017
+		G01 => L: ?-?
+		G02 => W: ?-?
+		G03 => T: ?-?
+		G04 => W: ?-?
+		G05 => L: ?-?
+		G06 => W: ?-?
+		G07 => W: ?-?
+		G08 => L: ?-?
+		G09 => W: ?-?
+		G10 => T: ?-?
+		G11 => L: 0-2
+	-->
+
+		<g
+			id = "cTeamStandings"
+			transform = "translate(0, 615)"
+		>
+			<!-- G01 --> <!-- red #F00 --> <!-- loss -->
+			<g transform = "translate(742, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#F00"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>1</text>
+			</g>
+		
+			<!-- G02 --> <!-- green #3F5 --> <!-- win -->
+			<g transform = "translate(774, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#3F5"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>2</text>
+			</g>
+		
+			<!-- G03 --> <!-- yellow #DD2 --> <!-- tie -->
+			<g transform = "translate(806, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#DD2"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>3</text>
+			</g>
+		
+			<!-- G04 --> <!-- green #3F5 --> <!-- win -->
+			<g transform = "translate(838, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#3F5"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>4</text>
+			</g>
+		
+			<!-- G05 --> <!-- red #F00 --> <!-- loss -->
+			<g transform = "translate(872, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#F00"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>5</text>
+			</g>
+		
+			<!-- G06 --> <!-- green #3F5 --> <!-- win -->
+			<g transform = "translate(904, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#3F5"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>6</text>
+			</g>
+		
+			<!-- G07 --> <!-- green #3F5 --> <!-- win -->
+			<g transform = "translate(936, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#3F5"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>7</text>
+			</g>
+		
+			<!-- G08 --> <!-- red #F00 --> <!-- loss -->
+			<g transform = "translate(968, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#F00"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>8</text>
+			</g>
+		
+			<!-- G09 --> <!-- green #3F5 --> <!-- win -->
+			<g transform = "translate(1000, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#3F5"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>9</text>
+			</g>
+		
+			<!-- G10 --> <!-- yellow #DD2 --> <!-- tie -->
+			<g transform = "translate(1032, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#DD2"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>10</text>
+			</g>
+		
+			<!-- G11 --> <!-- red #F00 --> <!-- loss -->
+			<g transform = "translate(1064, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#F00"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>11</text>
+			</g>
+		
+			<!-- G12 --> <!-- yellow #DD2 --> <!-- tie -->
+			<!--
+			<g transform = "translate(1064, -424)">
+				<circle
+					cx = "635px"
+					cy = "495px"
+					r = "12px"
+					fill = "#DD2"
+					stroke = "#DDD"
+					stroke-width = "2px"
+					transform = "translate(0, 0)"
+				/>
+				<text
+					x = "635px"
+					y = "499px"
+					font-family = "sans-serif"
+					font-size = "10px"
+					fill = "#222"
+					text-anchor = "middle"
+					transform = "translate(0, 0)"
+				>12</text>
+			</g>
+			-->
 		</g>
 
-		<!--
-		<g transform = "translate(0, 0)">
-					transform = "translate(-16.5, 110)"
-					transform = "translate(16.5, 110)"
-		-->
-		<!-- G03 --> <!-- red --> <!-- loss -->
-		<g transform = "translate(806, -440)"> <!-- LHS .vs. WRHS -->
-			<a xlink:href = "https://www.flickr.com/photos/120669763@N05/albums/72157686468592434">
-				<circle
-					cx = "635px"
-					cy = "495px"
-					r = "12px"
-					fill = "#222"
-					stroke = "red"
-					stroke-width = "2px"
-					transform = "translate(0, 0)"
-				/>
-				<text
-					x = "635px"
-					y = "499px"
-					font-family = "sans-serif"
-					font-size = "10px"
-					fill = "#DDD"
-					text-anchor = "middle"
-					transform = "translate(0, 0)"
-				>P3</text>
-			</a>
-			<a xlink:href = "https://youtu.be/oFSCngkckqs">
-				<circle
-					cx = "635px"
-					cy = "495px"
-					r = "12px"
-					fill = "#222"
-					stroke = "red"
-					stroke-width = "2px"
-					transform = "translate(0, 32)"
-				/>
-				<text
-					x = "635px"
-					y = "499px"
-					font-family = "sans-serif"
-					font-size = "10px"
-					fill = "#DDD"
-					text-anchor = "middle"
-					transform = "translate(0, 32)"
-				>V3</text>
-			</a>
-		</g>
-	</g>
-
-	<!--
-		4: transform = "translate(-43, 57)"
-		5: transform = "translate(-15.5, 70)"
-		6: transform = "translate(15.5, 70)"
-		7: transform = "translate(43, 57)"
-			fill = "#DDD"
-	-->
-	<!-- G04 --> <!-- red #F00 --> <!-- loss -->
-	<g transform = "translate(838, -424)">
-		<circle
-			cx = "635px"
-			cy = "495px"
-			r = "12px"
-			fill = "#F00"
-			stroke = "#DDD"
-			stroke-width = "2px"
-			transform = "translate(0, 0)"
-		/>
-		<text
-			x = "635px"
-			y = "499px"
-			font-family = "sans-serif"
-			font-size = "10px"
-			fill = "#222"
-			text-anchor = "middle"
-			transform = "translate(0, 0)"
-		>4</text>
-	</g>
-
-	<!-- G05 --> <!-- yellow #DD2 --> <!-- tie -->
-	<g transform = "translate(872, -424)">
-		<circle
-			cx = "635px"
-			cy = "495px"
-			r = "12px"
-			fill = "#DD2"
-			stroke = "#DDD"
-			stroke-width = "2px"
-			transform = "translate(0, 0)"
-		/>
-		<text
-			x = "635px"
-			y = "499px"
-			font-family = "sans-serif"
-			font-size = "10px"
-			fill = "#222"
-			text-anchor = "middle"
-			transform = "translate(0, 0)"
-		>5</text>
-	</g>
-
-	<!-- G06 --> <!-- red #F00 --> <!-- loss -->
-	<g transform = "translate(904, -424)">
-		<circle
-			cx = "635px"
-			cy = "495px"
-			r = "12px"
-			fill = "#F00"
-			stroke = "#DDD"
-			stroke-width = "2px"
-			transform = "translate(0, 0)"
-		/>
-		<text
-			x = "635px"
-			y = "499px"
-			font-family = "sans-serif"
-			font-size = "10px"
-			fill = "#222"
-			text-anchor = "middle"
-			transform = "translate(0, 0)"
-		>6</text>
-	</g>
-
-	<!--
-			r = "12px"
-			fill = "#3F5"
-			stroke = "#2F4"
-			stroke-width = "2.5px"
-
-			r = "14px"
-			fill = "#3F5"
-			stroke = "#DDD"
-			stroke-width = "4px"
-	-->
-	<!-- G07 --> <!-- green #3F5 --> <!-- win -->
-	<g transform = "translate(936, -424)">
-		<circle
-			cx = "635px"
-			cy = "495px"
-			r = "12px"
-			fill = "#3F5"
-			stroke = "#DDD"
-			stroke-width = "2px"
-			transform = "translate(0, 0)"
-		/>
-		<text
-			x = "635px"
-			y = "499px"
-			font-family = "sans-serif"
-			font-size = "10px"
-			fill = "#222"
-			text-anchor = "middle"
-			transform = "translate(0, 0)"
-		>7</text>
-	</g>
-
-	<!-- G08 --> <!-- green #3F5 --> <!-- win -->
-	<g transform = "translate(968, -424)">
-		<circle
-			cx = "635px"
-			cy = "495px"
-			r = "12px"
-			fill = "#3F5"
-			stroke = "#DDD"
-			stroke-width = "2px"
-			transform = "translate(0, 0)"
-		/>
-		<text
-			x = "635px"
-			y = "499px"
-			font-family = "sans-serif"
-			font-size = "10px"
-			fill = "#222"
-			text-anchor = "middle"
-			transform = "translate(0, 0)"
-		>8</text>
-	</g>
-
-	<!-- G09 --> <!-- yellow #DD2 --> <!-- tie -->
-	<g transform = "translate(1000, -424)">
-		<circle
-			cx = "635px"
-			cy = "495px"
-			r = "12px"
-			fill = "#DD2"
-			stroke = "#DDD"
-			stroke-width = "2px"
-			transform = "translate(0, 0)"
-		/>
-		<text
-			x = "635px"
-			y = "499px"
-			font-family = "sans-serif"
-			font-size = "10px"
-			fill = "#222"
-			text-anchor = "middle"
-			transform = "translate(0, 0)"
-		>9</text>
-	</g>
-
-	<!-- G10 --> <!-- yellow #DD2 --> <!-- tie -->
-	<!--
-	<g transform = "translate(1032, -424)">
-		<circle
-			cx = "635px"
-			cy = "495px"
-			r = "12px"
-			fill = "#DD2"
-			stroke = "#DDD"
-			stroke-width = "2px"
-			transform = "translate(0, 0)"
-		/>
-		<text
-			x = "635px"
-			y = "499px"
-			font-family = "sans-serif"
-			font-size = "10px"
-			fill = "#222"
-			text-anchor = "middle"
-			transform = "translate(0, 0)"
-		>10</text>
-	</g>
-	-->
-
-	<!-- G11 --> <!-- yellow #DD2 --> <!-- tie -->
-	<!--
-	<g transform = "translate(1064, -424)">
-		<circle
-			cx = "635px"
-			cy = "495px"
-			r = "12px"
-			fill = "#DD2"
-			stroke = "#DDD"
-			stroke-width = "2px"
-			transform = "translate(0, 0)"
-		/>
-		<text
-			x = "635px"
-			y = "499px"
-			font-family = "sans-serif"
-			font-size = "10px"
-			fill = "#222"
-			text-anchor = "middle"
-			transform = "translate(0, 0)"
-		>11</text>
-	</g>
-	-->
 
 	<!-- 01 -->
 	<!-- 55 -->
