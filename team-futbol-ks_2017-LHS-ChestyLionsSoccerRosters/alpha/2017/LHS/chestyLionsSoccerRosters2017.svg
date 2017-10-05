@@ -129,34 +129,34 @@
 		:: LHS Chesty Lions Soccer Fall 2017 Schedule ::
 
 		08-25 Away => Friday 6:15PM .vs. Manhatten
-		           => Tie: 1-1
+		       G01 => Tie: 1-1
 
 		08-29 Away => Tuesday 6:15PM .vs. Topeka
-		           => Win: 2-1
+		       G02 => Win: 2-1
 
 		09-07 Home => Thursday 6:15PM vs. Washburn Rural
-		           => Loss: 2-3
+		       G03 => Loss: 2-3
 
 		09-12 Away => Tuesday 6:15PM .vs. Shawnee Mission South
-		           => Loss: 1-3
+		       G04 => Loss: 1-3
 
 		09-14 Home => Thursday 6:15PM .vs. Shawnee Mission North
-		           => Tie: 1-1
+		       G05 => Tie: 1-1
 
 		09-19 Home => Tuesday 6:15PM .vs. Shawnee Mission East
-		           => Loss: 0-3
+		       G06 => Loss: 0-3
 
 		09-21 Away => Thursday 6:15PM .vs. Olathe West
-		           => Win: 3-0
+		       G07 => Win: 3-0
 
 		09-26 Away => Tuesday 6:15PM .vs. Shawnee Mission West
-		           => Win: 3-1
+		       G08 => Win: 3-1
 
 		09-28 Away => Thursday 6:15PM .vs. Lawrence Free State
-		           => Tie: 2-2
+		       G09 => Tie: 2-2
 
 		10-03 Home => Tuesday 6:15PM .vs. Shawnee Mission Northwest
-		           => :
+		       G10 => Loss: 1-3
 
 		10-05 Home => Thursday 6:15PM .vs. Olathe North
 		           => :
@@ -189,6 +189,7 @@
 		G07 => W: 3-0
 		G08 => W: 3-1
 		G09 => T: 2-2
+		G10 => L: 1-3
 	-->
 
 	<!--
@@ -970,7 +971,7 @@
 			G07 => W: 3-0
 			G08 => W: 3-1
 			G09 => T: 2-2
-			G10 => WTL: 0-0
+			G10 => L: 1-3
 			G11 => WTL: 0-0
 			G12 => WTL: 0-0
 			G13 => WTL: 0-0
@@ -1196,6 +1197,30 @@
 				</a>
 			</g>
 
+			<!-- G06 --> <!-- red --> <!-- loss -->
+			<g transform = "translate(870, -440)"> <!-- LHS .vs. SMEHS -->
+				<a xlink:href = "https://youtu.be/ztOQgHrgKJI">
+					<circle
+						cx = "635px"
+						cy = "495px"
+						r = "12px"
+						fill = "#222"
+						stroke = "red"
+						stroke-width = "2px"
+						transform = "translate(0, 32)"
+					/>
+					<text
+						x = "635px"
+						y = "499px"
+						font-family = "sans-serif"
+						font-size = "10px"
+						fill = "#DDD"
+						text-anchor = "middle"
+						transform = "translate(0, 32)"
+					>V</text>
+				</a>
+			</g>
+
 			<!-- G07 --> <!-- green #2F4 --> <!-- win -->
 			<g transform = "translate(934, -440)"> <!-- LHS .vs. OWHS -->
 				<a xlink:href = "https://youtu.be/UqrxHXecoUk">
@@ -1219,6 +1244,55 @@
 					>V</text>
 				</a>
 			</g>
+
+			<!-- G08 --> <!-- yellow --> <!-- tie -->
+			<g transform = "translate(998, -440)"> <!-- LHS .vs. FSHS -->
+				<a xlink:href = "https://youtu.be/bWYrABoWA68">
+					<circle
+						cx = "635px"
+						cy = "495px"
+						r = "12px"
+						fill = "#222"
+						stroke = "yellow"
+						stroke-width = "2px"
+						transform = "translate(0, 32)"
+					/>
+					<text
+						x = "635px"
+						y = "499px"
+						font-family = "sans-serif"
+						font-size = "10px"
+						fill = "#DDD"
+						text-anchor = "middle"
+						transform = "translate(0, 32)"
+					>V</text>
+				</a>
+			</g>
+	
+			<!-- G10 --> <!-- red --> <!-- loss -->
+			<g transform = "translate(1030, -440)"> <!-- LHS .vs. SMNWHS -->
+				<a xlink:href = "https://youtu.be/yZ8CnmFU9gg">
+					<circle
+						cx = "635px"
+						cy = "495px"
+						r = "12px"
+						fill = "#222"
+						stroke = "red"
+						stroke-width = "2px"
+						transform = "translate(0, 32)"
+					/>
+					<text
+						x = "635px"
+						y = "499px"
+						font-family = "sans-serif"
+						font-size = "10px"
+						fill = "#DDD"
+						text-anchor = "middle"
+						transform = "translate(0, 32)"
+					>V</text>
+				</a>
+			</g>
+
 		</g>
 
 		<g
@@ -1441,14 +1515,13 @@
 				>9</text>
 			</g>
 		
-			<!-- G10 --> <!-- yellow #DD2 --> <!-- tie -->
-			<!--
+			<!-- G10 --> <!-- red #F00 --> <!-- loss -->
 			<g transform = "translate(1030, -424)">
 				<circle
 					cx = "635px"
 					cy = "495px"
 					r = "12px"
-					fill = "#DD2"
+					fill = "#F00"
 					stroke = "#DDD"
 					stroke-width = "2px"
 					transform = "translate(0, 0)"
@@ -1463,7 +1536,6 @@
 					transform = "translate(0, 0)"
 				>10</text>
 			</g>
-			-->
 		
 			<!-- G11 --> <!-- yellow #DD2 --> <!-- tie -->
 			<!--
